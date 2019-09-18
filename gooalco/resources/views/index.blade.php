@@ -4,8 +4,8 @@
 
 <div class="loader">
 <div class="spinner">
-<div class="cloud1"><img src="{{asset('public/images/clouds/cloud-blue.svg')}}" alt=""></div>
-<div class="cloud2"><img src="{{asset('public/images/clouds/cloud-green.svg')}}" alt=""></div>
+<div class="cloud1"><img src="./images/clouds/cloud-blue.svg" alt=""></div>
+<div class="cloud2"><img src="./images/clouds/cloud-green.svg" alt=""></div>
 </div>
 </div>
 
@@ -15,7 +15,7 @@
     <div class="swiper-container fullscreen">
     <div class="swiper-wrapper">
 
-    <div class="swiper-slide overlay-black" style="background: url('{{asset('public/images/img/image1.jpg')}}'); background-size: cover;">
+    <div class="swiper-slide overlay-black" style="background: url('./images/img/image1.jpg'); background-size: cover;">
     <div class="slider-content container">
     <div class="col-md-12">
     <h2>Best web hosting <br> service for your <span class="text-blue">website</span>.</h2>
@@ -43,9 +43,9 @@
     </div>
     </div>
     <video class="video-bg " preload="auto" loop="" autoplay="" poster="video/video.jpg">
-    <source src="{{asset('public/video/video.mp4')}}" type="video/mp4">
-    <source src="{{asset('public/video/video.webm')}}" type="video/webm">
-    <source src="{{asset('public/video/video.ogv')}}" type="video/ogg">
+    <source src="./video/video.mp4" type="video/mp4">
+    <source src="./video/video.webm" type="video/webm">
+    <source src="./video/video.ogv" type="video/ogg">
     </video>
     </div>
 
@@ -128,15 +128,15 @@
 </div>
 
 <div class="col-md-6 about-image">
-<img src="{{asset('public/images/img/about.svg')}}" alt="">
+<img src="./images/img/about.svg" alt="">
 </div>
 
 <div class="clouds">
-<img src="{{asset('public/images/clouds/cloud1.svg')}}" alt="" class="cloud1">
-<img src="{{asset('public/images/clouds/cloud2.svg')}}" alt="" class="cloud2">
-<img src="{{asset('public/images/clouds/cloud3.svg')}}" alt="" class="cloud3">
-<img src="{{asset('public/images/clouds/cloud1.svg')}}" alt="" class="cloud4">
-<img src="{{asset('public/images/clouds/cloud3.svg')}}" alt="" class="cloud5">
+<img src="./images/clouds/cloud1.svg" alt="" class="cloud1">
+<img src="./images/clouds/cloud2.svg" alt="" class="cloud2">
+<img src="./images/clouds/cloud3.svg" alt="" class="cloud3">
+<img src="./images/clouds/cloud1.svg" alt="" class="cloud4">
+<img src="./images/clouds/cloud3.svg" alt="" class="cloud5">
 </div>
 </div>
 </section>
@@ -151,17 +151,17 @@
 
 <div class="row nomargin">
 <div class="col-sm-4 col-xs-12 service text-center pt40">
-<img src="{{asset('public/images/icons/cloud-server.svg')}}" alt="">
+<img src="./images/icons/cloud-server.svg" alt="">
 <h3 class="ptb20">SSD Cloud Hosting</h3>
 <p>Experience up to 2X faster load times due to low-density servers, premium hardware, and multiple caching layers.</p>
 </div>
 <div class="col-sm-4 col-xs-12 service text-center pt40">
-<img src="{{asset('public/images/icons/locked.svg')}}" alt="">
+<img src="./images/icons/locked.svg" alt="">
 <h3 class="ptb20">Secured Server</h3>
 <p>The security of your website is our top priority. </p>
 </div>
 <div class="col-sm-4 col-xs-12 service text-center pt40">
-<img src="{{asset('public/images/icons/transfer.svg')}}" alt="">
+<img src="./images/icons/transfer.svg" alt="">
 <h3 class="ptb20">Free Domain Transfer</h3>
 <p>Our dedicated Team is standing by to transfer your existing content from your prior host to our platform.</p>
 </div>
@@ -170,17 +170,17 @@
 
 <div class="row nomargin pt40">
 <div class="col-sm-4 col-xs-12 service text-center pt40">
-<img src="{{asset('public/images/icons/chat1.svg')}}" alt="">
+<img src="./images/icons/chat1.svg" alt="">
 <h3 class="ptb20">Live Chat Support</h3>
 <p>Our support team will be at your service 24/7 helping and guiding you via live chat. </p>
 </div>
 <div class="col-sm-4 col-xs-12 service text-center pt40">
-<img src="{{asset('public/images/icons/customer-service.svg')}}" alt="">
+<img src="./images/icons/customer-service.svg" alt="">
 <h3 class="ptb20">Technical Support</h3>
 <p>Our support staff is available 24/7/365 to assist you.</p>
 </div>
 <div class="col-sm-4 col-xs-12 service text-center pt40">
-<img src="{{asset('public/images/icons/optimization.svg')}}" alt="">
+<img src="./images/icons/optimization.svg" alt="">
 <h3 class="ptb20">Free Website Optimization</h3>
 <p>Cloudify will help you rank your website higher.</p>
 </div>
@@ -200,7 +200,7 @@
 </ul>
 </div>
 <div class="col-md-4 col-md-offset-2 info-image">
-<img src="{{asset('public/images/icons/custom.svg')}}" alt="">
+<img src="./images/icons/custom.svg" alt="">
 </div>
 </div>
 </div>
@@ -209,7 +209,7 @@
 <div class="container-fluid ptb80 info" id="secondary">
 <div class="container">
 <div class="col-md-4 info-image">
-<img src="{{asset('public/images/icons/pixel-perfect.svg')}}" alt="">
+<img src="./images/icons/pixel-perfect.svg" alt="">
 </div>
 <div class="col-md-offset-2 col-md-6 info-text">
 <h3 class="pb20">Pixel Perfect Design</h3>
@@ -236,7 +236,7 @@
 </ul>
 </div>
 <div class="col-md-4 col-md-offset-2 info-image">
-<img src="{{asset('public/images/icons/responsive-design.svg')}}" alt="">
+<img src="./images/icons/responsive-design.svg" alt="">
 </div>
 </div>
 </div>
@@ -266,8 +266,8 @@
 </div>
 
 <div class="clouds">
-<img src="{{asset('public/images/clouds/cloud1.svg')}}" class="cloud1" alt="">
-<img src="{{asset('public/images/clouds/cloud2.svg')}}" class="cloud2" alt="">
+<img src="./images/clouds/cloud1.svg" class="cloud1" alt="">
+<img src="./images/clouds/cloud2.svg" class="cloud2" alt="">
 </div>
 
 </div>
@@ -284,7 +284,7 @@
 <div class="col-md-4 col-sm-4 col-xs-12">
 <div class="member">
 <div class="member-details">
-<img src="{{asset('public/images/team/team1.jpg')}}" class="img-responsive" alt="">
+<img src="./images/team/team1.jpg" class="img-responsive" alt="">
 <div class="overlay">
 <div class="member-info-overlay">
 <h4>John Doe</h4>
@@ -309,7 +309,7 @@
 <div class="col-md-4 col-sm-4 col-xs-12">
 <div class="member">
 <div class="member-details">
-<img src="{{asset('public/images/team/team2.jpg')}}" class="img-responsive" alt="">
+<img src="./images/team/team2.jpg" class="img-responsive" alt="">
 <div class="overlay">
 <div class="member-info-overlay">
 <h4>John Doe</h4>
@@ -334,7 +334,7 @@
 <div class="col-md-4 col-sm-4 col-xs-12">
 <div class="member">
 <div class="member-details">
-<img src="{{asset('public/images/team/team3.jpg')}}" class="img-responsive" alt="">
+<img src="./images/team/team3.jpg" class="img-responsive" alt="">
 <div class="overlay">
 <div class="member-info-overlay">
 <h4>John Doe</h4>
@@ -485,28 +485,28 @@
 <div class="container-fluid">
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="{{asset('public/images/icons/award.svg')}}" alt="">
+<img src="./images/icons/award.svg" alt="">
 <span class="counter" data-from="0" data-to="65"></span>
 <h3>Awards</h3>
 </div>
 
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="{{asset('public/images/icons/happy.svg')}}" alt="">
+<img src="./images/icons/happy.svg" alt="">
 <span class="counter" data-from="0" data-to="750"></span>
 <h3>Clients</h3>
 </div>
 
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="{{asset('public/images/icons/site.svg')}}" alt="">
+<img src="./images/icons/site.svg" alt="">
 <span class="counter" data-from="0" data-to="1425"></span>
 <h3>Hosted Websites</h3>
 </div>
 
 
 <div class="col-md-3 col-sm-3 col-xs-12">
-<img src="{{asset('public/images/icons/clock.svg')}}" alt="">
+<img src="./images/icons/clock.svg" alt="">
 <span class="counter" data-from="0" data-to="2425"></span>
 <h3>Work Hours</h3>
 </div>
@@ -528,7 +528,7 @@
 <div class="review">
 <div class="review-inner text-center">
 <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="{{asset('public/images/clouds/cloud-blue.svg')}}" alt="">
+<img src="./images/clouds/cloud-blue.svg" alt="">
 </div>
 </div>
 <div class="customer">
@@ -542,7 +542,7 @@
 <div class="review">
 <div class="review-inner text-center">
 <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="{{asset('public/images/clouds/cloud-blue.svg')}}" alt="">
+<img src="./images/clouds/cloud-blue.svg" alt="">
 </div>
 </div>
 <div class="customer">
@@ -556,7 +556,7 @@
 <div class="review">
 <div class="review-inner text-center">
 <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="{{asset('public/images/clouds/cloud-blue.svg')}}" alt="">
+<img src="./images/clouds/cloud-blue.svg" alt="">
 </div>
 </div>
 <div class="customer">
@@ -570,7 +570,7 @@
 <div class="review">
 <div class="review-inner text-center">
 <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="{{asset('public/images/clouds/cloud-blue.svg')}}" alt="">
+<img src="./images/clouds/cloud-blue.svg" alt="">
 </div>
 </div>
 <div class="customer">
@@ -584,7 +584,7 @@
 <div class="review">
 <div class="review-inner text-center">
 <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="{{asset('public/images/clouds/cloud-blue.svg')}}" alt="">
+<img src="./images/clouds/cloud-blue.svg" alt="">
 </div>
 </div>
 <div class="customer">
@@ -598,7 +598,7 @@
 <div class="review">
 <div class="review-inner text-center">
 <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="{{asset('public/images/clouds/cloud-blue.svg')}}" alt="">
+<img src="./images/clouds/cloud-blue.svg" alt="">
 </div>
 </div>
 <div class="customer">
@@ -650,7 +650,7 @@
 <div class="col-md-4">
 <article class="blog-single pb30 shadow">
 <div class="blog-post-thumbnail normal-post hover-link">
-<a href="blog-post.html"><img src="{{asset('public/images/blog/blog2.jpg')}}" alt=""></a>
+<a href="blog-post.html"><img src="./images/blog/blog2.jpg" alt=""></a>
 </div>
 <div class="blog-post-title pt30 pb10">
 <h3><a href="blog-post.html">Cloudify strategy tipps</a></h3>
@@ -667,7 +667,7 @@
 <div class="col-md-4">
 <article class="blog-single pb30 shadow">
 <div class="blog-post-thumbnail normal-post hover-link">
-<a href="blog-post.html"><img src="{{asset('public/images/blog/blog3.jpg')}}" alt=""></a>
+<a href="blog-post.html"><img src="./images/blog/blog3.jpg" alt=""></a>
 </div>
 <div class="blog-post-title pt30 pb10">
 <h3><a href="blog-post.html">Working with Cloudify</a></h3>
@@ -695,28 +695,28 @@
 <div class="container">
 <div class="owl-carousel partners-slider">
 <div class="item">
-<a href="#"><img src="{{asset('public/images/partners/envato-logo.svg')}}" alt="image title"></a>
+<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
 </div>
 <div class="item">
-<a href="#"><img src="{{asset('public/images/partners/envato-logo.svg')}}" alt="image title"></a>
+<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
 </div>
 <div class="item">
-<a href="#"><img src="{{asset('public/images/partners/envato-logo.svg')}}" alt="image title"></a>
+<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
 </div>
 <div class="item">
-<a href="#"><img src="{{asset('public/images/partners/envato-logo.svg')}}" alt="image title"></a>
+<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
 </div>
 <div class="item">
-<a href="#"><img src="{{asset('public/images/partners/envato-logo.svg')}}" alt="image title"></a>
+<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
 </div>
 <div class="item">
-<a href="#"><img src="{{asset('public/images/partners/envato-logo.svg')}}" alt="image title"></a>
+<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
 </div>
 <div class="item">
-<a href="#"><img src="{{asset('public/images/partners/envato-logo.svg')}}" alt="image title"></a>
+<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
 </div>
 <div class="item">
-<a href="#"><img src="{{asset('public/images/partners/envato-logo.svg')}}" alt="image title"></a>
+<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
 </div>
 </div>
 </div>
@@ -731,7 +731,7 @@
 <div class="row ptb60 footer-info">
 
 <div class="col-sm-3 about">
-<a href="index.html"><img src="{{asset('public/images/logo.svg')}}" alt=""></a>
+<a href="index.html"><img src="./images/logo2.svg" alt=""></a>
 <p class="pt30">Lorem ipsum dolor sit amet, ectetur adipiscing elit.viverra tellus. Vivamus finibus, quam vitae pulvinar euismod, Lorem ipsum dolor sit amet, ectetur adipiscing elit.</p>
 </div>
 
@@ -799,7 +799,7 @@ Copyright &copy; cloudify. All Rights Reserved
 <div class="chat-history">
 
 <div class="chat-message">
-<img src="{{asset('public/images/team/team1.jpg')}}" alt="">
+<img src="./images/team/team1.jpg" alt="">
 
 <div class="chat-message-content">
 <span class="chat-time">18:35</span>
@@ -812,7 +812,7 @@ Copyright &copy; cloudify. All Rights Reserved
 <hr>
 
 <div class="chat-message">
-<img src="{{asset('public/images/team/team1.jpg')}}" alt="">
+<img src="./images/team/team1.jpg" alt="">
 
 <div class="chat-message-content">
 <span class="chat-time">18:36</span>

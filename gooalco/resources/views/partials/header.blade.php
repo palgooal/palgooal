@@ -4,7 +4,7 @@
 
     <div class="col-md-6 col-sm-6 col-xs-12">
     <ul class="social list-inline ptb10">
-    <li><a href="tel:12345678912">+970-598-663-aa</a></li>
+    <li><a href="tel:12345678912">+970-598-663</a></li>
     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
@@ -21,11 +21,11 @@
     <li class="login">
     <a id="modal_trigger" class="btn btn-small btn-border-rev btn-blue" href="#"><i class="fa fa-user"></i>{{__('home.Client Area')}}</a>
     </li>
-    <li class="login">
-            <a id="" class="" href="/lang/ar"><i class="fa fa-user"></i>ar</a>
+    <li>
+            <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/ar"><i class="fa fa-user"></i>عربي</a>
             </li>
-            <li class="login">
-                    <a id="" class="" href="/lang/en"><i class="fa fa-user"></i>en</a>
+            <li>
+                    <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/en"><i class="fa fa-user"></i>en</a>
                     </li>
     </ul>
 
@@ -39,7 +39,7 @@
         <div class="container">
 
         <div class="col-md-2 col-sm-3 col-xs-3">
-        <a class="navbar-brand" href="index.html"><img src="{{asset('public/images/logo.svg')}}" alt="logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="{{asset('./images/logo2.svg')}}" alt="logo"></a>
 
         </div>
 
