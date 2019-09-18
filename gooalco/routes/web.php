@@ -21,7 +21,7 @@ Route::get('/admin', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/index', 'HomeController@index')->name('home');
 Route::get('/lang/{local}', 'HomeController@lang');
 
 Route::resource('/admin/posts', 'PostController');
