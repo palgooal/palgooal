@@ -23,7 +23,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/lang/{local}', 'HomeController@lang');
-Route::resource('/admin/posts', 'HomeController');
+Route::resource('/index', 'HomeController');
 Route::resource('/admin/posts', 'PostController');
 
 Auth::routes();

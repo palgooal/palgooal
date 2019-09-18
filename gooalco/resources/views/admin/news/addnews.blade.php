@@ -8,7 +8,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Add new</h4>
+                    <h4>Add Posts</h4>
                     <hr />
                 </div>
             </div>
@@ -20,7 +20,7 @@
                         <div class="form-group row">
                             <label for="title" class="col-4 col-form-label">Title</label>
                             <div class="col-8">
-                                <input id="title"
+                                <input id="Title"
                                        name="Title"
                                        placeholder="title"
                                        class="form-control here"
@@ -46,21 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="Date" class="col-4 col-form-label">Date</label>
-                            <div class="col-8">
-                                <input id="Date"
-                                       name="Date"
-                                       placeholder="Date"
-                                       class="form-control here"
-                                       type="date" />
-                                <div class="valid-feedback">Looks good!</div>
-                                <div class="invalid-feedback">
-                                    Please Price is required.
-                                </div>
-                            </div>
-                        </div>
-
+                       
                         <div class="form-group row">
                             <label for="Body" class="col-4 col-form-label">Body</label>
                             <div class="col-8">
@@ -77,9 +63,10 @@
 
                         <div class="form-group row">
                             <label for="time" class="col-4 col-form-label">Image </label>
+                            
                             <div class="col-8">
                                 <input id="image"
-                                       name="imageURL"
+                                       name="image"
                                        placeholder="Image Online URL"
                                        class="form-control here"
                                        type="file" />

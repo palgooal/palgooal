@@ -14,7 +14,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.news.news')->with('posts', Post::get());
     }
 
     /**
@@ -24,7 +24,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.news.addnews');
     }
 
     /**
@@ -35,7 +35,17 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $path = $request->image->store('post');
+        $posts = new Post();
+        $posts->Title =$request->Title;
+        $posts->image =$path;
+        $posts->Auther =$request->Auther;
+        $posts->Body =$request->Body;
+        $posts->save();
+
+        return redirect('/admin/posts');
+
+
     }
 
     /**

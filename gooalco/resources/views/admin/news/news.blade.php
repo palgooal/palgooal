@@ -14,7 +14,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-
+                    
                     <th scope="col">Title</th>
                     <th scope="col">Auther</th>
                     <th scope="col">Date</th>
@@ -34,7 +34,8 @@
                     <td>{{$post->Auther}}</td>
                     <td>{{$post->Date}}</td>
                     <td>{{$post->Body}}</td>
-                    <td>{{$post->Image}}</td>
+                    
+                    <td><img src="{{asset('/images/'.$post->image)}}" alt=""></td>
                     <td>
                     <a href="/admin/posts/{{$post->id}}/edit" class="btn btn-outline-primary">Edit</a> |
                     <form style="display :inline"  action="/admin/posts/{{$post->id}}" method="POST">

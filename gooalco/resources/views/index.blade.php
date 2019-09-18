@@ -635,7 +635,7 @@
 <a href="blog-post.html"><img src="" alt=""></a>
 </div>
 <div class="blog-post-title pt30 pb10">
-<h3><a href="blog-post.html">ee</a></h3>
+{{-- <h3><a href="blog-post.html">{{$post->id}}</a></h3> --}}
 <p class="nomargin pt5">By <a class="blog-author" href="#"></a> <span class="blog-date"></span></p>
 </div>
 <div class="blog-post-details pt20">
