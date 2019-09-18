@@ -39,7 +39,7 @@
         <div class="container">
 
         <div class="col-md-2 col-sm-3 col-xs-3">
-        <a class="navbar-brand" href="index.html"><img src="{{asset('./images/logo2.svg')}}" alt="logo"></a>
+        <a class="navbar-brand" href="/"><img src="{{asset('./images/logo2.svg')}}" alt="logo"></a>
 
         </div>
 

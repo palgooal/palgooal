@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
@@ -65,9 +66,9 @@ class PostController extends Controller
      * @param  \App\modals\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
+    public function edit($id)
     {
-        //
+       return view('admin.news.editnews');
     }
 
     /**
@@ -79,7 +80,14 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $path = $request->image->store('post');
+        $posts = Post::find($id);
+        $posts->Title =$request->Title;
+        $posts->image =$path;
+        $posts->Auther =$request->Auther;
+        $posts->Body =$request->Body;
+        $posts->save();
+        return redirect('/admin/posts');
     }
 
     /**
