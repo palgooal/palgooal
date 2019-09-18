@@ -11,5 +11,7 @@ return[
 'Enter your domain name here'=>'أدخل اسم المجال الخاص بك هنا',
 'Read More'=> 'أقراء المزيد',
 'Palgooal co' => 'شركة بال قول لتكنولوجيا المعلومات',
-'visit blog'=>'شاهد المدونة'
+'visit blog'=>'شاهد المدونة',
+'Blog'=> 'مدونة',
+'Home'=>'الرئيسية'
 ];

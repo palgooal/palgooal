@@ -3,11 +3,11 @@
 
 
 <div class="loader">
-<div class="spinner">
-<div class="cloud1"><img src="./images/clouds/cloud-blue.svg" alt=""></div>
-<div class="cloud2"><img src="./images/clouds/cloud-green.svg" alt=""></div>
-</div>
-</div>
+    <div class="spinner">
+    <div class="cloud1"><img src="./images/clouds/cloud-blue.svg" alt=""></div>
+    <div class="cloud2"><img src="./images/clouds/cloud-green.svg" alt=""></div>
+    </div>
+    </div>
 
 
 <section class="demo1" id="home">

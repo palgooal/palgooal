@@ -15,17 +15,17 @@
 <meta name="author" content="GnoDesign">
 
 <title>{{__('home.Palgooal co')}}</title>
-<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" href="./images/apple-touch-icon.html">
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700|Roboto:400,700" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
-<link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
-<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 
 
 @if (App::isLocale('ar'))
@@ -48,21 +48,21 @@
 
 
 <script data-cfasync="false" src="./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./js/jquery-3.1.1.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/wow.min.js"></script>
-<script src="./js/swiper.min.js"></script>
-<script src="./js/owl.carousel.min.js"></script>
-<script src="./js/simple-expand.min.js"></script>
-<script src="./js/jquery.countTo.js"></script>
-<script src="./js/jquery.inview.min.js"></script>
-<script src="./js/jquery.easing.min.js"></script>
-<script src="./js/jquery.nav.js"></script>
-<script src="./js/jquery.ajaxchimp.js"></script>
-<script src="./js/jquery-ui.min.js"></script>
-<script src="./js/jquery.easypiechart.min.js"></script>
-<script src="./js/jquery.magnific-popup.min.js"></script>
-<script src="./js/isotope.pkgd.min.js"></script>
-<script src="./js/custom.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/simple-expand.min.js"></script>
+<script src="../js/jquery.countTo.js"></script>
+<script src="../js/jquery.inview.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/jquery.nav.js"></script>
+<script src="../js/jquery.ajaxchimp.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/jquery.easypiechart.min.js"></script>
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/custom.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

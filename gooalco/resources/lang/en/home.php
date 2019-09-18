@@ -10,5 +10,7 @@ return[
     'Lear More'=>'Lear More',
     'Read More'=> 'Read More',
     'Palgooal co' => 'Palgooal co',
-    'visit blog'=>'visit blog'
+    'visit blog'=>'visit blog',
+    'Blog'=> 'Blog',
+    'Home'=>'Home'
 ];

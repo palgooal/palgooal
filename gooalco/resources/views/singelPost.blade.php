@@ -6,7 +6,7 @@
     <div class="container">
     <h2 class="uppercase">Blog post</h2>
     <div class="breadcrumbs pt10">
-    <h5><a href="index.html">Home</a> / Blog</h5>
+    <h5><a href="/home">{{__('home.Home')}}</a> / {{__('home.Blog')}} / {{$post->Title}}</h5>
     </div>
     </div>
     </section>
@@ -16,10 +16,10 @@
     <div class="container">
     
     <div class="col-md-12 post-title">
-    <h2 class="uppercase">grow your business by working with cloudify</h2>
+    <h2 class="uppercase">{{$post->Title}}</h2>
     
     <ul class="post-detail list-inline pt10">
-    <li><i class="fa fa-user"></i> Author</li>
+    <li><i class="fa fa-user"></i> {{$post->Auther}}</li>
     <li><i class="fa fa-clock-o"></i> 4:30pm</li>
     <li><i class="fa fa-comments-o"></i> 12 Comments</li>
     </ul>
