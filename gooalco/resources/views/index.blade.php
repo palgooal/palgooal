@@ -626,60 +626,25 @@
 
 
 
-{{-- @foreach ($posts as $post) --}}
+@foreach ($posts as $post)
 
 
 <div class="col-md-4">
 <article class="blog-single pb30 shadow">
 <div class="blog-post-thumbnail normal-post hover-link">
-<a href="blog-post.html"><img src="" alt=""></a>
+<a href="blog-post.html"><img src="{{asset('/images/'.$post->image)}}" alt=""></a>
 </div>
 <div class="blog-post-title pt30 pb10">
-{{-- <h3><a href="blog-post.html">{{$post->id}}</a></h3> --}}
-<p class="nomargin pt5">By <a class="blog-author" href="#"></a> <span class="blog-date"></span></p>
+<h3><a href="blog-post.html">{{$post->Title}}</a></h3>
+<p class="nomargin pt5">{{$post->Auther}} <a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
 <p class="nomargin pb20"></p>
-<a class="blog-more-btn" href="blog-post.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+<a class="blog-more-btn" href="blog-post.html">{{__('home.Read More')}} <i class="fa fa-long-arrow-right"></i></a>
 </div>
 </article>
 </div>
-{{-- @endforeach --}}
-
-
-<div class="col-md-4">
-<article class="blog-single pb30 shadow">
-<div class="blog-post-thumbnail normal-post hover-link">
-<a href="blog-post.html"><img src="./images/blog/blog2.jpg" alt=""></a>
-</div>
-<div class="blog-post-title pt30 pb10">
-<h3><a href="blog-post.html">Cloudify strategy tipps</a></h3>
-<p class="nomargin pt5">By <a class="blog-author" href="#">John Doe</a> <span class="blog-date">17 October 2016</span></p>
-</div>
-<div class="blog-post-details pt20">
-<p class="nomargin pb20">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-<a class="blog-more-btn" href="blog-post.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-</div>
-</article>
-</div>
-
-
-<div class="col-md-4">
-<article class="blog-single pb30 shadow">
-<div class="blog-post-thumbnail normal-post hover-link">
-<a href="blog-post.html"><img src="./images/blog/blog3.jpg" alt=""></a>
-</div>
-<div class="blog-post-title pt30 pb10">
-<h3><a href="blog-post.html">Working with Cloudify</a></h3>
-<p class="nomargin pt5">By <a class="blog-author" href="#">John Doe</a> <span class="blog-date">17 October 2016</span></p>
-</div>
-<div class="blog-post-details pt20">
-<p class="nomargin pb20">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-<a class="blog-more-btn" href="blog-post.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-</div>
-</article>
-</div>
-
+@endforeach
 
 <div class="col-md-12 text-center pt40">
 <a href="blog-listing.html" class="btn btn-border btn-blue btn-dark">visit blog</a>

@@ -8,5 +8,6 @@ return[
 'domain'=> 'النطاق',
 'Now!'=>'الآن!',
 'Search'=>'بحث',
-'Enter your domain name here'=>'أدخل اسم المجال الخاص بك هنا'
+'Enter your domain name here'=>'أدخل اسم المجال الخاص بك هنا',
+'Read More'=> 'أقراء المزيد'
 ];
