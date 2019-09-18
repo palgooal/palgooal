@@ -68,7 +68,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-       return view('admin.news.editnews');
+       return view('admin.news.editNew')->with('post', Post::find($id));
     }
 
     /**
@@ -78,7 +78,7 @@ class PostController extends Controller
      * @param  \App\modals\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, $id)
     {
         $path = $request->image->store('post');
         $posts = Post::find($id);
@@ -96,8 +96,9 @@ class PostController extends Controller
      * @param  \App\modals\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy($id)
     {
-        //
+        Post::destroy($id);
+        return redirect('/admin/posts');
     }
 }

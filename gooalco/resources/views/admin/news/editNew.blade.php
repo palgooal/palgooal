@@ -14,16 +14,16 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                <form  method="POST" action="/admin/posts/{{$new->id}}">
+                <form  method="POST" action="/admin/posts/{{$post->id}}" enctype="multipart/form-data">
                         @csrf
                         @method('put')
                         <div class="form-group row">
                             <label for="title" class="col-4 col-form-label">Title</label>
                             <div class="col-8">
-                                <input id="title"
+                                <input id="Title"
                                        name="Title"
                                        placeholder="title"
-                                         value="{{$new->Title}}"
+                                         value="{{$post->Title}}"
                                        class="form-control here"
                                        type="text" />
                                 <div class="valid-feedback">Looks good!</div>
@@ -39,7 +39,7 @@
                                 <input id="Auther"
                                        name="Auther"
                                        placeholder="Auther"
-                                       value="{{$new->Auther}}"
+                                       value="{{$post->Auther}}"
                                        class="form-control here"
                                        type="text" />
                                 <div class="valid-feedback">Looks good!</div>
@@ -48,29 +48,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="Date" class="col-4 col-form-label">Date</label>
-                            <div class="col-8">
-                                <input id="Date"
-                                       name="Date"
-                                       placeholder="Date"
-                                       value="{{$new->Date}}"
-                                       class="form-control here"
-                                       type="date" />
-                                <div class="valid-feedback">Looks good!</div>
-                                <div class="invalid-feedback">
-                                    Please Price is required.
-                                </div>
-                            </div>
-                        </div>
-
+                       
                         <div class="form-group row">
                             <label for="Body" class="col-4 col-form-label">Body</label>
                             <div class="col-8">
                                 <textarea id="Body"
                                           name="Body"
 
-                                          class="form-control here">value="{{$new->Body}}"</textarea>
+                                          class="form-control here">{{$post->Body}}</textarea>
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">
                                     Please Price is required.
@@ -82,7 +67,7 @@
                             <label for="time" class="col-4 col-form-label">Image </label>
                             <div class="col-8">
                                 <input id="image"
-                                       name="imageURL"
+                                       name="image"
                                        placeholder="Image Online URL"
                                        class="form-control here"
                                        type="file" />
