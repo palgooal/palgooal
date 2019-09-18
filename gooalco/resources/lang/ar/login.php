@@ -1,0 +1,16 @@
+<?php
+return[
+    'Login' => 'تسجيل الدخول',
+    'E-Mail Address' => 'البريد الالكتروني',
+    'Password' => 'كلمة المرور',
+    'Remember Me' => 'تذكرني',
+    'Login' => 'تسجيل الدخول',
+    'Forgot Your Password?' => 'هل نسيت كلمة المرور؟',
+    'Reset Password' => 'إعادة تعيين كلمة المرور',
+    'Send Password Reset Link'=>'إرسال رابط إعادة تعيين كلمة المرور',
+    'Register' => 'تسجيل',
+    'First Name'=>'الاسم الأول',
+    'Last Name'=> 'الاسم الأخير',
+    'Confirm Password'=>'اعادة تأكيد كلمة المرور'
+
+];
