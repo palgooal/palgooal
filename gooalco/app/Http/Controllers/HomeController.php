@@ -29,6 +29,10 @@ class HomeController extends Controller
         
         return view('index')->with('posts', Post::get());
     }
+    public function show($id)
+    {
+        return view('singel-post');
+    }
     function lang($local){
         Session::put('lang', $local);
         return redirect()->back();

@@ -8,5 +8,7 @@ return[
     'Search'=>'Search',
     'Enter your domain name here'=>'Enter your domain name here',
     'Lear More'=>'Lear More',
-    'Read More'=> 'Read More'
+    'Read More'=> 'Read More',
+    'Palgooal co' => 'Palgooal co',
+    'visit blog'=>'visit blog'
 ];

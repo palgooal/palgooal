@@ -14,9 +14,9 @@
 <meta name="keywords" content="one page, multipage, domain, hosting, server, cloud, cloudify, html5 template">
 <meta name="author" content="GnoDesign">
 
-<title>Cloudify - Web Hosting HTML Template</title>
-<link rel="shortcut icon" href="{{asset('public/images/favicon.png')}}" type="image/x-icon">
-<link rel="apple-touch-icon-precomposed" href="{{asset('public/images/apple-touch-icon.html')}}">
+<title>{{__('home.Palgooal co')}}</title>
+<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" href="./images/apple-touch-icon.html">
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700|Roboto:400,700" rel="stylesheet">
 

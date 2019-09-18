@@ -639,15 +639,15 @@
 <p class="nomargin pt5">{{$post->Auther}} <a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
-<p class="nomargin pb20"></p>
-<a class="blog-more-btn" href="blog-post.html">{{__('home.Read More')}} <i class="fa fa-long-arrow-right"></i></a>
+<p class="nomargin pb20">{{$post->Body}}</p>
+<a class="blog-more-btn" href="/post/{{$post->id}}">{{__('home.Read More')}} <i class="fa fa-long-arrow-right"></i></a>
 </div>
 </article>
 </div>
 @endforeach
 
 <div class="col-md-12 text-center pt40">
-<a href="blog-listing.html" class="btn btn-border btn-blue btn-dark">visit blog</a>
+<a href="blog-listing.html" class="btn btn-border btn-blue btn-dark">{{__('home.visit blog')}}</a>
 </div>
 </div>
 
