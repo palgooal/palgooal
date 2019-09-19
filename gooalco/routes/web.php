@@ -25,6 +25,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/lang/{local}', 'HomeController@lang');
+
 Route::resource('/admin/posts', 'PostController');
 Route::get('/post/{id}', 'HomeController@show');
 Route::resource('/admin/slider', 'SliderController');
+Route::get('/admin2', function () {
+    return view('admin.indexpanel');
+});
+Route::get('/admin2/a', function () {
+    return view('admin2.wecom');
+});
+

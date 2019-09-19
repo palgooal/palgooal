@@ -1,6 +1,5 @@
 @extends('layouts.adminLayout')
-@section('adminContent')
-
+@section('content')
 
 <div class="page-content-wrapper">
     <!-- BEGIN CONTENT BODY -->

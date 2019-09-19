@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    
+
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('admin.news.news')->with('posts', Post::get());
+        return view ("admin.posts.addnews")->with("posts", Post::get());
     }
 
     /**
@@ -25,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('admin.news.addnews');
+        return view ("admin.posts.addnews");
     }
 
     /**
@@ -36,10 +36,10 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $path = $request->image->store('post');
+       // $path = $request->image->store('post');
         $posts = new Post();
         $posts->Title =$request->Title;
-        $posts->image =$path;
+        $posts->image ="1";
         $posts->Auther =$request->Auther;
         $posts->Body =$request->Body;
         $posts->save();
@@ -66,9 +66,9 @@ class PostController extends Controller
      * @param  \App\modals\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-       return view('admin.news.editNew')->with('post', Post::find($id));
+        return view ("admin.posts.editNew")->with("post", $post);
     }
 
     /**

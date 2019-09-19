@@ -1,53 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+Version: 4.5.6
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
 
-<!-- Mirrored from demo.interface.club/limitless/demo/bs4/Template/layout_1/RTL/material/full/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2019 14:09:17 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+    <head>
+        <meta charset="utf-8" />
+        <title>Metronic | Boxed Page Layout</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="{{asset('assets/global/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('assets/global/plugins/simple-line-icons/simple-line-icons.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset ('assets/global/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset ('assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css')}}" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="{{asset ('assets/global/css/components.min.css')}}" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="{{asset ('assets/global/css/plugins.min.css')}}" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="{{asset ('assets/layouts/layout/css/layout.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset ('assets/layouts/layout/css/themes/darkblue.min.css')}}" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="{{asset ('assets/layouts/layout/css/custom.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('assets/global/plugins/jstree/dist/themes/default/style.min.css')}}" rel="stylesheet" type="text/css" />
 
-	<!-- Global stylesheets -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="../../../../global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
-	<link href={{asset("assets/css/bootstrap.min.css")}} rel="stylesheet" type="text/css">
-	<link href={{asset("assets/css/bootstrap_limitless.min.css")}} rel="stylesheet" type="text/css">
-	<link href={{asset("assets/css/layout.min.css")}} rel="stylesheet" type="text/css">
-	<link href={{asset("assets/css/components.min.css" )}}rel="stylesheet" type="text/css">
-	<link href={{asset("assets/css/colors.min.css")}} rel="stylesheet" type="text/css">
-	<!-- /global stylesheets -->
+        <!-- END THEME LAYOUT STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" /> </head>
+    <!-- END HEAD -->
 
-	<!-- Core JS files -->
-	<script src={{asset("../../../../global_assets/js/main/jquery.min.js")}}></script>
-	<script src={{asset("../../../../global_assets/js/main/bootstrap.bundle.min.js")}}></script>
-	<script src={{asset("../../../../global_assets/js/plugins/loaders/blockui.min.js")}}></script>
-	<script src={{asset("../../../../global_assets/js/plugins/ui/ripple.min.js")}}></script>
-	<!-- /core JS files -->
-
-	<!-- Theme JS files -->
-	<script src={{asset("../../../../global_assets/js/plugins/visualization/d3/d3.min.js")}}></script>
-	<script src={{asset("../../../../global_assets/js/plugins/visualization/d3/d3_tooltip.js")}}></script>
-	<script src={{asset("../../../../global_assets/js/plugins/forms/styling/switchery.min.js")}}></script>
-	<script src={{asset("../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js")}}></script>
-	<script src={{asset("../../../../global_assets/js/plugins/ui/moment/moment.min.js")}}></script>
-	<script src={{asset("../../../../global_assets/js/plugins/pickers/daterangepicker.js")}}></script>
-
-	<script src={{asset("assets/js/app.js")}}></script>
-	<script src={{asset("../../../../global_assets/js/demo_pages/dashboard.js")}}></script>
-	<!-- /theme JS files -->
-
-</head>
-<body>
-@include('admin.partials._navbar')
-<div class="page-content">
-@include('admin.partials._sidebar')
-
-@yield('adminContent')
-</div>
-</body>
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-boxed">
+        <!-- BEGIN HEADER -->
+       @include('admin.partialsadmin.navbar')
+       <div class="page-container">
+       @include('admin.partialsadmin.sidpar')
+       @yield('content')
+       </div>
+        <!--[if lt IE 9]>
+<script src="assets/global/plugins/respond.min.js"></script>
+<script src="assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
 
 
-<!-- Mirrored from demo.interface.club/limitless/demo/bs4/Template/layout_1/RTL/material/full/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Sep 2019 14:25:54 GMT -->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="{{asset ('assets/global/plugins/jquery.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset ('assets/global/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset ('assets/global/plugins/js.cookie.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset ('assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset ('assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset ('assets/global/plugins/jquery.blockui.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset ('assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js')}}" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="{{asset ('assets/global/scripts/app.min.js')}}" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="{{asset ('assets/layouts/layout/scripts/layout.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset ('assets/layouts/layout/scripts/demo.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset ('assets/layouts/global/scripts/quick-sidebar.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset('assets/pages/scripts/ui-tree.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset('assets/global/plugins/jstree/dist/jstree.min.js')}}" type="text/javascript"></script>
+
+        <!-- END THEME LAYOUT SCRIPTS -->
+
+
+
+    </body>
+
 </html>
