@@ -19,6 +19,15 @@
                 <li class="nav-item"><a href="/admin/posts/create" class="nav-link active">Add news</a></li>
             </ul>
         </li>
+        <li class="nav-item nav-item-submenu">
+                <a href="/admin/posts" class="nav-link"><i class="icon-copy"></i> <span>Slider</span></a>
+
+                <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                    <li class="nav-item"><a href="/admin/slider" class="nav-link active">All slider</a></li>
+                    <li class="nav-item"><a href="/admin/slider/create" class="nav-link active">Add slider</a></li>
+
+                </ul>
+            </li>
 
 
     </ul>

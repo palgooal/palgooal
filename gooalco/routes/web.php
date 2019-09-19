@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/index', 'HomeController@index')->name('home');
 Route::get('/', function () {
     return view('index');
@@ -25,3 +27,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/lang/{local}', 'HomeController@lang');
 Route::resource('/admin/posts', 'PostController');
 Route::get('/post/{id}', 'HomeController@show');
+Route::resource('/admin/slider', 'SliderController');
