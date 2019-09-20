@@ -48,14 +48,13 @@
             
             </div> 
             <div class="form-group">
-                <img src="{{asset ('/images/'.$post->image)}}" alt="">
-                <label> Uploed image  </label>
+                <img src="{{asset ('/images/'.$post->image)}}" class="img-rounded img-thumbnail"  alt=""  width="304" height="236">
+                <br>
+                <label>تحميل الصورة</label>
             <input class="form-control spinner" type="file" placeholder=" Uploed image" name="image" id="image" value="{{$post->image}}"> 
             </div>    
             <div class="form-group">
-                <label for="catagory_id" class="col-md-2 control-label"
-                  >category</label
-                >
+                <label for="catagory_id" class="col-md-2 control-label">التصنيف</label>
 
                 {{-- <div class="col-md-8">
                   <select

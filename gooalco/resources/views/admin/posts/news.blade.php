@@ -21,25 +21,21 @@
                         <div class="table-scrollable">
                             <table class="table table-hover">
                                 <thead>
-
                                     <tr>
-                                        <th> sort </th>
                                         <th> عنوان </th>
-                                        <th>صورة التدوينة</th>
                                         <th>التصنيف</th>
+                                        <th>الكاتب</th>
                                         <th>مشاهدة المقالة</th>
                                         <th>تعديل</th>
                                         <th>حذف</th>
                                     </tr>
-
                                 </thead>
                                 <tbody>
                                     @foreach ($posts as $post)
                                     <tr>
-                                        <td> {{$post->id}}</td>
                                         <td> {{$post->Title}}</td>
-                                        <td><img src="" alt=""></td>
                                         <td></td>
+                                        <td>{{$post->Auther}}</td>
                                         {{-- <td> @foreach($item->categories as $category)
                                            * {{$category->title}} 
                                          @endforeach</td> --}}
