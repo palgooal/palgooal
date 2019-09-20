@@ -13,17 +13,16 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/index', 'HomeController@index')->name('home');
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@index')->name('home');
+// Route::get('/', function () {
+//     return view('home');
+// });
 Route::get('/admin', function () {
     return view('admin.welcom');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/lang/{local}', 'HomeController@lang');
 
 Route::resource('/admin/posts', 'PostController');
