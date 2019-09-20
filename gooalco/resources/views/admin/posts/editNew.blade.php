@@ -82,8 +82,8 @@
               </div>
         </div>
         <div class="form-actions">
-            <button type="submit" class="btn blue">Submit</button>
-            <a href="/admin/Posts" type="button" class="btn default">Cancel</a>
+            <button type="submit" class="btn blue">تعديل</button>
+            <a href="/admin/posts" type="button" class="btn default">الغاء</a>
         </div>
         
     </form>

@@ -167,7 +167,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item start ">
-                                        <a href="/admin/Slider" class="nav-link nav-toggle">
+                                        <a href="/admin/slider" class="nav-link nav-toggle">
                                             <i class="icon-home"></i>
                                             <span class="title">Slider</span>
                                          

@@ -616,17 +616,12 @@
 <section class="ptb80" id="latest-news">
 <div class="container">
 <div class="section-title">
-<h2>Latest News</h2>
-<p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s.</p>
+<h2>{{__('home.Latest News')}}</h2>
 </div>
 <div class="col-md-12">
 
 <div class="row news-content pt30">
-
-
-
-
-@foreach ($posts as $post)
+    @foreach ($posts as $post)
 
 
 <div class="col-md-4">
@@ -636,7 +631,7 @@
 </div>
 <div class="blog-post-title pt30 pb10">
 <h3><a href="blog-post.html">{{$post->Title}}</a></h3>
-<p class="nomargin pt5">{{$post->Auther}} <a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
+<p class="nomargin pt5">{{$post->Auther}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
 <p class="nomargin pb20">{{$post->Body}}</p>

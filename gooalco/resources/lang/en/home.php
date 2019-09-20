@@ -12,5 +12,6 @@ return[
     'Palgooal co' => 'Palgooal co',
     'visit blog'=>'visit blog',
     'Blog'=> 'Blog',
-    'Home'=>'Home'
+    'Home'=>'Home',
+    'Latest News'=> 'Latest News'
 ];
