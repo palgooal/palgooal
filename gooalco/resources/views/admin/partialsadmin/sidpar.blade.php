@@ -41,49 +41,139 @@
                             </form>
                             <!-- END RESPONSIVE QUICK SEARCH FORM -->
                         </li>
+                        <li class="nav-item start ">
+                            <a href="javascript:;" class="nav-link nav-toggle">
+                                <i class="icon-home"></i>
+                                <span class="title">Dashboard</span>
+                                <span class="arrow"></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item start ">
+                                    <a href="index.html" class="nav-link ">
+                                        <i class="icon-bar-chart"></i>
+                                        <span class="title">Dashboard 1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item start ">
+                                    <a href="dashboard_2.html" class="nav-link ">
+                                        <i class="icon-bulb"></i>
+                                        <span class="title">Dashboard 2</span>
+                                        <span class="badge badge-success">1</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item start ">
+                                    <a href="dashboard_3.html" class="nav-link ">
+                                        <i class="icon-graph"></i>
+                                        <span class="title">Dashboard 3</span>
+                                        <span class="badge badge-danger">5</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
                         <li class="nav-item start ">
                             <a href="/admin/Menus" class="nav-link nav-toggle">
                                 <i class="icon-home"></i>
-                                <span class="title">News</span>
+                                <span class="title">Menu</span>
                             </a>
                             <ul class="sub-menu">
                                     <li class="nav-item start ">
-                                            <a href="/admin/posts" class="nav-link ">
+                                            <a href="/cms/public/admin/Menus" class="nav-link ">
                                                 <i class="icon-bar-chart"></i>
-                                                <span class="title">All news</span>
-                                            </a>
-                                        </li>
-
-                            </ul>
-
-
-                        </li>
-                        <li class="nav-item start ">
-                            <a href="/admin/slider" class="nav-link nav-toggle">
-                                <i class="icon-home"></i>
-                                <span class="title">Slider</span>
-                            </a>
-                            <ul class="sub-menu">
-                                    <li class="nav-item start ">
-                                            <a href="/admin/slider" class="nav-link ">
-                                                <i class="icon-bar-chart"></i>
-                                                <span class="title">All slider</span>
+                                                <span class="title">Menus</span>
                                             </a>
                                         </li>
                                     <li class="nav-item start ">
-                                        <a href="/admin/slider/create" class="nav-link ">
+                                        <a href="/admin/Submenus" class="nav-link ">
                                             <i class="icon-bar-chart"></i>
-                                            <span class="title">Add slider</span>
+                                            <span class="title">Submenus</span>
                                         </a>
                                     </li>
                             </ul>
-
-
+                         
                         </li>
-
-
-
+                        <li class="nav-item start ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-home"></i>
+                                    <span class="title">المدونة</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item start ">
+                                        <a href="/admin/posts" class="nav-link ">
+                                            <i class="icon-bar-chart"></i>
+                                            <span class="title">كل التدوينات</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item start ">
+                                    <a href="/admin/posts/create" class="nav-link ">
+                                            <i class="icon-bulb"></i>
+                                            <span class="title">اضافة تدوينة</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item start ">
+                                            <a href="/admin/Catagorys" class="nav-link ">
+                                                <i class="icon-bulb"></i>
+                                                <span class="title">التصنيافات</span>
+                                            </a>
+                                        </li>
+                                  
+                                </ul>
+                            </li>
+                            <li class="nav-item start ">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-home"></i>
+                                    <span class="title">Pages</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="nav-item start ">
+                                        <a href="/admin/Pages" class="nav-link ">
+                                            <i class="icon-bar-chart"></i>
+                                            <span class="title">All Pages </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item start ">
+                                    <a href="/admin/Pages/create" class="nav-link ">
+                                            <i class="icon-bulb"></i>
+                                            <span class="title">Add Page</span>
+                                        </a>
+                                    </li>
+                                 
+                                  
+                                </ul>
+                            </li>
+                            <li class="nav-item start ">
+                                    <a href="javascript:;" class="nav-link nav-toggle">
+                                        <i class="icon-home"></i>
+                                        <span class="title">Projects</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item start ">
+                                            <a href="/admin/Projects" class="nav-link ">
+                                                <i class="icon-bar-chart"></i>
+                                                <span class="title">All Poroject </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item start ">
+                                        <a href="/admin/Projects/create" class="nav-link ">
+                                                <i class="icon-bulb"></i>
+                                                <span class="title">Add Projects</span>
+                                            </a>
+                                        </li>
+                                       
+                                      
+                                    </ul>
+                                </li>
+                                <li class="nav-item start ">
+                                        <a href="/admin/Slider" class="nav-link nav-toggle">
+                                            <i class="icon-home"></i>
+                                            <span class="title">Slider</span>
+                                         
+                                        </a>
+                                     
+                                    </li>
                     </ul>
                     <!-- END SIDEBAR MENU -->
                     <!-- END SIDEBAR MENU -->
@@ -92,7 +182,7 @@
             </div>
             <!-- END SIDEBAR -->
             <!-- BEGIN CONTENT -->
-
+ 
             <!-- END CONTENT -->
             <!-- BEGIN QUICK SIDEBAR -->
             <a href="javascript:;" class="page-quick-sidebar-toggler">
@@ -655,3 +745,4 @@
                 </div>
             </div>
             <!-- END QUICK SIDEBAR -->
+  

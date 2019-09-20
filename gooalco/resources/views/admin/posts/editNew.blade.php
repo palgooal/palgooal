@@ -1,90 +1,105 @@
-
 @extends('layouts.adminLayout')
 @section('content')
-
 <div class="page-content-wrapper">
     <!-- BEGIN CONTENT BODY -->
     <div class="page-content" style="min-height:1318px">
         <!-- BEGIN PAGE HEADER-->
-        <div class="row">
-  <div class="col-md-12">
-    <div class="portlet light bordered">
-      <div class="portlet-title">
-        <div class="caption font-red-sunglo">
-          <i class="icon-settings font-red-sunglo"></i>
-          <span class="caption-subject bold uppercase"> Edit new </span>
-        </div>
-      </div>
-      <div class="portlet-body form">
-        <form
-          method="POST"
-          action="/admin/posts/{{$post->id}}"
-          accept-charset="UTF-8"
-          class="form-horizontal"
-          role="form"
-          enctype="multipart/form-data"
-        >
-        @method('put')
-          @csrf
+        <!-- BEGIN THEME PANEL -->
+   
 
-          <div class="form-body">
-            <div class="form-group">
-              <label> Title </label>
-              <input
-                class="form-control spinner"
-                type="text"
-                placeholder="Title"
-                name="Title"
-                id="Title"
-                value="{{$post->Title}}"
-              />
-            </div>
-            <div class="form-group row">
-                <label for="Auther" class="col-4 col-form-label">Auther</label>
-                <div class="col-8">
-                    <input id="Auther"
-                           name="Auther"
-                           placeholder="Auther"
-                           class="form-control here"
-                           type="text"
-                           value="{{$post->Auther}}" />
+<div class="row">
+<div class="col-md-8">
 
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="Body" class="col-4 col-form-label">Body</label>
-                <div class="col-8">
-                    <textarea id="Body"
-                              name="Body"
-                              class="form-control here">{{$post->Body}}"</textarea>
-
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="time" class="col-4 col-form-label">Image </label>
-
-                <div class="col-8">
-                    <input id="image"
-                           name="image"
-                           placeholder="Image Online URL"
-                           class="form-control here"
-                           type="file"
-                            />
-
-                </div>
-            </div>
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="btn blue">Submit</button>
-            <a href="/admin/Submenus" class="btn default">Add Submenus</a>
-          </div>
-        </form>
-      </div>
+<div class="portlet light bordered">
+<div class="portlet-title">
+    <div class="caption font-red-sunglo">
+        <i class="icon-settings font-red-sunglo"></i>
+        <span class="caption-subject bold uppercase">تعديل التدوينة</span>
     </div>
-  </div>
+  
+</div>
+<div class="portlet-body form">
+       
+    <form
+        method="post"
+        action="/admin/posts/{{$post->id}}"
+        enctype="multipart/form-data"
+        accept-charset="UTF-8"
+        class="form-horizontal"
+        enctype="multipart/form-data"
+        role="form"
+      >
+      
+      <input type="hidden" name="_method" value="put">
+      @csrf
+        <div class="form-body">
+                
+                
+         <div class="form-group">
+                <label>عنوان التدوينة</label>
+            <input class="form-control spinner"  value="{{$post->Title}}" type="text"  name="Title" id="Title" > 
+            
 
+            </div>
+            <div class="form-group">
+                <label>نص التدوينة</label>
+            <textarea name="Body" id="Body" cols="30" rows="10" class="form-control" placeholder="اضافة وصف هنا ...." >
+{{$post->Body}}</textarea>
+            
+            </div> 
+            <div class="form-group">
+                <img src="{{asset ('/images/'.$post->image)}}" alt="">
+                <label> Uploed image  </label>
+            <input class="form-control spinner" type="file" placeholder=" Uploed image" name="image" id="image" value="{{$post->image}}"> 
+            </div>    
+            <div class="form-group">
+                <label for="catagory_id" class="col-md-2 control-label"
+                  >category</label
+                >
+
+                {{-- <div class="col-md-8">
+                  <select
+                    class="form-control"
+                    required="required"
+                    id="catagory_id"
+                    name="catagory_id[]"
+                    multiple
+                    >
+                    @foreach ($categorys as $category)
+                    <option value="{{$category->id}}"
+                            @foreach ($post->categories as $categoryp)
+                                {{$categoryp->id == $category->id ? "selected" : "" }}
+                            @endforeach
+
+                        >{{$category->title}}</option>
+                    @endforeach
+                  
+                    </select> --}}
+
+                  <span class="help-block">
+                    <strong></strong>
+                  </span>
+                </div>
+              </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn blue">Submit</button>
+            <a href="/admin/Posts" type="button" class="btn default">Cancel</a>
+        </div>
+        
+    </form>
+
+ 
+    
+</div>
+</div>
+</div>
 </div>
 
+    
+    </div>
+    <!-- END CONTENT BODY -->
 </div>
-</div>
+
+
 @endsection

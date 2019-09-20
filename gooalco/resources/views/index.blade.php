@@ -632,7 +632,7 @@
 <div class="col-md-4">
 <article class="blog-single pb30 shadow">
 <div class="blog-post-thumbnail normal-post hover-link">
-<a href="blog-post.html"><img src="{{asset('/images/'.$post->image)}}" alt=""></a>
+<a href="/post/{{$post->id}}"><img src="{{asset('/images/'.$post->image)}}" alt=""></a>
 </div>
 <div class="blog-post-title pt30 pb10">
 <h3><a href="blog-post.html">{{$post->Title}}</a></h3>
