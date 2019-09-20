@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Session;
 use App\modals\Post;
+use App\modals\Slider;
+
 use DB;
 
 class HomeController extends Controller
@@ -27,7 +29,9 @@ class HomeController extends Controller
     public function index()
     {
         
-        return view('index')->with('posts', Post::get());
+        return view('index')
+        ->with('posts', Post::get())
+        ->with('sliders', Slider::get());
     }
     public function show($id)
     {
