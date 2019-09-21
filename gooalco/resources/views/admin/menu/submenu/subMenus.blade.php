@@ -40,10 +40,10 @@
 
 
                                                 <td>
-                                                <a href="/admin/menus/{{$submenu->id}}/edit" class="btn btn-primary">تعديل</a>
+                                                <a href="/admin/submenus/{{$submenu->id}}/edit" class="btn btn-primary">تعديل</a>
                                                 </td>
                                                 <td>
-                                                    <form style="display: inline" action="/admin/submenu/{{$submenu->id}}" method="post">
+                                                    <form style="display: inline" action="/admin/submenus/{{$submenu->id}}" method="post">
                                                         <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i> حذف </button>
 
                                                         @method('delete')

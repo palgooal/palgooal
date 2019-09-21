@@ -90,6 +90,12 @@
                                             <span class="title">اضافة قائمة</span>
                                         </a>
                                     </li>
+                                    <li class="nav-item start ">
+                                        <a href="/admin/submenus/create" class="nav-link ">
+                                            <i class="icon-bar-chart"></i>
+                                            <span class="title">اضافة قائمة فرعية</span>
+                                        </a>
+                                    </li>
                             </ul>
 
                         </li>

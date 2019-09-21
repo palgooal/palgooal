@@ -21,7 +21,7 @@
     <div class="portlet-body form">
         <form
             method="POST"
-    action="/admin/submenus/{{}}"
+    action="/admin/submenus/create"
             accept-charset="UTF-8"
             class="form-horizontal"
             role="form"
