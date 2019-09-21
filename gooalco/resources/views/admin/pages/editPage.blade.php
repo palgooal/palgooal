@@ -35,7 +35,7 @@ action="/admin/pages/{{$page->id}}"
             </div>
             <div class="form-group">
                 <label>   المحتوى  </label>
-                <textarea name="content" id="content" cols="30" rows="10" class="form-control" placeholder=" المحتوى ">{{$page->content}}"</textarea>
+                <textarea name="content" id="content" cols="30" rows="10" class="form-control" placeholder=" المحتوى ">{{$page->content}}</textarea>
 
             </div>
             <label> Slug  </label>

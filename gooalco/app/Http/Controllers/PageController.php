@@ -14,8 +14,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $pages = Page::get();
-        return view ('admin.pages.pages')->with('page', $pages);
+        return view('admin.pages.pages')->with('pages', Page::get());
     }
 
     /**
@@ -25,7 +24,7 @@ class PageController extends Controller
      */
     public function create()
     {
-       return view ('admin.pages.addPage');
+        return view('admin.pages.addPage');
     }
 
     /**
@@ -36,22 +35,22 @@ class PageController extends Controller
      */
     public function store(Request $request)
     {
-        $page = new Page();
-        $page->slug = $request->slug;
-        $page->title = $request->title;
-        $page->content = $request->content;
-        $page->save();
-        return redirect('/admin/pages');
+        $pages = new Page();
+        $pages->slug =$request->slug;
+        $pages->title =$request->title;
+        $pages->content =$request->content;
+        $pages->save();
 
+        return redirect('/admin/pages');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\modal\Page  $page
+     * @param  \App\Pages  $pages
      * @return \Illuminate\Http\Response
      */
-    public function show(Page $page)
+    public function show(Pages $pages)
     {
         //
     }
@@ -59,35 +58,36 @@ class PageController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\modal\Page  $page
+     * @param  \App\Pages  $pages
      * @return \Illuminate\Http\Response
      */
-    public function edit(Page $page)
+    public function edit($id)
     {
-        return view ('admin.pages.pages')->with('page',  $page);
+        return  view('admin.pages.editPage')->with('page', Page::find($id));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\modal\Page  $page
+     * @param  \App\Pages  $pages
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Page $page)
+    public function update(Request $request, $id)
     {
-        $page->slug = $request->slug;
-        $page->title = $request->title;
-        $page->content = $request->content;
-        $page->save();
-        return redirect('/admin/pages');
+        $pages = Page::find($id);
+        $pages->slug =$request->slug;
+        $pages->title =$request->title;
+        $pages->content =$request->content;
+        $pages->save();
 
+        return redirect('/admin/pages');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\modal\Page  $page
+     * @param  \App\Pages  $pages
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

@@ -130,20 +130,20 @@
                             <li class="nav-item start ">
                                 <a href="javascript:;" class="nav-link nav-toggle">
                                     <i class="icon-home"></i>
-                                    <span class="title">Pages</span>
+                                    <span class="title">الصفحات</span>
                                     <span class="arrow"></span>
                                 </a>
                                 <ul class="sub-menu">
                                     <li class="nav-item start ">
-                                        <a href="/admin/Pages" class="nav-link ">
+                                        <a href="/admin/pages" class="nav-link ">
                                             <i class="icon-bar-chart"></i>
-                                            <span class="title">All Pages </span>
+                                            <span class="title">جيمع الصفحات </span>
                                         </a>
                                     </li>
                                     <li class="nav-item start ">
-                                    <a href="/admin/Pages/create" class="nav-link ">
+                                    <a href="/admin/pages/create" class="nav-link ">
                                             <i class="icon-bulb"></i>
-                                            <span class="title">Add Page</span>
+                                            <span class="title">اضافة صفحة</span>
                                         </a>
                                     </li>
 

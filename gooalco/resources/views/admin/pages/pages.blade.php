@@ -1,75 +1,77 @@
 @extends('layouts.adminLayout')
 @section('content')
 <div class="page-content-wrapper">
-        <!-- BEGIN CONTENT BODY -->
-        <div class="page-content" style="min-height:1318px">
-            <!-- BEGIN PAGE HEADER-->
-            <!-- BEGIN THEME PANEL -->
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content" style="min-height:1318px">
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN THEME PANEL -->
 
 
-    <div class="row">
+<div class="row">
 
 
 
-        <div class="col-md-12">
-            <!-- BEGIN SAMPLE TABLE PORTLET-->
-            <div class="portlet light bordered">
-                <div class="portlet-title">
-                    <div class="caption">
-                        <i class="icon-social-dribbble font-green"></i>
-                        <span class="caption-subject font-green bold uppercase">All Pages </span>
-                    </div>
-                    <a href="/admin/pages/create" type="submit" class="btn btn-primary Add-post"> Add Pages </a>
-
+    <div class="col-md-12">
+        <!-- BEGIN SAMPLE TABLE PORTLET-->
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-social-dribbble font-green"></i>
+                    <span class="caption-subject font-green bold uppercase">جميع الصفحات </span>
                 </div>
-                <div class="portlet-body">
-                    <div class="table-scrollable">
-                        <table class="table table-hover">
-                            <thead>
+                <a href="/admin/pages/create" type="submit" class="btn btn-primary Add-post"> اضافة صفحة </a>
 
-                                <tr>
-                                        <th> sort </th>
-                                    <th>title </th>
-                                    <th> url </th>
-                                    <th> Edit </th>
-                                    <th> Deleted </th>
+            </div>
+            <div class="portlet-body">
+                <div class="table-scrollable">
+                    <table class="table table-hover">
+                        <thead>
 
-                                </tr>
+                            <tr>
+                                    <th> تصنيف </th>
+                                <th>  العنوان </th>
+                                <th>  الرابط </th>
 
-                            </thead>
-                            <tbody>
+                                <th> تعديل </th>
+                                <th> حذف </th>
 
+                            </tr>
 
-
-                                <tr>
-                                <td> </td>
-                                <td></td>
-                                <td> </td>
-
-                                    <td>
-
-                                            <a href="/admin/pages//edit" class="btn btn-primary">Edit</a>
-
-                                           </td>
-                                  <td>
-                                  <form style="display: inline" action="/admin/pages/" method="post" >
-                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i> Delete </button>
-
-                                    @method('delete')
-                                    @csrf
-                                        </form>
-                                   </td>
+                        </thead>
+                        <tbody>
+                               @foreach ($pages as $item)
 
 
-                                </tr>
+                            <tr>
+                            <td> {{$item->id}}</td>
+                            <td> {{$item->title}}</td>
+                            <td> {{$item->image}} </td>
 
-                            </tbody>
-                        </table>
-                    </div>
+                                <td>
+
+                                        <a href="/admin/pages/{{$item->id}}/edit" class="btn btn-primary">تعديل</a>
+                                {{-- <button  class="edit" data-id="" type="button" class="btn btn-primary" ><i class="fa fa-edit" ></i> Edit </button >                 --}}
+
+                                       </td>
+                              <td>
+                              <form style="display: inline" action="/admin/pages/{{$item->id}}" method="post" >
+                                <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i> حذف </button>
+
+                                @method('delete')
+                                @csrf
+                                    </form>
+                               </td>
+
+
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <!-- END SAMPLE TABLE PORTLET-->
-          </div>
         </div>
+        <!-- END SAMPLE TABLE PORTLET-->
+      </div>
+    </div>
 </div>
 @endsection
