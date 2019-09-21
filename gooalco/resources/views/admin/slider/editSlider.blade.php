@@ -14,7 +14,7 @@
 <div class="portlet-title">
     <div class="caption font-red-sunglo">
         <i class="icon-settings font-red-sunglo"></i>
-        <span class="caption-subject bold uppercase"> Edit slider </span>
+        <span class="caption-subject bold uppercase"> تعديل السلايدر </span>
     </div>
   
 </div>
@@ -35,26 +35,51 @@
                 
                 
          <div class="form-group">
-          <label> Name Menus  </label>
-         <input class="form-control spinner" type="text" placeholder="Name Text" name="title" id="title" value="{{$slider->title}}">  
+          <label>عنوان السلايدر</label>
+         <input class="form-control spinner" type="text" placeholder="عنوان عام للسلايدر" name="title" id="title" value="{{$slider->title}}">  
             
 
             </div>
+            
+                <div class="form-group">
+                  <label>عنوان 2 السلايدر</label>
+                  <input
+                    class="form-control spinner"
+                    type="text"
+                    placeholder="اكتب هنا عنوان 2 السلايدر"
+                value="{{$slider->title2}}"
+                    name="title2"
+                    id="title2"
+                  />
+                </div>
+                
+                    <div class="form-group">
+                      <label>اكتب هنا عنوان بالون الازرق</label>
+                      <input
+                        class="form-control spinner"
+                        type="text"
+                        placeholder="اكتب هنا عنوان بالون الازرق"
+                    value="{{$slider->text_blue}}"
+                        name="text_blue"
+                        id="text_blue"
+                      />
+                    </div>
             <div class="form-group">
-              <label>  Url Menu  </label>
-            <input class="form-control spinner" type="text" placeholder=" Url Menu" name="description" id="description" value="{{$slider->description}}"> 
+              <label>وصف عام</label>
+            <input class="form-control spinner" type="text" placeholder="كتابة وصف عام هنا" name="description" id="description" value="{{$slider->description}}"> 
             
             </div> 
             <div class="form-group">
-              <label>  image slider </label>
-            <img src="{{asset('/images/'.$slider->image)}}" alt="">
-            <input class="form-control spinner" type="file" placeholder=" sort" name="image" id="image" value="{{$slider->image}}"> 
+                <img src="{{asset('/images/'.$slider->image)}}" class="img-rounded img-thumbnail"  alt=""  width="304" height="236">
+                <br>
+              <label>تحميل صورة خلفية للسلايد</label>
+              <input class="form-control spinner" type="file" placeholder="تحميل صورة" name="image" id="image" value="{{$slider->image}}"> 
           </div>           
                           
         </div>
         <div class="form-actions">
-            <button type="submit" class="btn blue">Submit</button>
-            <a href="/admin/slider" type="button" class="btn default">Cancel</a>
+            <button type="submit" class="btn blue">تعديل</button>
+            <a href="/admin/slider" type="button" class="btn default">الغاء</a>
         </div>
         
     </form>

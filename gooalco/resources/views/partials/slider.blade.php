@@ -11,9 +11,8 @@
     <div class="swiper-slide overlay-black" style="background: url('{{asset('/images/'.$slider->image)}}'); background-size: cover;">
     <div class="slider-content container">
     <div class="col-md-12">
-    <h2>Best web hosting <br> service for your <span class="text-blue">{{$slider->title}}</span>.</h2>
-    <p>Get the best speed for your website. Don’t lose anymore
-    <br>clients for the slowest speed of your hosting service.</p>
+    <h2>{{$slider->title}} <br> {{$slider->title2}}  <span class="text-blue">{{$slider->text_blue}}</span>.</h2>
+    <p>{{$slider->description}}</p>
     <div>
     <a href="#" class="btn btn-border btn-blue"><i class="fa fa-star"></i>Get Started Now</a>
     <a href="#" class="btn btn-border-rev btn-green">check pricing</a>

@@ -35,11 +35,18 @@ class SliderController extends Controller
      */
     public function store(Request $request)
     {
-        $path= $request->image->store('slider');
         $slider = new Slider();
+        if($request->image !=null)
+        {
+            $path= $request->image->store('slider');
+            $slider->image =$path;
+        }
+        
         $slider->title =$request->title;
+        $slider->title2 =$request->title2;
+        $slider->text_blue =$request->text_blue;
         $slider->description =$request->description;
-        $slider->image =$path;
+       
         $slider->save();
 
         return redirect('/admin/slider');
@@ -77,11 +84,17 @@ class SliderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $path= $request->image->store('slider');
         $slider = Slider::find($id);
+        if($request->image !=null)
+        {
+            $path= $request->image->store('slider');
+            $slider->image =$path;
+        }
+       
         $slider->title =$request->title;
+        $slider->title2 =$request->title2;
+        $slider->text_blue =$request->text_blue;
         $slider->description =$request->description;
-        $slider->image =$path;
         $slider->save();
 
         return redirect('/admin/slider');

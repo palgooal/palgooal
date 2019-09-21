@@ -11,7 +11,7 @@
           <div class="portlet-title">
             <div class="caption font-red-sunglo">
               <i class="icon-settings font-red-sunglo"></i>
-              <span class="caption-subject bold uppercase"> Add slider </span>
+              <span class="caption-subject bold uppercase">اضافة سلايدر</span>
             </div>
           </div>
           <div class="portlet-body form">
@@ -26,39 +26,62 @@
               @csrf
               <div class="form-body">
                 <div class="form-group">
-                  <label> title slider </label>
+                  <label>عنوان السلايدر</label>
                   <input
                     class="form-control spinner"
                     type="text"
-                    placeholder="Name Text"
+                    placeholder="اكتب هنا عنوان السلايدر"
                     name="title"
                     id="title"
                   />
                 </div>
+                
+                    <div class="form-group">
+                      <label>عنوان 2 السلايدر</label>
+                      <input
+                        class="form-control spinner"
+                        type="text"
+                        placeholder="اكتب هنا عنوان 2 السلايدر"
+                        name="title2"
+                        id="title2"
+                      />
+                    </div>
+                    
+                        <div class="form-group">
+                          <label>اكتب هنا عنوان بالون الازرق</label>
+                          <input
+                            class="form-control spinner"
+                            type="text"
+                            placeholder="اكتب هنا عنوان بالون الازرق"
+                            name="text_blue"
+                            id="text_blue"
+                          />
+                        </div>
                 <div class="form-group">
-                  <label> description slider </label>
+                  <label>وصف عام للسلايدر</label>
                   <input
                     class="form-control spinner"
                     type="text"
-                    placeholder=" Url Menu"
+                    placeholder="اكتب هنا وصف عام للسلايدر"
                     name="description"
                     id="description"
                   />
                 </div>
                 <div class="form-group">
-                  <label> images slider </label>
+                  <label>تحميل صورة خلفية السلايدر</label>
                   <input
                     class="form-control spinner"
                     type="file"
-                    placeholder=" images slider"
+                    placeholder="تحميل الصورة"
+                    required
                     name="image"
                     id="image"
                   />
                 </div>
               </div>
               <div class="form-actions">
-                <button type="submit" class="btn blue">Submit</button>
-                <a href="/admin/Slider" class="btn default">Cancel</a>
+                <button type="submit" class="btn blue">اضافة</button>
+                {{-- <a href="/admin/Slider" class="btn default">Cancel</a> --}}
               </div>
             </form>
           </div>
@@ -71,7 +94,7 @@
             <div class="caption">
               <i class="icon-social-dribbble font-green"></i>
               <span class="caption-subject font-green bold uppercase"
-                >All slider
+                >عرض السلايدر 
               </span>
             </div>
           </div>
@@ -80,12 +103,11 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>title sliders</th>
+                    <th>عنوان السلايدر</th>
                     {{-- <th>description</th> --}}
-                    <th>images</th>
-
-                    <th>Edit</th>
-                    <th>Deleted</th>
+                    <th>صورة خلفية السلايدر</th>
+                    <th>تعديل</th>
+                    <th>حذف</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -117,7 +139,7 @@
                       <a
                         href="/admin/slider/{{$slider->id}}/edit"
                         class="btn btn-primary"
-                        >Edit</a
+                        >تعديل</a
                       >
                     </td>
                     <td>
@@ -127,7 +149,7 @@
                         method="post"
                       >
                         <button type="submit" class="btn btn-danger">
-                          <i class="fa fa-trash-o"></i> Delete
+                          <i class="fa fa-trash-o"></i> حذف
                         </button>
 
                         @method('delete') @csrf
