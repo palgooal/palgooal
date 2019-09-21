@@ -70,14 +70,9 @@ class SubMenuController extends Controller
     public function edit($id)
     {
         return view ('admin.menu.submenu.editSubmenu')
-<<<<<<< HEAD
         ->with('submenu', SubMenu::orderBy('number', 'asc')->find($id))
         ->with('menus', Menu::get());
-=======
-        ->with('submenu', $subMenu)
 
-        ->with('menus',AppMenu::get());
->>>>>>> 6073cfbc2dcf499cd74d6318f0e41b01cefa9c4b
     }
 
     /**
