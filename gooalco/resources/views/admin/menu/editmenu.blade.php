@@ -5,59 +5,69 @@
     <div class="page-content" style="min-height:1318px">
         <!-- BEGIN PAGE HEADER-->
         <!-- BEGIN THEME PANEL -->
-
+   
 
 <div class="row">
-<div class="col-md-6">
+<div class="col-md-8">
 
 <div class="portlet light bordered">
 <div class="portlet-title">
     <div class="caption font-red-sunglo">
         <i class="icon-settings font-red-sunglo"></i>
-        <span class="caption-subject bold uppercase">تعديل قائمة</span>
+        <span class="caption-subject bold uppercase">تعديل القائمة</span>
     </div>
+  
 </div>
+<div class="portlet-body form">
+       
+    <form
+        method="post"
+        action="/admin/menus/{{$menu->id}}"
+        accept-charset="UTF-8"
+        class="form-horizontal"
+        role="form"
+      >
+      
+      <input type="hidden" name="_method" value="put">
+      @csrf
+        <div class="form-body">
+                
+                
+         <div class="form-group">
+          <label>اسم القائمة</label>
+         <input class="form-control spinner" type="text" placeholder="اكتب اسم القائمة" name="name" id="name" value="{{$menu->name}}">  
+            
 
-    <div class="portlet-body form">
-        <form
-            method="POST"
-    action="/admin/menu/{{$menu->id}}"
-            accept-charset="UTF-8"
-            class="form-horizontal"
-            role="form"
-            enctype="multipart/form-data"
-          >
-          @csrf
-          @method("put")
-            <div class="form-body">
-
-                <div class="form-group">
-                    <label>اسم القائمة</label>
-                    <input class="form-control spinner" type="text" placeholder="اسم القائمة" value="{{$menu->name}}" name="name" id="اسم القائمة">
-                </div>
-                <div class="form-group">
-                    <label>الرابط</label>
-                    <input class="form-control spinner" type="text" placeholder="الرابط" value="{{$menu->url}}" name="url" id="الرابط">
-                </div>
-                <div class="form-group">
-                    <label>الرقم</label>
-                    <input class="form-control spinner" type="number" placeholder="الرقم"value="{{$menu->number}}" name="number" id="الرقم">
-                </div>
-
-
-
-
-            <div class="form-actions">
-                <button type="submit" class="btn blue">اضافة</button>
-                <a href="/admin/posts" class="btn default">الغاء</a>
             </div>
+            <div class="form-group">
+              <label>رابط عنوان القائمة </label>
+            <input class="form-control spinner" type="text" placeholder="اكتب هنا رابط القائمة url http://" name="url" id="url" value="{{$menu->url}}"> 
+            
+            </div> 
+            <div class="form-group">
+              <label>ترتيب القائمة</label>
+            <input class="form-control spinner" type="number" placeholder="ترتيب القائمة" name="number" id="number" value="{{$menu->number}}"> 
+          </div>           
+                          
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn blue">اضافة</button>
+            <a href="/admin/menus" type="button" class="btn default">الغاء</a>
+        </div>
+        
+    </form>
 
-        </form>
 
+    
+</div>
+</div>
+</div>
+</div>
 
-
+    
     </div>
-</div>
+    <!-- END CONTENT BODY -->
 </div>
 
-    @endsection
+
+@endsection

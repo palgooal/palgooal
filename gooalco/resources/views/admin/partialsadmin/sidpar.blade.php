@@ -85,9 +85,9 @@
                                             </a>
                                         </li>
                                     <li class="nav-item start ">
-                                        <a href="/admin/menus/create" class="nav-link ">
+                                        <a href="/admin/submenus" class="nav-link ">
                                             <i class="icon-bar-chart"></i>
-                                            <span class="title">اضافة قائمة</span>
+                                            <span class="title">قائمة فرعية</span>
                                         </a>
                                     </li>
                             </ul>

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Menu as AppMenu;
+//use App\Menu as AppMenu;
 use App\modals\Menu;
 
 use App\modals\SubMenu;
@@ -20,7 +20,7 @@ class SubMenuController extends Controller
 
         return view ('admin.menu.submenu.subMenus')
         ->with('submenus', SubMenu::orderBy('number', 'asc')->get())
-        ->with('menus',AppMenu::get());
+        ->with('menus', Menu::get());
     }
 
     /**
@@ -30,7 +30,7 @@ class SubMenuController extends Controller
      */
     public function create()
     {
-        return view ('admin.menu.submenu.addSubmenu')->with('menus',Menu::get());
+        return view ('admin.menu.submenu.subMenus')->with('menus', Menu::get());
     }
 
     /**
@@ -67,11 +67,11 @@ class SubMenuController extends Controller
      * @param  \App\modals\SubMenu  $subMenu
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubMenu $subMenu)
+    public function edit($id)
     {
         return view ('admin.menu.submenu.editSubmenu')
-        ->with('submenu', SubMenu::orderBy('number', 'asc')->get())
-        ->with('menus',AppMenu::get());
+        ->with('submenu', SubMenu::orderBy('number', 'asc')->find($id))
+        ->with('menus', Menu::get());
     }
 
     /**
@@ -81,9 +81,15 @@ class SubMenuController extends Controller
      * @param  \App\modals\SubMenu  $subMenu
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubMenu $subMenu)
+    public function update(Request $request, $id)
     {
-        //
+        $sub = SubMenu::find($id);
+        $sub->name= $request->name;
+        $sub->url= $request->url;
+        $sub->number= $request->number;
+        $sub->menu_id= $request->menu_id;
+        $sub->save();
+        return redirect('/admin/submenus');
     }
 
     /**
