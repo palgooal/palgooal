@@ -28,10 +28,11 @@ Route::get('/lang/{local}', 'HomeController@lang');
 Route::resource('/admin/posts', 'PostController');
 Route::get('/post/{id}', 'HomeController@show');
 Route::resource('/admin/slider', 'SliderController');
-Route::get('/admin2', function () {
-    return view('admin.indexpanel');
-});
-Route::get('/admin2/a', function () {
-    return view('admin2.wecom');
-});
+
+
+
+
+Route::resource('/admin/menus', 'MenuController');
+Route::resource('/admin/submenus', 'SubMenuController');
+
 

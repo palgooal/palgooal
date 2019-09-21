@@ -72,25 +72,26 @@
                         </li>
 
                         <li class="nav-item start ">
-                            <a href="/admin/Menus" class="nav-link nav-toggle">
+                            <a href="/admin/menus" class="nav-link nav-toggle">
                                 <i class="icon-home"></i>
-                                <span class="title">Menu</span>
+                                <span class="title">القائمة</span>
                             </a>
+
                             <ul class="sub-menu">
                                     <li class="nav-item start ">
-                                            <a href="/cms/public/admin/Menus" class="nav-link ">
+                                            <a href="/admin/menus" class="nav-link ">
                                                 <i class="icon-bar-chart"></i>
-                                                <span class="title">Menus</span>
+                                                <span class="title">كل القوائم</span>
                                             </a>
                                         </li>
                                     <li class="nav-item start ">
-                                        <a href="/admin/Submenus" class="nav-link ">
+                                        <a href="/admin/menus/create" class="nav-link ">
                                             <i class="icon-bar-chart"></i>
-                                            <span class="title">Submenus</span>
+                                            <span class="title">اضافة قائمة</span>
                                         </a>
                                     </li>
                             </ul>
-                         
+
                         </li>
                         <li class="nav-item start ">
                                 <a href="javascript:;" class="nav-link nav-toggle">
@@ -117,7 +118,7 @@
                                                 <span class="title">التصنيافات</span>
                                             </a>
                                         </li>
-                                  
+
                                 </ul>
                             </li>
                             <li class="nav-item start ">
@@ -139,8 +140,8 @@
                                             <span class="title">Add Page</span>
                                         </a>
                                     </li>
-                                 
-                                  
+
+
                                 </ul>
                             </li>
                             <li class="nav-item start ">
@@ -162,17 +163,17 @@
                                                 <span class="title">Add Projects</span>
                                             </a>
                                         </li>
-                                       
-                                      
+
+
                                     </ul>
                                 </li>
                                 <li class="nav-item start ">
                                         <a href="/admin/slider" class="nav-link nav-toggle">
                                             <i class="icon-home"></i>
                                             <span class="title">Slider</span>
-                                         
+
                                         </a>
-                                     
+
                                     </li>
                     </ul>
                     <!-- END SIDEBAR MENU -->
@@ -182,7 +183,7 @@
             </div>
             <!-- END SIDEBAR -->
             <!-- BEGIN CONTENT -->
- 
+
             <!-- END CONTENT -->
             <!-- BEGIN QUICK SIDEBAR -->
             <a href="javascript:;" class="page-quick-sidebar-toggler">
@@ -745,4 +746,3 @@
                 </div>
             </div>
             <!-- END QUICK SIDEBAR -->
-  
