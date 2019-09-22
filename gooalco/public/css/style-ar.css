@@ -1,0 +1,31 @@
+#about p {
+    text-align: right;
+}
+.domain-check ul li {
+    padding-left: 28px;
+}
+.domain .form-group button {
+    float: right;
+    margin-right: 15px;
+}
+.domain .form-group .search-filters .domain-selector,
+.domain .form-group button[type="submit"],
+.domain .form-group input[type="search"] {
+    float: right;
+}
+
+.navbar-brand img {
+    margin-top: -16px;
+}
+.owl-carousel .owl-stage-outer {
+    direction: ltr;
+}
+.owl-prev {
+    margin-left: 6px;
+}
+.top-footer .footer-links {
+    text-align: right !important;
+}
+.info .info-text p {
+    text-align: right !important;
+}

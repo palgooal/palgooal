@@ -29,7 +29,10 @@
 
 
 @if (App::isLocale('ar'))
+
 <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style-ar.css">
+
 @endif
 
 

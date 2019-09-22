@@ -31,7 +31,7 @@
 <div class="domain-check">
 <ul>
 <li class="com">
-<input type="checkbox" id="com" name="com" value="com"> .com ($8.99)
+<input type="checkbox" id="com" name="com" value="com"> .comm ($8.99)
 <label for="com"></label>
 </li>
 <li class="net">
