@@ -54,7 +54,11 @@
 
 
 <div class="copyright ptb20 text-center">
-Copyright &copy; cloudify. All Rights Reserved
+    @foreach ($options as $option)
+    {{$option->Copyright}}
+    @endforeach
+    
+{{-- Copyright &copy; cloudify. All Rights Reserved --}}
 </div>
 
 </footer>

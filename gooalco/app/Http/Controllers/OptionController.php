@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\modals\Page;
+use App\modals\Option;
 use Illuminate\Http\Request;
 
-class PageController extends Controller
+class OptionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.pages')->with('pages', Page::get());
+        return view('admin.options.options')->with('options', Option::get());
     }
 
     /**
@@ -24,7 +24,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.addPage');
+        return view('admin.options.addOptions');
     }
 
     /**
@@ -35,22 +35,20 @@ class PageController extends Controller
      */
     public function store(Request $request)
     {
-        $pages = new Page();
-        $pages->slug =$request->slug;
-        $pages->title =$request->title;
-        $pages->content =$request->content;
-        $pages->save();
+        $options = new Option();
+        $options->Copyright = $request->Copyright->default('جميع الحقوق محفوظة © شركة بال قول لتكنولوجيا المعلومات والدعاية والاعلان ');
+        $options->save();
 
-        return redirect('/admin/pages');
+        return redirect('/admin/options');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Pages  $pages
+     * @param  \App\modals\Option  $option
      * @return \Illuminate\Http\Response
      */
-    public function show(Pages $pages)
+    public function show(Option $option)
     {
         //
     }
@@ -58,41 +56,39 @@ class PageController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Pages  $pages
+     * @param  \App\modals\Option  $option
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        return  view('admin.pages.editPage')->with('page', Page::find($id));
+        return view('admin.options.options')->with('option', Option::find($id));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Pages  $pages
+     * @param  \App\modals\Option  $option
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $pages = Page::find($id);
-        $pages->slug =$request->slug;
-        $pages->title =$request->title;
-        $pages->content =$request->content;
-        $pages->save();
+        $options = Option::find($id);
+        $options->Copyright = $request->Copyright;
+        $options->save();
 
-        return redirect('/admin/pages');
+        return redirect()->back();
+
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Pages  $pages
+     * @param  \App\modals\Option  $option
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Option $option)
     {
-        Page::destroy($id);
-        return redirect('/admin/pages');
+        //
     }
 }

@@ -8,7 +8,10 @@ use Session;
 use App\modals\Post;
 use App\modals\Slider;
 use App\modals\SubMenu;
-use DB;
+use App\modals\Option;
+
+
+
 
 class HomeController extends Controller
 {
@@ -34,7 +37,9 @@ class HomeController extends Controller
         ->with('posts', Post::get())
         ->with('sliders', Slider::get())
         ->with('menus', Menu::get())
-        ->with('submenus' ,SubMenu::get());
+        ->with('submenus' ,SubMenu::get())
+        ->with('options' , Option::get());
+        
 
     }
     public function show($id)
