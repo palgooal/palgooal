@@ -29,3 +29,18 @@
 .info .info-text p {
     text-align: right !important;
 }
+a.blog-more-btn i {
+    transform: rotateZ(-180deg) !important;
+}
+.owl-prev {
+    transform: rotateZ(-180deg) !important;
+}
+.owl-next {
+    transform: rotateZ(-180deg) !important;
+}
+.swiper-button-prev {
+    transform: rotateZ(-180deg) !important;
+}
+.swiper-button-next i {
+    transform: rotateZ(-180deg) !important;
+}

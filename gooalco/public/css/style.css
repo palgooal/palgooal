@@ -1346,7 +1346,8 @@ nav.navbar {
 
 .navbar-brand img {
     height: 68px;
-    cursor: pointer
+    cursor: pointer;
+    margin-top:-15px;
 }
 
 .nav>li>a:focus,

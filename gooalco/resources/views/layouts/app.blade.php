@@ -46,6 +46,7 @@
 @include('partials.header')
 {{-- @include('partials.slider')   --}}
 @yield('content')
+@include('partials.footer')
 
 
 

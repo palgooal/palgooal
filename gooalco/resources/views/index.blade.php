@@ -619,66 +619,6 @@
 </section>
 
 
-<footer>
-
-<div class="top-footer">
-<div class="container">
-
-<div class="row ptb60 footer-info">
-
-<div class="col-sm-3 about">
-<a href="index.html"><img src="./images/logo2.svg" alt=""></a>
-<p class="pt30">Lorem ipsum dolor sit amet, ectetur adipiscing elit.viverra tellus. Vivamus finibus, quam vitae pulvinar euismod, Lorem ipsum dolor sit amet, ectetur adipiscing elit.</p>
-</div>
-
-<div class="col-sm-3">
-<h4>Important Links</h4>
-<ul class="footer-links nopadding mt30">
-<li><a href="#">Privacy & Policy</a></li>
-<li><a href="#">Terms & Conditions</a></li>
-<li><a href="#">VPS Service</a></li>
-<li><a href="#">Support</a></li>
-</ul>
-</div>
-
-<div class="col-sm-3">
-<h4>Products</h4>
-<ul class="footer-links nopadding mt30">
-<li><a href="#">Webhosting</a></li>
-<li><a href="#">Reseler Hosting</a></li>
-<li><a href="#">VPS Hosting</a></li>
-<li><a href="#">Wordpress Hosting</a></li>
-</ul>
-</div>
-
-<div class="col-sm-3">
-<h4>Contact Us</h4>
-<ul class="footer-links nopadding mt30">
-<li><i class="fa fa-phone"></i>123-456-7890</li>
-<li><i class="fa fa-envelope"></i><a href="http://cariera.co/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f29b9c949db2919e9d87969b948bdc919d9f">[email&#160;protected]</a></li>
-<li><i class="fa fa-map-marker"></i>London, UK</li>
-</ul>
-<div class="payment mt30">
-<h4>Payment</h4>
-<ul class="list-inline nopadding mt20">
-<li><i class="fa fa-cc-amex"></i></li>
-<li><i class="fa fa-cc-paypal"></i></li>
-<li><i class="fa fa-cc-stripe"></i></li>
-<li><i class="fa fa-cc-visa"></i></li>
-</ul>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-
-<div class="copyright ptb20 text-center">
-Copyright &copy; cloudify. All Rights Reserved
-</div>
-
-</footer>
 
 
 <div class="live-chat collapsed">
