@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use App\modals\Menu;
 use Illuminate\Support\ServiceProvider;
 use Schema;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,5 +27,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        //view::share( 'menus', 'partials.header', 'App\Http\ViewComposers\HeaderComposer');
+        view::share('menus' , Menu::get());
     }
 }
