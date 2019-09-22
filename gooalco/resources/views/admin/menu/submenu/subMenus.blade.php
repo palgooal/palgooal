@@ -23,11 +23,11 @@
           role="form"
         >
           @csrf
-         
+
           <div class="form-body">
-                
+
                 <div class="form-group">
-                        <label>القائمة</label> 
+                        <label>القائمة</label>
                             <select
                             class="form-control"
                             required="required"
@@ -103,20 +103,21 @@
               </tr>
             </thead>
             <tbody>
-              @foreach ($submenus as $submenu)
+              @foreach ($submenu as $submenu)
               <tr>
                 <td>{{$submenu->number}}</td>
                 <td>{{$submenu->name}}</td>
                 <td>{{$submenu->url}}</td>
-                <td>{{$submenu->menu->name}}</td>
+                <td>{{$submenu->Menu->name}}</td>
+                {{-- <td>{{$submenu->menu->name}}</td> --}}
                {{-- <td>@foreach ($submenu->$menu as $item)
-                  
+
               {{$item->menu_id}} @endforeach</td>  --}}
-                
-                
+
+
 
                 <td>
-                  
+
                   {{--
                   <a
                     href="/admin/Menus/{{$item->id}}/edit"
@@ -161,7 +162,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- END SAMPLE TABLE PORTLET-->
   </div>
 </div>

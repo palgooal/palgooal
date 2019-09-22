@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\modals\Menu;
 use Illuminate\Http\Request;
 use Session;
 use App\modals\Post;
 use App\modals\Slider;
-
+use App\modals\SubMenu;
 use DB;
 
 class HomeController extends Controller
@@ -28,10 +29,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        
+
         return view('index')
         ->with('posts', Post::get())
-        ->with('sliders', Slider::get());
+        ->with('sliders', Slider::get())
+        ->with('menus', Menu::get())
+        ->with('submenus' ,SubMenu::get());
+
     }
     public function show($id)
     {

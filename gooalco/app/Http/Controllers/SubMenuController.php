@@ -19,7 +19,7 @@ class SubMenuController extends Controller
     {
 
         return view ('admin.menu.submenu.subMenus')
-        ->with('submenus', SubMenu::orderBy('number', 'asc')->get())
+        ->with('submenu', SubMenu::orderBy('number', 'asc')->get())
         ->with('menus', Menu::get());
     }
 
@@ -30,7 +30,7 @@ class SubMenuController extends Controller
      */
     public function create()
     {
-        return view ('admin.menu.submenu.subMenus')->with('menus', Menu::get());
+        return view ('admin.menu.submenu.subMenus')->with('menus', Menu::get())->with('submenu', SubMenu::orderBy('number', 'asc')->get());
     }
 
     /**
@@ -70,7 +70,7 @@ class SubMenuController extends Controller
     public function edit($id)
     {
         return view ('admin.menu.submenu.editSubmenu')
-        ->with('submenu', SubMenu::orderBy('number', 'asc')->find($id))
+        ->with('submenus', SubMenu::orderBy('number', 'asc')->find($id))
         ->with('menus', Menu::get());
 
     }
