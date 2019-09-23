@@ -15,7 +15,7 @@ class CreateOptionsTable extends Migration
     {
         Schema::create('options', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Copyright');
+            $table->string('Copyright')->nullable();
             $table->timestamps();
         });
     }

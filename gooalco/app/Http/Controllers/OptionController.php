@@ -36,7 +36,7 @@ class OptionController extends Controller
     public function store(Request $request)
     {
         $options = new Option();
-        $options->Copyright = $request->Copyright->default('جميع الحقوق محفوظة © شركة بال قول لتكنولوجيا المعلومات والدعاية والاعلان ');
+        $options->Copyright = $request->Copyright;
         $options->save();
 
         return redirect('/admin/options');

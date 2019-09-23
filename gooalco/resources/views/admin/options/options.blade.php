@@ -21,7 +21,7 @@
 <div class="portlet-body form">
     <form
         method="POST"
-action="/admin/options/{{$option->id}}"
+action="/admin/options/1"
         accept-charset="UTF-8"
         class="form-horizontal"
         role="form"
