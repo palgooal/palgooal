@@ -43,7 +43,7 @@
                                 @foreach ($menus as $menu)
 
 
-                                ><option value="{{$menu->id}}">{{$menu->name}}</option
+                                ><option value="{{$menu->id}}">{{$menu->name_en}}</option
                                 >
                                 @endforeach</select
                               >

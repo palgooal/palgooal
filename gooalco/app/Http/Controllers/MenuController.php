@@ -36,7 +36,8 @@ class MenuController extends Controller
     public function store(Request $request)
     {
         $menu = new Menu();
-        $menu->name = $request->name;
+        $menu->name_ar = $request->name_ar;
+        $menu->name_en = $request->name_en;
         $menu->url = $request->url;
         $menu->number = $request->number;
         $menu->save();
@@ -74,7 +75,8 @@ class MenuController extends Controller
      */
     public function update(Request $request, Menu $menu)
     {
-        $menu->name = $request->name;
+        $menu->name_ar = $request->name_ar;
+        $menu->name_en = $request->name_en;
         $menu->url = $request->url;
         $menu->number = $request->number;
         $menu->save();

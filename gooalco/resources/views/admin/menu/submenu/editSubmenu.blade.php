@@ -31,22 +31,43 @@
             <div class="form-body">
                     <div class="form-group">
                             <label>القائمة</label>
+
                                 <select
                                 class="form-control"
                                 required="required"
                                 id="menu_id"
                                 name="menu_id"
+
                                 >
                                 @foreach($menus as $menu)
-                               <option value="{{$menu->id}}">{{$menu->name}}</option>
+                               <option value="{{$menu->id}}">{{$menu->name_en}}</option>
+
                             @endforeach
                             </select>
                           </div>
 
-                <div class="form-group">
-                    <label>اسم القائمة</label>
-                <input class="form-control spinner" type="text" placeholder="اسم القائمة" name="name" id="اسم القائمة" value="{{$submenu->name}}">
-                </div>
+                          <div class="form-group">
+                            <label>اسم القائمة الفرعية بالعربي</label>
+                            <input
+                              class="form-control spinner"
+                              type="text"
+                              placeholder="كتابة القائمة الفرعية بالعربية"
+                              name="name_ar"
+                              value="{{$submenu->name_ar}}"
+                              id="name_ar"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label>اسم القائمة الفرعية بالانجليزية</label>
+                            <input
+                              class="form-control spinner"
+                              type="text"
+                              placeholder="كتابة القائمة الفرعية بالعربية"
+                              name="name_en"
+                              value="{{$submenu->name_en}}"
+                              id="name_en"
+                            />
+                          </div>
                 <div class="form-group">
                     <label>الرابط</label>
                 <input class="form-control spinner" type="text" placeholder="الرابط" name="url" id="الرابط" value="{{$submenu->url}}">
@@ -60,7 +81,7 @@
 
 
             <div class="form-actions">
-                <button type="submit" class="btn blue">اضافة</button>
+                <button type="submit" class="btn blue">تعديل</button>
                 <a href="/admin/menus" class="btn default">الغاء</a>
             </div>
 

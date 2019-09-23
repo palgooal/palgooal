@@ -15,7 +15,8 @@ class CreateSubMenusTable extends Migration
     {
         Schema::create('sub_menus', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->string('name_ar');
+            $table->string('name_en');
             $table->string('url');
             $table->string('number');
             $table->string('menu_id');

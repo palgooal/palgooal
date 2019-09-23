@@ -26,8 +26,8 @@
             <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/ar"><i class="fa fa-user"></i>عربي</a>
             </li>
             <li>
-                    <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/en"><i class="fa fa-user"></i>en</a>
-                    </li>
+            <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/en"><i class="fa fa-user"></i>en</a>
+            </li>
     </ul>
 
     </div>
@@ -58,11 +58,17 @@
                 @foreach ($menus as $menu)
 
         <li class="dropdown simple-menu active">
-        <a href="{{$menu->url}}" class="dropdown-toggle" data-toggle="dropdown" role="button">{{$menu->name}}<i class="fa fa-caret-down"></i></a>
+
+        <a href="{{$menu->url}}" class="dropdown-toggle" data-toggle="dropdown" role="button">@if (App::isLocale('en')){{$menu->name_en }}
+            @else
+            {{$menu->name_ar }}
+            @endif
+           <i class="fa fa-caret-down"></i></a>
         @if ($menu->submenus->count() >= 1)
         <ul class="dropdown-menu" role="menu">
                 @foreach ($menu->submenus as $submenu)
-        <li><a href="index.html">{{$submenu->name}}</a></li>
+        <li><a href="index.html">@if (App::isLocale('en')){{$submenu->name_en}}@else {{$submenu->name_ar}}@endif
+                </a></li>
         @endforeach
         </ul>
         @endif

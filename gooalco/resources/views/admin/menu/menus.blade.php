@@ -7,7 +7,7 @@
     <div class="page-content" style="min-height:1318px">
         <!-- BEGIN PAGE HEADER-->
         <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div class="portlet light bordered">
       <div class="portlet-title">
         <div class="caption font-red-sunglo">
@@ -26,15 +26,26 @@
           @csrf
           <div class="form-body">
             <div class="form-group">
-              <label>اسم القائمة</label>
+              <label>اسم القائمة بالعربية</label>
               <input
                 class="form-control spinner"
                 type="text"
-                placeholder="اكتب عنوان القائمة"
-                name="name"
-                id="name"
+                placeholder="اكتب عنوان القائمة بالعربية"
+                name="name_ar"
+                name="name_ar"
               />
             </div>
+            <div class="form-group">
+                <label>اسم القائمة بالانجليزية</label>
+                <input
+                  class="form-control spinner"
+                  type="text"
+                  placeholder="اكتب عنوان القائمة بالانجليزية"
+                  name="name_en"
+                  id="name_en"
+                />
+              </div>
+
             <div class="form-group">
               <label>رابط القائمة</label>
               <input
@@ -64,7 +75,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-8">
     <!-- BEGIN SAMPLE TABLE PORTLET-->
     <div class="portlet light bordered">
       <div class="portlet-title">
@@ -82,6 +93,7 @@
               <tr>
                 <th>ترتيب القائمة</th>
                 <th>اسم القائمة</th>
+                <th>اسم اسم القائمة بالانجليزية</th>
                 <th>رابط القائمة</th>
                 <th>تعديل</th>
                 <th>حذف</th>
@@ -91,11 +103,12 @@
               @foreach ($menus as $item)
               <tr>
                 <td>{{$item->number}}</td>
-                <td>{{$item->name}}</td>
+                <td>{{$item->name_ar}}</td>
+                <td>{{$item->name_en}}</td>
                 <td>{{$item->url}}</td>
 
                 <td>
-                  
+
                   {{--
                   <a
                     href="/admin/Menus/{{$item->id}}/edit"
@@ -140,7 +153,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- END SAMPLE TABLE PORTLET-->
   </div>
 </div>

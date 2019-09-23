@@ -42,7 +42,8 @@ class SubMenuController extends Controller
     public function store(Request $request)
     {
         $sub = new SubMenu();
-        $sub->name= $request->name;
+        $sub->name_ar= $request->name_ar;
+        $sub->name_en= $request->name_en;
         $sub->url= $request->url;
         $sub->number= $request->number;
         $sub->menu_id= $request->menu_id;
@@ -85,7 +86,8 @@ class SubMenuController extends Controller
     public function update(Request $request, $id)
     {
         $sub = SubMenu::find($id);
-        $sub->name= $request->name;
+        $sub->name_ar= $request->name_ar;
+        $sub->name_en= $request->name_en;
         $sub->url= $request->url;
         $sub->number= $request->number;
         $sub->menu_id= $request->menu_id;

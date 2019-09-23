@@ -35,20 +35,30 @@
                             name="menu_id"
                             >
                             @foreach($menus as $menu)
-                           <option value="{{$menu->id}}">{{$menu->name}}</option>
+                           <option value="{{$menu->id}}">{{$menu->name_en}}</option>
                         @endforeach
                         </select>
                       </div>
             <div class="form-group">
-              <label>اسم القائمة الفرعية</label>
+              <label>اسم القائمة الفرعية بالعربي</label>
               <input
                 class="form-control spinner"
                 type="text"
-                placeholder="كتابة القائمة الفرعية"
-                name="name"
-                id="name"
+                placeholder="كتابة القائمة الفرعية بالعربية"
+                name="name_ar"
+                id="name_ar"
               />
             </div>
+            <div class="form-group">
+                    <label>اسم القائمة الفرعية بالانجليزية</label>
+                    <input
+                      class="form-control spinner"
+                      type="text"
+                      placeholder="كتابة القائمة الفرعية بالانجليزية"
+                      name="name_en"
+                      id="name_en"
+                    />
+                  </div>
             <div class="form-group">
               <label>رابط القائمة الفرعية</label>
               <input
@@ -95,9 +105,10 @@
             <thead>
               <tr>
                 <th>ترتيب القائمة الفرعية</th>
-                <th>اسم القائمة الفرعية</th>
-                <th>رابط القائمة الفرعية</th>
-                <th>القائمة</th>
+                <th>اسم القائمة الفرعية بالعربية</th>
+                <th>رابط القائمة الفرعية بالانجليزية</th>
+                <th>الرابط</th>
+
                 <th>تعديل</th>
                 <th>حذف</th>
               </tr>
@@ -106,10 +117,11 @@
               @foreach ($submenu as $submenu)
               <tr>
                 <td>{{$submenu->number}}</td>
-                <td>{{$submenu->name}}</td>
+                <td>{{$submenu->name_ar}}</td>
+                <td>{{$submenu->name_en}}</td>
                 <td>{{$submenu->url}}</td>
-                <td>{{$submenu->Menu->name}}</td>
-                {{-- <td>{{$submenu->Menu->>name}}</td> --}}
+
+                {{-- <td>{{$submenu->Menu->name_en}}</td> --}}
                 {{-- <td>{{$submenu->menu->name}}</td> --}}
                {{-- <td>@foreach ($submenu->$menu as $item)
 
@@ -119,23 +131,7 @@
 
                 <td>
 
-                  {{--
-                  <a
-                    href="/admin/Menus/{{$item->id}}/edit"
-                    class="btn btn-xs
-                                                btn-info"
-                    >Edit</a
-                  >
-                  --}} {{--
-                  <button
-                    class="edit"
-                    data-id="{{$item->id}}"
-                    type="button"
-                    class="btn btn-primary"
-                  >
-                    <i class="fa fa-edit"></i> Edit
-                  </button>
-                  --}}
+
                   <a
                     href="/admin/submenus/{{$submenu->id}}/edit"
                     class="btn btn-primary"
