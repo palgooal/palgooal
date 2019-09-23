@@ -43,6 +43,7 @@
                   name="name_ar"
                   name="name_ar"
                 />
+                
               </div>
             <div class="form-group">
                 <label>اسم القائمة بالانجليزية</label>

@@ -84,6 +84,7 @@
           <span class="caption-subject font-green bold uppercase"
             >كل القوائم
           </span>
+          
         </div>
       </div>
       <div class="portlet-body">

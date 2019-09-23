@@ -54,6 +54,7 @@
                               placeholder="كتابة القائمة الفرعية بالعربية"
                               name="name_ar"
                               value="{{$submenu->name_ar}}"
+                              
                               id="name_ar"
                             />
                           </div>

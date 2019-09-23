@@ -17,6 +17,7 @@ class SubMenuController extends Controller
      */
     public function index()
     {
+        
 
         return view ('admin.menu.submenu.subMenus')
         ->with('submenu', SubMenu::orderBy('number', 'asc')->get())

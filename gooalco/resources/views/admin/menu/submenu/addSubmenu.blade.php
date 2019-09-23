@@ -26,6 +26,7 @@
             class="form-horizontal"
             role="form"
             enctype="multipart/form-data"
+            
           >
           @csrf
             <div class="form-body">

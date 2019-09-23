@@ -26,6 +26,7 @@ class MenuController extends Controller
     {
         return view ('admin.menu.addmenu');
     }
+    
 
     /**
      * Store a newly created resource in storage.

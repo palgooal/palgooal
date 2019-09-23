@@ -49,6 +49,7 @@
                 id="name_ar"
               />
             </div>
+            
             <div class="form-group">
                     <label>اسم القائمة الفرعية بالانجليزية</label>
                     <input
