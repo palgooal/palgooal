@@ -58,6 +58,7 @@
     {{$option->Copyright}}
     @endforeach
     
+    
 {{-- Copyright &copy; cloudify. All Rights Reserved --}}
 </div>
 

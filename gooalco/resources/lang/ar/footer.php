@@ -1,8 +1,8 @@
 <?php
 return [
 'IMPORTANT LINKS' =>'روابط مهمة',
-'Privacy & Policy' =>'سياسة خاصة',
-'Terms & Conditions' =>'البنود و الظروف',
+'Privacy & Policy' =>'سياسة الاستخدام',
+'Terms & Conditions' =>'سياسة الخصوصية',
 'VPS Service' =>'خدمة VPS',
 'Support' =>'الدعم',
 'Products' =>'منتجات',
