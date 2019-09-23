@@ -2,12 +2,12 @@
 @section('content')
 
 
-<div class="loader">
+{{-- <div class="loader">
     <div class="spinner">
     <div class="cloud1"><img src="./images/clouds/cloud-blue.svg" alt=""></div>
     <div class="cloud2"><img src="./images/clouds/cloud-green.svg" alt=""></div>
     </div>
-    </div>
+    </div> --}}
 
 @include('partials.slider')
 
@@ -15,7 +15,11 @@
 <section class="domain ptb30">
 <div class="container">
 <div class="col-md-3">
-<h2 class="capitalize">{{__('home.Search Your')}} <span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
+<h2 class="capitalize"></h2>{{__('home.Search Your')}} <span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
+<form action="https://clientgooal.palgooal.com/cart.php?a=add&domain=register" method="post">
+Find your Domain: <input type="text" name="query" size="20" />
+<input type="submit" value="Go" />
+</form>
 </div>
 <div class="col-md-9">
 <div class="row">
