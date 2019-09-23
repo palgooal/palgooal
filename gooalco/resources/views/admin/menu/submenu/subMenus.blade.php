@@ -6,7 +6,7 @@
     <div class="page-content" style="min-height:1318px">
         <!-- BEGIN PAGE HEADER-->
         <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div class="portlet light bordered">
       <div class="portlet-title">
         <div class="caption font-red-sunglo">
@@ -78,7 +78,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-8">
     <!-- BEGIN SAMPLE TABLE PORTLET-->
     <div class="portlet light bordered">
       <div class="portlet-title">
@@ -109,6 +109,7 @@
                 <td>{{$submenu->name}}</td>
                 <td>{{$submenu->url}}</td>
                 <td>{{$submenu->Menu->name}}</td>
+                {{-- <td>{{$submenu->Menu->>name}}</td> --}}
                 {{-- <td>{{$submenu->menu->name}}</td> --}}
                {{-- <td>@foreach ($submenu->$menu as $item)
 

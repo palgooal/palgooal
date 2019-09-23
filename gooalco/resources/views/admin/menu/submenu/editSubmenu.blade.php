@@ -30,8 +30,7 @@
                       @csrf
             <div class="form-body">
                     <div class="form-group">
-<<<<<<< HEAD
-                            <label>القائمة</label> 
+                            <label>القائمة</label>
                                 <select
                                 class="form-control"
                                 required="required"
@@ -55,46 +54,6 @@
                 <div class="form-group">
                     <label>ترتيب القائمة</label>
                 <input class="form-control spinner" type="number" placeholder="الرقم" name="number" id="number" value="{{$submenu->number}}">
-=======
-                            <label for="القوائم" class="col-md-1 control-label"
-                              >القوائم</label
-                            >
-
-                            <div class="col-md-11">
-                              <select
-                                class="form-control"
-
-                                id="القوائم"
-                                name="menu_id"
-
-                                @foreach ($menus as $menu)
-
-
-                                ><option value="{{$menu->id}}">{{$menu->name}}</option
-                                >
-                                @endforeach</select
-                              >
-
-
-                              <span class="help-block">
-                                <strong></strong>
-                              </span>
-                            </div>
-                          </div>
-
-
-                <div class="form-group">
-                    <label>اسم القائمة الفرعية</label>
-                <input class="form-control spinner" type="text" placeholder="اسم القائمة" value="{{$submenu->name}}" name="name" id="اسم القائمة">
-                </div>
-                <div class="form-group">
-                    <label>الرابط</label>
-                    <input class="form-control spinner" type="text" placeholder="الرابط" value="{{$submenu->url}}" name="url" id="الرابط">
-                </div>
-                <div class="form-group">
-                    <label>الرقم</label>
-                    <input class="form-control spinner" type="number" placeholder="الرقم" value="{{$submenu->number}}"name="number" id="الرقم">
->>>>>>> 6073cfbc2dcf499cd74d6318f0e41b01cefa9c4b
                 </div>
 
 
