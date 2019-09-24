@@ -23,7 +23,7 @@
                                 <thead>
                                     <tr>
                                         <th> عنوان </th>
-                                        <th>التصنيف</th>
+
                                         <th>الكاتب</th>
                                         <th>مشاهدة المقالة</th>
                                         <th>تعديل</th>
@@ -33,11 +33,11 @@
                                 <tbody>
                                     @foreach ($posts as $post)
                                     <tr>
-                                        <td> {{$post->Title}}</td>
-                                        <td></td>
-                                        <td>{{$post->Auther}}</td>
+                                        <td> {{$post->Title_ar}}</td>
+
+                                        <td>{{$post->Auther_ar}}</td>
                                         {{-- <td> @foreach($item->categories as $category)
-                                           * {{$category->title}} 
+                                           * {{$category->title}}
                                          @endforeach</td> --}}
 
                                          <td>

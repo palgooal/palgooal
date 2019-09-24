@@ -570,11 +570,20 @@ Find your Domain: <input type="text" name="query" size="20" />
 <a href="/post/{{$post->id}}"><img src="{{asset('/images/'.$post->image)}}" alt=""></a>
 </div>
 <div class="blog-post-title pt30 pb10">
-<h3><a href="blog-post.html">{{$post->Title}}</a></h3>
-<p class="nomargin pt5">{{$post->Auther}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
+ @if (App::isLocale('en'))
+<h3><a href="blog-post.html">{{$post->Title_en}}</a></h3>
+<p class="nomargin pt5">{{$post->Auther_em}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
-<p class="nomargin pb20">{{$post->Body}}</p>
+<p class="nomargin pb20">{{$post->Body_en}}</p>
+@else
+<h3><a href="blog-post.html">{{$post->Title_ar}}</a></h3>
+<p class="nomargin pt5">{{$post->Auther_ar}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
+</div>
+<div class="blog-post-details pt20">
+<p class="nomargin pb20">{{$post->Body_ar}}</p>
+@endif
+
 <a class="blog-more-btn" href="/post/{{$post->id}}">{{__('home.Read More')}} <i class="fa fa-long-arrow-right"></i></a>
 </div>
 </article>

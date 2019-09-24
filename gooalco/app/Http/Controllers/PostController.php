@@ -38,10 +38,13 @@ class PostController extends Controller
     {
         $path = $request->image->store('post');
         $posts = new Post();
-        $posts->Title =$request->Title;
+        $posts->Title_ar =$request->Title_ar;
         $posts->image = $path;
-        $posts->Auther =$request->Auther;
-        $posts->Body =$request->Body;
+        $posts->Auther_ar =$request->Auther_ar;
+        $posts->Body_ar =$request->Body_ar;
+        $posts->Title_en =$request->Title_en;
+        $posts->Auther_en =$request->Auther_en;
+        $posts->Body_en =$request->Body_en;
         $posts->save();
 
         return redirect('/admin/posts');
@@ -82,11 +85,12 @@ class PostController extends Controller
     {
         $path = $request->image->store('post');
         $posts = Post::find($id);
-        $posts->Title =$request->Title;
-        $posts->image =$path;
-        $posts->Auther =$request->Auther;
-        $posts->Body =$request->Body;
-        $posts->save();
+        $posts->Title_ar =$request->Title_ar;
+        $posts->Auther_ar =$request->Auther_ar;
+        $posts->Body_ar =$request->Body_ar;
+        $posts->Title_en =$request->Title_en;
+        $posts->Auther_en =$request->Auther_en;
+        $posts->Body_en =$request->Body_en;
         return redirect('/admin/posts');
     }
 

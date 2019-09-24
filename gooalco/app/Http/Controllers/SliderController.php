@@ -41,12 +41,15 @@ class SliderController extends Controller
             $path= $request->image->store('slider');
             $slider->image =$path;
         }
-        
-        $slider->title =$request->title;
-        $slider->title2 =$request->title2;
-        $slider->text_blue =$request->text_blue;
-        $slider->description =$request->description;
-       
+
+        $slider->title_ar =$request->title_ar;
+        $slider->title2_ar =$request->title2_ar;
+        $slider->text_blue_ar =$request->text_blue_ar;
+        $slider->description_ar =$request->description_ar;
+        $slider->title_en =$request->title_en;
+        $slider->title2_en =$request->title2_en;
+        $slider->text_blue_en =$request->text_blue_en;
+        $slider->description_en =$request->description_en;
         $slider->save();
 
         return redirect('/admin/slider');
@@ -90,11 +93,15 @@ class SliderController extends Controller
             $path= $request->image->store('slider');
             $slider->image =$path;
         }
-       
-        $slider->title =$request->title;
-        $slider->title2 =$request->title2;
-        $slider->text_blue =$request->text_blue;
-        $slider->description =$request->description;
+
+        $slider->title_ar =$request->title_ar;
+        $slider->title2_ar =$request->title2_ar;
+        $slider->text_blue_ar =$request->text_blue_ar;
+        $slider->description_ar =$request->description_ar;
+        $slider->title_en =$request->title_en;
+        $slider->title2_en =$request->title2_en;
+        $slider->text_blue_en =$request->text_blue_en;
+        $slider->description_en =$request->description_en;
         $slider->save();
 
         return redirect('/admin/slider');

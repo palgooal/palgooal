@@ -2,18 +2,23 @@
 <section class="demo1" id="home">
 
     <div class="swiper-container fullscreen">
-        
-            
-        
+
+
+
     <div class="swiper-wrapper">
             @foreach ($sliders->take(3) as $slider)
 
     <div class="swiper-slide overlay-black" style="background: url('{{asset('/images/'.$slider->image)}}'); background-size: cover;">
     <div class="slider-content container">
     <div class="col-md-12">
-    <h2>{{$slider->title}} <br> {{$slider->title2}}  <span class="text-blue">{{$slider->text_blue}}</span>.</h2>
-    <p>{{$slider->description}}</p>
-    <div>
+            @if (App::isLocale('en'))
+    <h2>{{$slider->title_en}} <br> {{$slider->title2_en}}  <span class="text-blue">{{$slider->text_blue_en}}</span>.</h2>
+    <p>{{$slider->description_en}}</p>
+    @else
+            <h2>{{$slider->title_ar}} <br> {{$slider->title2_ar}}  <span class="text-blue">{{$slider->text_blue_ar}}</span>.</h2>
+            <p>{{$slider->description_ar}}</p>
+            @endif
+            <div>
     <a href="#" class="btn btn-border btn-blue"><i class="fa fa-star"></i>Get Started Now</a>
     <a href="#" class="btn btn-border-rev btn-green">check pricing</a>
     </div>
@@ -21,7 +26,7 @@
     </div>
     </div>
 
-{{-- 
+{{--
     <div class="swiper-slide overlay-black">
     <div class="slider-content container">
     <div class="col-md-12">
@@ -64,6 +69,6 @@
     <div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
     <div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
     </div>
-    
+
 
  </section>

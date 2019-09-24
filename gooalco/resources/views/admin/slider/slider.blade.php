@@ -26,47 +26,92 @@
               @csrf
               <div class="form-body">
                 <div class="form-group">
-                  <label>عنوان السلايدر</label>
+                  <label>عنوان السلايدر باللغة العربية</label>
                   <input
                     class="form-control spinner"
                     type="text"
-                    placeholder="اكتب هنا عنوان السلايدر"
-                    name="title"
-                    id="title"
+                    placeholder="اكتب هنا عنوان السلادير باللغة العربية"
+                    name="title_ar"
+                    id="title_ar"
                   />
                 </div>
-                
+                <div class="form-group">
+                    <label>عنوان السلايدر باللغة الانجليزية</label>
+                    <input
+                      class="form-control spinner"
+                      type="text"
+                      placeholder="اكتب هنا عنوان السلادير باللغة الانجليزية"
+                      name="title_en"
+                      id="title_en"
+                    />
+                  </div>
+
                     <div class="form-group">
-                      <label>عنوان 2 السلايدر</label>
+                      <label>عنوان 2 السلادير باللغة العربية</label>
                       <input
                         class="form-control spinner"
                         type="text"
-                        placeholder="اكتب هنا عنوان 2 السلايدر"
-                        name="title2"
-                        id="title2"
+                        placeholder="اكتب هنا عنوان 2 السلادير باللغة العربية"
+                        name="title2_ar"
+                        id="title2_ar"
                       />
                     </div>
-                    
+                    <div class="form-group">
+                        <label>عنوان 2 السلايدر بالانجليزية</label>
+                        <input
+                          class="form-control spinner"
+                          type="text"
+                          placeholder="اكتب هنا عنوان 2 السلايدر بالانجليزية"
+                          name="title2_en"
+                          id="title2_en"
+                        />
+                      </div>
+
+
                         <div class="form-group">
-                          <label>اكتب هنا عنوان بالون الازرق</label>
+                          <label>اكتب هنا عنوان بالون الأزرق باللغة العربية</label>
                           <input
                             class="form-control spinner"
                             type="text"
-                            placeholder="اكتب هنا عنوان بالون الازرق"
-                            name="text_blue"
-                            id="text_blue"
+                            placeholder="اكتب هنا عنوان بالون الأزرق باللغة العربية"
+                            name="text_blue_ar"
+                            id="text_blue_ar"
                           />
                         </div>
+                        <div class="form-group">
+                            <label>اكتب هنا عنوان بالون الأزرق باللغة الانجليزية</label>
+                            <input
+                              class="form-control spinner"
+                              type="text"
+                              placeholder="اكتب هنا عنوان بالون الأزرق باللغة الانجليزية"
+                              name="text_blue_en"
+                              id="text_blue_en"
+                            />
+                          </div>
                 <div class="form-group">
                   <label>وصف عام للسلايدر</label>
                   <input
                     class="form-control spinner"
                     type="text"
                     placeholder="اكتب هنا وصف عام للسلايدر"
-                    name="description"
-                    id="description"
+                    name="description_ar"
+                    id="description_ar"
                   />
                 </div>
+
+
+
+
+                  <div class="form-group">
+                    <label>وصف عام للسلايدر بالإنجليزية</label>
+                    <input
+                      class="form-control spinner"
+                      type="text"
+                      placeholder="اكتب هنا وصف عام للسلايدر بالإنجليزية"
+                      name="description_en"
+                      id="description_en"
+                    />
+                  </div>
                 <div class="form-group">
                   <label>تحميل صورة خلفية السلايدر</label>
                   <input
@@ -94,7 +139,7 @@
             <div class="caption">
               <i class="icon-social-dribbble font-green"></i>
               <span class="caption-subject font-green bold uppercase"
-                >عرض السلايدر 
+                >عرض السلايدر
               </span>
             </div>
           </div>
@@ -113,7 +158,7 @@
                 <tbody>
                   @foreach ($sliders as $slider)
                   <tr>
-                    <td>{{$slider->title}}</td>
+                    <td>{{$slider->title_ar}}</td>
                     {{-- <td>{{$slider->description}}</td> --}}
                     <td><img src="{{asset('/images/'.$slider->image)}}"}} alt="Los Angeles" style="width:100%;"></td>
 
