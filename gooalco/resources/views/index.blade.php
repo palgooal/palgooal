@@ -584,6 +584,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 <p class="nomargin pb20">{{$post->Body_ar}}</p>
 @endif
 
+
 <a class="blog-more-btn" href="/post/{{$post->id}}">{{__('home.Read More')}} <i class="fa fa-long-arrow-right"></i></a>
 </div>
 </article>
