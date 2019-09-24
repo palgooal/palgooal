@@ -8,7 +8,7 @@
 
 
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-12">
 
 <div class="portlet light bordered">
 <div class="portlet-title">
@@ -18,6 +18,7 @@
     </div>
 
 </div>
+
 <div class="portlet-body form">
     <form
         method="POST"
@@ -29,33 +30,56 @@
       >
       @csrf
         <div class="form-body">
+            <div class="container">
 
-            <div class="form-group">
-                <label>عنوان التدوينة باللغة العربية</label>
-                <input class="form-control spinner" type="text" placeholder="العنوان باللغة العربية" name="Title_ar" id="Title">
-            </div>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#ar">اضافة خبر باللغة العربية</a></li>
+                  <li><a data-toggle="tab" href="#en">اضافة خبر باللغة الانجليزية</a></li>
+
+                </ul>
+
+                <div class="tab-content">
+                  <div id="ar" class="tab-pane fade in active">
+                    <h3>اضافة خبر باللغة العربية</h3>
+                    <div class="form-group">
+                        <label>عنوان التدوينة باللغة العربية</label>
+                        <input class="form-control spinner" type="text" placeholder="العنوان باللغة العربية" name="Title_ar" id="Title">
+                    </div>
+                    <div class="form-group">
+                        <label>نص التدوينة باللغة العربية</label>
+                        <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control" placeholder="إضافة وصف هنا باللغة العربية ... "></textarea>
+
+                    </div>
+                    <div class="form-group">
+                        <label>اسم الكاتب بالغة العربية</label>
+                        <input class="form-control spinner" type="text" placeholder="الكاتب باللغة العربية" name="Auther_ar" id="Auther">
+                    </div>
+                  </div>
+
+                  <div id="en" class="tab-pane fade">
+                    <h3>اضافة خبر باللغة الانجليزية</h3>
+
+
+
+
             <div class="form-group">
                     <label>عنوان التدوينة باللغة الانجليزية</label>
                     <input class="form-control spinner" type="text" placeholder="العنوان باللغة الانجليزية" name="Title_en" id="Title">
                 </div>
-            <div class="form-group">
-                <label>نص التدوينة باللغة العربية</label>
-                <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control" placeholder="إضافة وصف هنا باللغة العربية ... "></textarea>
 
-            </div>
             <div class="form-group">
                     <label>نص التدوينة باللغة الانجليزية</label>
                     <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control" placeholder="إضافة وصف هنا باللغة الانجليزية ... "></textarea>
 
                 </div>
-                <div class="form-group">
-                        <label>اسم الكاتب بالغة العربية</label>
-                        <input class="form-control spinner" type="text" placeholder="الكاتب باللغة العربية" name="Auther_ar" id="Auther">
-                    </div>
+
                     <div class="form-group">
                             <label>اسم الكاتب بالغة الانجليزية</label>
                             <input class="form-control spinner" type="text" placeholder="الكاتب باللغة الانجليزية" name="Auther_en" id="Auther">
                         </div>
+                    </div>
+                </div>
+                </div>
             <div class="form-group">
                 <label>تحميل الصور</label>
                 <input class="form-control spinner" type="file" placeholder="تحميل الصور" name="image" id="image">
