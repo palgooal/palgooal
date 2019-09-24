@@ -42,48 +42,48 @@
                   <div id="ar" class="tab-pane fade in active">
                     <h3>اضافة خبر باللغة العربية</h3>
                     <div class="form-group">
-                        <label>عنوان التدوينة باللغة العربية</label>
-                        <input class="form-control spinner" type="text" placeholder="العنوان باللغة العربية" name="Title_ar" id="Title">
+                        <label>عنوان التدوينة</label>
+                        <input class="form-control spinner" type="text" placeholder="العنوان" name="Title_ar" id="Title">
                     </div>
                     <div class="form-group">
-                        <label>نص التدوينة باللغة العربية</label>
-                        <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control" placeholder="إضافة وصف هنا باللغة العربية ... "></textarea>
+                        <label>نص التدوينة</label>
+                        <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا ... "></textarea>
 
                     </div>
                     <div class="form-group">
-                        <label>اسم الكاتب بالغة العربية</label>
-                        <input class="form-control spinner" type="text" placeholder="الكاتب باللغة العربية" name="Auther_ar" id="Auther">
+                        <label>اسم الكاتب</label>
+                        <input class="form-control spinner" type="text" placeholder="الكاتب" name="Auther_ar" id="Auther">
                     </div>
                   </div>
 
                   <div id="en" class="tab-pane fade">
-                    <h3>اضافة خبر باللغة الانجليزية</h3>
+                    <h3>Add post in Engilsh</h3>
 
 
 
-
-            <div class="form-group">
-                    <label>عنوان التدوينة باللغة الانجليزية</label>
-                    <input class="form-control spinner" type="text" placeholder="العنوان باللغة الانجليزية" name="Title_en" id="Title">
-                </div>
-
-            <div class="form-group">
-                    <label>نص التدوينة باللغة الانجليزية</label>
-                    <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control" placeholder="إضافة وصف هنا باللغة الانجليزية ... "></textarea>
-
-                </div>
 
                     <div class="form-group">
-                            <label>اسم الكاتب بالغة الانجليزية</label>
-                            <input class="form-control spinner" type="text" placeholder="الكاتب باللغة الانجليزية" name="Auther_en" id="Auther">
+                            <label>Add title</label>
+                            <input class="form-control spinner" type="text" placeholder="Add title of the post" name="Title_en" id="Title">
                         </div>
+
+                    <div class="form-group">
+                            <label>Add body of the post</label>
+                            <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control" placeholder=" Add body of the post "></textarea>
+
+                        </div>
+
+                            <div class="form-group">
+                                    <label>Auther</label>
+                                    <input class="form-control spinner" type="text" placeholder="Auther  " name="Auther_en" id="Auther">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="form-group">
+                        <label>تحميل الصور</label>
+                        <input class="form-control spinner" type="file" placeholder="تحميل الصور" name="image" id="image">
                     </div>
-                </div>
-                </div>
-            <div class="form-group">
-                <label>تحميل الصور</label>
-                <input class="form-control spinner" type="file" placeholder="تحميل الصور" name="image" id="image">
-            </div>
 
 
             {{-- <div class="form-group">
