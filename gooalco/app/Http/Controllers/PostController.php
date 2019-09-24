@@ -36,8 +36,13 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $path = $request->image->store('post');
         $posts = new Post();
+        if($request->image !=null)
+        {
+            $path= $request->image->store('post');
+            $posts->image =$path;
+        }
+
         $posts->Title_ar =$request->Title_ar;
         $posts->image = $path;
         $posts->Auther_ar =$request->Auther_ar;
@@ -83,14 +88,20 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $path = $request->image->store('post');
+
         $posts = Post::find($id);
+        if($request->image !=null)
+        {
+            $path= $request->image->store('post');
+            $posts->image =$path;
+        }
         $posts->Title_ar =$request->Title_ar;
         $posts->Auther_ar =$request->Auther_ar;
         $posts->Body_ar =$request->Body_ar;
         $posts->Title_en =$request->Title_en;
         $posts->Auther_en =$request->Auther_en;
         $posts->Body_en =$request->Body_en;
+        $posts->save();
         return redirect('/admin/posts');
     }
 

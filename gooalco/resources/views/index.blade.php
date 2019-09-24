@@ -572,7 +572,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 <div class="blog-post-title pt30 pb10">
  @if (App::isLocale('en'))
 <h3><a href="blog-post.html">{{$post->Title_en}}</a></h3>
-<p class="nomargin pt5">{{$post->Auther_em}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
+<p class="nomargin pt5">{{$post->Auther_en}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
 <p class="nomargin pb20">{{$post->Body_en}}</p>
