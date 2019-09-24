@@ -42,8 +42,10 @@
 <![endif]-->
 </head>
 <body id="page-top">
+                
 
 @include('partials.header')
+            </div>
 @yield('content')
 @include('partials.footer')
 

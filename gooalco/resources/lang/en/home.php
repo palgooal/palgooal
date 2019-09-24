@@ -13,5 +13,6 @@ return[
     'visit blog'=>'visit blog',
     'Blog'=> 'Blog',
     'Home'=>'Home',
-    'Latest News'=> 'Latest News'
+    'Latest News'=> 'Latest News',
+    'share'=>'share'
 ];
