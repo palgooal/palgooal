@@ -44,12 +44,12 @@
                 </div>
             <div class="form-group">
                 <label>نص التدوينة باللغة العربية</label>
-                <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control" placeholder="إضافة وصف هنا باللغة العربية ... ">{{$post->Body_ar}}</textarea>
+                <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا باللغة العربية ... ">{{$post->Body_ar}}</textarea>
 
             </div>
             <div class="form-group">
                     <label>نص التدوينة باللغة الانجليزية</label>
-                    <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control" placeholder="إضافة وصف هنا باللغة الانجليزية ... ">{{$post->Body_en}}</textarea>
+                    <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا باللغة الانجليزية ... ">{{$post->Body_en}}</textarea>
 
                 </div>
                 <div class="form-group">

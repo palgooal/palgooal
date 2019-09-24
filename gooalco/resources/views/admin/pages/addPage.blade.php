@@ -35,7 +35,7 @@
             </div>
             <div class="form-group">
                 <label>   المحتوى  </label>
-                <textarea name="content" id="content" cols="30" rows="10" class="form-control" placeholder=" المحتوى "></textarea>
+                <textarea name="content" id="content" cols="30" rows="10" class="form-control summernote" placeholder=" المحتوى "></textarea>
 
             </div>
             <label> Slug  </label>

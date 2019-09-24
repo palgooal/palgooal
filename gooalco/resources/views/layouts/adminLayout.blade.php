@@ -26,6 +26,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
         <meta content="" name="author" />
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
         <link href="{{asset('./assets/global/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
@@ -85,10 +86,14 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="{{asset ('assets/layouts/global/scripts/quick-sidebar.min.js')}}" type="text/javascript"></script>
         <script src="{{asset('assets/pages/scripts/ui-tree.min.js')}}" type="text/javascript"></script>
         <script src="{{asset('assets/global/plugins/jstree/dist/jstree.min.js')}}" type="text/javascript"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
         <!-- END THEME LAYOUT SCRIPTS -->
 
-
+        <script>
+            $(document).ready(function() {
+                $('.summernote').summernote();
+            });
+    </script>
 
     </body>
 

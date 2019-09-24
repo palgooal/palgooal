@@ -69,7 +69,7 @@
 
                     <div class="form-group">
                             <label>Add body of the post</label>
-                            <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control" placeholder=" Add body of the post "></textarea>
+                            <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control summernote" placeholder=" Add body of the post "></textarea>
 
                         </div>
 
