@@ -293,6 +293,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 <div class="pricing-table1">
     @foreach ($prices as $price)
 
+<<<<<<< HEAD
 
 
 <div class="col-sm-3 pricing-plan" id="starter">
@@ -305,6 +306,20 @@ Find your Domain: <input type="text" name="query" size="20" />
 </div>
 </div>
 
+=======
+
+
+<div class="col-sm-3 pricing-plan" id="starter">
+
+<div class="row price">
+<div>
+<span class="currency">$</span>
+<span class="amount">{{$price->price}}</span>
+<span class="month">per year</span>
+</div>
+</div>
+
+>>>>>>> 0a15ec3eb8e2d1109f1d10074a3866c984978c1f
 <div class="plan-type">
 <span>{{$price->name}}</span>
 </div>
@@ -321,11 +336,19 @@ Find your Domain: <input type="text" name="query" size="20" />
 <a href="#" class="btn btn-border btn-blue">purchase</a>
 
 </div>
+<<<<<<< HEAD
 
 
 
 
 
+=======
+
+
+
+
+
+>>>>>>> 0a15ec3eb8e2d1109f1d10074a3866c984978c1f
 @endforeach
 
 </div>
