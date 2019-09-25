@@ -46,7 +46,8 @@ class HomeController extends Controller
     }
     public function show($id)
     {
-        return view('singelPost')->with('post', Post::find($id));
+        return view('singelPost')
+        ->with('post', Post::find($id));
     }
     function lang($local){
         Session::put('lang', $local);
