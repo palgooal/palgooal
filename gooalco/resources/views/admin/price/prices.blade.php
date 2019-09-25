@@ -142,7 +142,8 @@
             <div class="caption">
               <i class="icon-social-dribbble font-green"></i>
               <span class="caption-subject font-green bold uppercase"
-                >عرض السلايدر
+                >العرةض
+
               </span>
             </div>
           </div>
