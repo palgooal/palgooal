@@ -17,7 +17,7 @@ Route::get('/', 'HomeController@index')->name('home');
 //     return view('home');
 // });
 Route::get('/admin', function () {
-    
+
     return view('admin.welcom');
 });
 
@@ -32,5 +32,6 @@ Route::resource('/admin/menus', 'MenuController');
 Route::resource('/admin/submenus', 'SubMenuController');
 Route::resource('/admin/pages', 'PageController');
 Route::resource('/admin/options', 'OptionController');
+Route::resource('/admin/price', 'PriceController');
 
 

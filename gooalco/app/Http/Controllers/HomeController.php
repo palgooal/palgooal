@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\modal\Price;
 use App\modals\Menu;
 use Illuminate\Http\Request;
 use Session;
@@ -38,8 +39,9 @@ class HomeController extends Controller
         ->with('sliders', Slider::get())
         ->with('menus', Menu::get())
         ->with('submenus' ,SubMenu::get())
-        ->with('options' , Option::get());
-        
+        ->with('options' , Option::get())
+        ->with('prices' , Price::paginate(4));
+
 
     }
     public function show($id)

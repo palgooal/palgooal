@@ -307,113 +307,42 @@ Find your Domain: <input type="text" name="query" size="20" />
 </div>
 
 <div class="pricing-table1">
+    @foreach ($prices as $price)
+
+
 
 <div class="col-sm-3 pricing-plan" id="starter">
 
 <div class="row price">
 <div>
 <span class="currency">$</span>
-<span class="amount">19</span>
-<span class="month">per month</span>
+<span class="amount">{{$price->price}}</span>
+<span class="month">per year</span>
 </div>
 </div>
 
 <div class="plan-type">
-<span>Starter</span>
+<span>{{$price->name}}</span>
 </div>
 
 <ul class="nav">
-<li>3 Email Account</li>
-<li>1 Website Layout</li>
-<li>5GB Space</li>
-<li><i class="fa fa-times"></i></li>
-<li><i class="fa fa-times"></i></li>
-<li><i class="fa fa-times"></i></li>
+<li>{{$price->num_email}} Email Account</li>
+<li>{{$price->num_website}} Website Layout</li>
+<li>{{$price->storge}}GB Space</li>
+<li>Number of Database : {{$price->num_database}}</li>
+<li>Avarage of Data Transfer : {{$price->data_transfare}}</li>
+<li>Backup  :{{$price->backup}}</li>
+<li>{{$price->description}}</li>
 </ul>
 <a href="#" class="btn btn-border btn-blue">purchase</a>
 
 </div>
 
 
-<div class="col-sm-3 pricing-plan" id="basic">
-
-<div class="row price">
-<div>
-<span class="currency">$</span>
-<span class="amount">39</span>
-<span class="month">per month</span>
-</div>
-</div>
-
-<div class="plan-type">
-<span>basic</span>
-</div>
-
-<ul class="nav">
-<li>10 Email Account</li>
-<li>3 Website Layout</li>
-<li>10GB Space</li>
-<li><i class="fa fa-check"></i></li>
-<li><i class="fa fa-times"></i></li>
-<li><i class="fa fa-times"></i></li>
-</ul>
-<a href="#" class="btn btn-border btn-blue">purchase</a>
-
-</div>
 
 
-<div class="col-sm-3 pricing-plan" id="agency">
 
-<div class="row price">
-<div>
-<span class="currency">$</span>
-<span class="amount">69</span>
-<span class="month">per month</span>
-</div>
-</div>
-
-<div class="plan-type">
-<span>agency</span>
-</div>
-
-<ul class="nav">
-<li>100 Email Account</li>
-<li>10 Website Layout</li>
-<li>100GB Space</li>
-<li><i class="fa fa-check"></i></li>
-<li><i class="fa fa-check"></i></li>
-<li><i class="fa fa-times"></i></li>
-</ul>
-<a href="#" class="btn btn-border btn-blue">purchase</a>
-
-</div>
-
-
-<div class="col-sm-3 pricing-plan" id="enterprise">
-
-<div class="row price">
-<div>
-<span class="currency">$</span>
-<span class="amount">99</span>
-<span class="month">per month</span>
-</div>
-</div>
-
-<div class="plan-type">
-<span>enterprise</span>
-</div>
-
-<ul class="nav">
-<li><strong>Unlimited</strong></li>
-<li>100 Website Layout</li>
-<li><strong>Unlimited Space</strong></li>
-<li><i class="fa fa-check"></i></li>
-<li><i class="fa fa-check"></i></li>
- <li><i class="fa fa-check"></i></li>
-</ul>
-<a href="#" class="btn btn-border btn-blue">purchase</a>
-
-</div>
+@endforeach
 
 </div>
 
@@ -580,14 +509,14 @@ Find your Domain: <input type="text" name="query" size="20" />
 <<<<<<< HEAD
 <p class="nomargin pb20">{{$post->Body_en}} </p>
 =======
-<p class="nomargin pb20">{!!str_limit($post->Body_en, 200)!!}</p>
+<p class="nomargin pb20">{!!Str::limit($post->Body_en, 200)!!}</p>
 >>>>>>> 84c4bc5c9476597ccf92e687765acd65f04f50d4
 @else
 <h3><a href="/post/{{$post->id}}">{{$post->Title_ar}}</a></h3>
 <p class="nomargin pt5">{{$post->Auther_ar}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
-<p class="nomargin pb20">{!!str_limit($post->Body_ar, 200)!!}</p>
+<p class="nomargin pb20">{!!Str::limit($post->Body_ar, 200)!!}</p>
 @endif
 
 
