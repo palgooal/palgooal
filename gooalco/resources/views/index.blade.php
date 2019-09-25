@@ -62,9 +62,11 @@ Find your Domain: <input type="text" name="query" size="20" />
 <section class="pt80" id="about">
 <div class="container">
 <div class="col-md-6">
-<h2 class="ptb20">Welcome to Cloudify</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus felis sit amet eros varius vestibulum. Aliquam in euismod leo. Proin ac leo est. Ut eu bibendum velit, vitae tristique ipsum. In scelerisque elit ac ipsum ullamcorper porttitor. Phasellus vitae felis eu arcu iaculis posuere vitae eget diam. Nullam dictum sollicitudin elementum.</p>
-<a href="#" class="btn btn-border btn-blue">{{__('home.Lear More')}}</a>
+<h2 class="ptb20">{{__('home.Welcome to Palgooal')}}</h2>
+<h4>{{__('home.Palgooal guarantees a return of funds within 30 days')}}</h4>
+<br>
+<p>{{__('home.It is an Arabic site for shops and websites for life. All company websites are easy to use and efficient')}}</p>
+{{-- <a href="#" class="btn btn-border btn-blue">{{__('home.Lear More')}}</a> --}}
 </div>
 
 <div class="col-md-6 about-image">
@@ -85,25 +87,25 @@ Find your Domain: <input type="text" name="query" size="20" />
 <section id="services">
 <div class="container ptb80">
 <div class="section-title">
-<h2>Services</h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+<h2>{{__('home.Why choose Palgooal')}}</h2>
+<p>{{__('home.Every type of company services we offer is optimized with unique performance improvements!')}}</p>
 </div>
 
 <div class="row nomargin">
 <div class="col-sm-4 col-xs-12 service text-center pt40">
 <img src="./images/icons/cloud-server.svg" alt="">
-<h3 class="ptb20">SSD Cloud Hosting</h3>
-<p>Experience up to 2X faster load times due to low-density servers, premium hardware, and multiple caching layers.</p>
+<h3 class="ptb20">{{__('home.SSD Cloud Hosting')}}</h3>
+<p>{{__('home.Experience up to 2X faster load times due to low-density servers, premium hardware, and multiple caching layers')}}</p>
 </div>
 <div class="col-sm-4 col-xs-12 service text-center pt40">
 <img src="./images/icons/locked.svg" alt="">
-<h3 class="ptb20">Secured Server</h3>
-<p>The security of your website is our top priority. </p>
+<h3 class="ptb20">{{__('home.Safe and fortified')}}</h3>
+<p>{{__('home.The security of your website is our top priority.')}} </p>
 </div>
 <div class="col-sm-4 col-xs-12 service text-center pt40">
 <img src="./images/icons/transfer.svg" alt="">
-<h3 class="ptb20">Free Domain Transfer</h3>
-<p>Our dedicated Team is standing by to transfer your existing content from your prior host to our platform.</p>
+<h3 class="ptb20">{{__('home.Transfer your site for free')}}</h3>
+<p>{{__('home.Our dedicated Team is standing by to transfer your existing content from your prior host to our platform.')}}</p>
 </div>
 </div>
 
@@ -111,48 +113,28 @@ Find your Domain: <input type="text" name="query" size="20" />
 <div class="row nomargin pt40">
 <div class="col-sm-4 col-xs-12 service text-center pt40">
 <img src="./images/icons/chat1.svg" alt="">
-<h3 class="ptb20">Live Chat Support</h3>
-<p>Our support team will be at your service 24/7 helping and guiding you via live chat. </p>
+<h3 class="ptb20">{{__('home.Live Chat Support')}}</h3>
+<p>{{__('home.Our support team will be at your service 24/7 helping and guiding you via live chat.')}} </p>
 </div>
 <div class="col-sm-4 col-xs-12 service text-center pt40">
 <img src="./images/icons/customer-service.svg" alt="">
-<h3 class="ptb20">Technical Support</h3>
-<p>Our support staff is available 24/7/365 to assist you.</p>
+<h3 class="ptb20">{{__('home.Technical Support')}}</h3>
+<p>{{__('home.Our support staff is available 24/7 to assist you.')}}</p>
 </div>
 <div class="col-sm-4 col-xs-12 service text-center pt40">
 <img src="./images/icons/optimization.svg" alt="">
-<h3 class="ptb20">Free Website Optimization</h3>
-<p>Cloudify will help you rank your website higher.</p>
+<h3 class="ptb20">{{__('home.Flexible and high quality')}}</h3>
+<p>{{__('home.Get a flexible and responsive site that is responsive to all screens')}}</p>
 </div>
 </div>
 
 </div>
-
-<div class="container-fluid ptb80 info">
-<div class="container">
-<div class="col-md-6 info-text">
-<h3 class="pb20">Easy to Customize</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<ul>
-<li>Super clean code.</li>
-<li>Well commented.</li>
-<li>Documentation included.</li>
-</ul>
-</div>
-<div class="col-md-4 col-md-offset-2 info-image">
-<img src="./images/icons/custom.svg" alt="">
-</div>
-</div>
-</div>
-
 
 <div class="container-fluid ptb80 info" id="secondary">
 <div class="container">
-<div class="col-md-4 info-image">
-<img src="./images/icons/pixel-perfect.svg" alt="">
-</div>
+
 <div class="col-md-offset-2 col-md-6 info-text">
-<h3 class="pb20">Pixel Perfect Design</h3>
+<h3 class="pb20">Our main service</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 <ul>
 <li>Unique & modern design.</li>
@@ -162,395 +144,91 @@ Find your Domain: <input type="text" name="query" size="20" />
 </div>
 </div>
 </div>
-
-
-<div class="container-fluid ptb80 info">
-<div class="container">
-<div class="col-md-6 info-text">
-<h3 class="pb20">Fully Responsive</h3>
-<p>Cloudify adapts and provides an optimal experience on any device it’s being accessed from. This means that your website should look and function flawlessly for a user on a desktop computer, laptop, tablet, or smartphone. </p>
-<ul>
-<li>Pixel Perfect</li>
-<li>Svg graphics.</li>
-<li>Retina ready.</li>
-</ul>
-</div>
-<div class="col-md-4 col-md-offset-2 info-image">
-<img src="./images/icons/responsive-design.svg" alt="">
-</div>
-</div>
-</div>
-
 </section>
-
-
-<section class="ptb40" id="subscribe">
-<div class="container subscribe-form">
-<div class="col-md-3 col-sm-12">
-<h2 class="uppercase">Subscribe<small class="capitalize">Newsletter</small></h2>
-</div>
-<div class="col-md-9 col-sm-12">
-
-<form action="#" class="form-inline mailchimp" id="subscribtion-form-not">
-
-<div id="subscribe-result"></div>
-
-<div class="form-group">
-<div class="input-group">
-<input type="email" name="email" class="form-control" placeholder="Email Address">
-<button type="submit" class="btn btn-border btn-blue">Submit</button>
-</div>
-</div>
-</form>
-
-</div>
-
-<div class="clouds">
-<img src="./images/clouds/cloud1.svg" class="cloud1" alt="">
-<img src="./images/clouds/cloud2.svg" class="cloud2" alt="">
-</div>
-
-</div>
-</section>
-
-
-<section id="team">
-<div class="container ptb80">
-<div class="section-title">
-<h2> Meet The Team </h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-</div>
-
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class="member">
-<div class="member-details">
-<img src="./images/team/team1.jpg" class="img-responsive" alt="">
-<div class="overlay">
-<div class="member-info-overlay">
-<h4>John Doe</h4>
-<p>SEO Expert</p>
-</div>
-<div class="member-social">
-<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-</div>
-</div>
-</div>
-<div class="member-info">
-<h4>John Doe</h4>
-<p>SEO Expert</p>
-</div>
-</div>
-</div>
-
-
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class="member">
-<div class="member-details">
-<img src="./images/team/team2.jpg" class="img-responsive" alt="">
-<div class="overlay">
-<div class="member-info-overlay">
-<h4>John Doe</h4>
-<p>Web Developer</p>
-</div>
-<div class="member-social">
-<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-</div>
-</div>
-</div>
-<div class="member-info">
-<h4>John Doe</h4>
-<p>Web Developer</p>
-</div>
-</div>
-</div>
-
-
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class="member">
-<div class="member-details">
-<img src="./images/team/team3.jpg" class="img-responsive" alt="">
-<div class="overlay">
-<div class="member-info-overlay">
-<h4>John Doe</h4>
-<p>Graphic Designer</p>
-</div>
-<div class="member-social">
-<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-</div>
-</div>
-</div>
-<div class="member-info">
-<h4>John Doe</h4>
-<p>Graphic Designer</p>
-</div>
-</div>
-</div>
-
-</div>
-</section>
-
-
-<section id="pricing-table">
-<div class="container ptb80">
-<div class="section-title">
-<h2>Pricing Plan</h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-</div>
-
-<div class="pricing-table1">
-
-<div class="col-sm-3 pricing-plan" id="starter">
-
-<div class="row price">
-<div>
-<span class="currency">$</span>
-<span class="amount">19</span>
-<span class="month">per month</span>
-</div>
-</div>
-
-<div class="plan-type">
-<span>Starter</span>
-</div>
-
-<ul class="nav">
-<li>3 Email Account</li>
-<li>1 Website Layout</li>
-<li>5GB Space</li>
-<li><i class="fa fa-times"></i></li>
-<li><i class="fa fa-times"></i></li>
-<li><i class="fa fa-times"></i></li>
-</ul>
-<a href="#" class="btn btn-border btn-blue">purchase</a>
-
-</div>
-
-
-<div class="col-sm-3 pricing-plan" id="basic">
-
-<div class="row price">
-<div>
-<span class="currency">$</span>
-<span class="amount">39</span>
-<span class="month">per month</span>
-</div>
-</div>
-
-<div class="plan-type">
-<span>basic</span>
-</div>
-
-<ul class="nav">
-<li>10 Email Account</li>
-<li>3 Website Layout</li>
-<li>10GB Space</li>
-<li><i class="fa fa-check"></i></li>
-<li><i class="fa fa-times"></i></li>
-<li><i class="fa fa-times"></i></li>
-</ul>
-<a href="#" class="btn btn-border btn-blue">purchase</a>
-
-</div>
-
-
-<div class="col-sm-3 pricing-plan" id="agency">
-
-<div class="row price">
-<div>
-<span class="currency">$</span>
-<span class="amount">69</span>
-<span class="month">per month</span>
-</div>
-</div>
-
-<div class="plan-type">
-<span>agency</span>
-</div>
-
-<ul class="nav">
-<li>100 Email Account</li>
-<li>10 Website Layout</li>
-<li>100GB Space</li>
-<li><i class="fa fa-check"></i></li>
-<li><i class="fa fa-check"></i></li>
-<li><i class="fa fa-times"></i></li>
-</ul>
-<a href="#" class="btn btn-border btn-blue">purchase</a>
-
-</div>
-
-
-<div class="col-sm-3 pricing-plan" id="enterprise">
-
-<div class="row price">
-<div>
-<span class="currency">$</span>
-<span class="amount">99</span>
-<span class="month">per month</span>
-</div>
-</div>
-
-<div class="plan-type">
-<span>enterprise</span>
-</div>
-
-<ul class="nav">
-<li><strong>Unlimited</strong></li>
-<li>100 Website Layout</li>
-<li><strong>Unlimited Space</strong></li>
-<li><i class="fa fa-check"></i></li>
-<li><i class="fa fa-check"></i></li>
- <li><i class="fa fa-check"></i></li>
-</ul>
-<a href="#" class="btn btn-border btn-blue">purchase</a>
-
-</div>
-
-</div>
-
-</div>
-</section>
-
-
-<section class="ptb40" id="countup">
-<div class="container-fluid">
-
-<div class="col-md-3 col-sm-3 col-xs-12">
-<img src="./images/icons/award.svg" alt="">
-<span class="counter" data-from="0" data-to="65"></span>
-<h3>Awards</h3>
-</div>
-
-
-<div class="col-md-3 col-sm-3 col-xs-12">
-<img src="./images/icons/happy.svg" alt="">
-<span class="counter" data-from="0" data-to="750"></span>
-<h3>Clients</h3>
-</div>
-
-
-<div class="col-md-3 col-sm-3 col-xs-12">
-<img src="./images/icons/site.svg" alt="">
-<span class="counter" data-from="0" data-to="1425"></span>
-<h3>Hosted Websites</h3>
-</div>
-
-
-<div class="col-md-3 col-sm-3 col-xs-12">
-<img src="./images/icons/clock.svg" alt="">
-<span class="counter" data-from="0" data-to="2425"></span>
-<h3>Work Hours</h3>
-</div>
-
-</div>
-</section>
-
-
-<section class="pt80 pb40" id="testimonials">
-<div class="container">
-<div class="section-title">
-<h2> Testimonials </h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-</div>
-
-<div class="owl-carousel testimonial">
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-</div>
-
-</div>
-</section>
+<section class="portfolio pt80 pb40">
+    <div class="container nopadding">
+    <div class="row">
+        <div class="section-title">
+            <h2>{{__('home.Of our business')}}</h2>
+            </div>
+    <ul class="list-inline text-center uppercase" id="portfolio-sorting">
+    <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
+    <li><a href="#0" data-filter=".portfolio-cat1">servers</a></li>
+    <li><a href="#0" data-filter=".portfolio-cat2">shared hosting</a></li>
+    <li><a href="#0" data-filter=".portfolio-cat3">domains</a></li>
+    <li><a href="#0" data-filter=".portfolio-cat4">hosted websites</a></li>
+    </ul>
+    </div>
+    
+    <div class="row portfolio-grid mt40">
+    
+    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
+    <figure>
+    <a href="images/portfolio/image1.jpg" class="hover-zoom">
+    <img src="images/portfolio/image1.jpg" class="img-responsive" alt="">
+    </a>
+    </figure>
+    </div>
+    
+    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
+    <figure>
+    <a href="images/portfolio/image2.jpg" class="hover-zoom">
+    <img src="images/portfolio/image2.jpg" class="img-responsive" alt="">
+    </a>
+    </figure>
+    </div>
+    
+    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
+    <figure>
+    <a href="images/portfolio/image3.jpg" class="hover-zoom">
+    <img src="images/portfolio/image3.jpg" class="img-responsive" alt="">
+    </a>
+    </figure>
+    </div>
+    
+    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
+    <figure>
+    <a href="images/portfolio/image4.jpg" class="hover-zoom">
+    <img src="images/portfolio/image4.jpg" class="img-responsive" alt="">
+    </a>
+    </figure>
+    </div>
+    
+    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
+    <figure>
+    <a href="images/portfolio/image5.jpg" class="hover-zoom">
+    <img src="images/portfolio/image5.jpg" class="img-responsive" alt="">
+    </a>
+    </figure>
+    </div>
+    
+    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
+    <figure>
+    <a href="images/portfolio/image6.jpg" class="hover-zoom">
+    <img src="images/portfolio/image6.jpg" class="img-responsive" alt="">
+    </a>
+     </figure>
+    </div>
+    
+    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
+    <figure>
+    <a href="images/portfolio/image7.jpg" class="hover-zoom">
+    <img src="images/portfolio/image7.jpg" class="img-responsive" alt="">
+    </a>
+    </figure>
+    </div>
+    
+    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
+    <figure>
+    <a href="images/portfolio/image8.jpg" class="hover-zoom">
+    <img src="images/portfolio/image8.jpg" class="img-responsive" alt="">
+    </a>
+    </figure>
+    </div>
+    </div>
+    
+    </div>
+    </section>
 
 
 <section class="ptb80" id="latest-news">
@@ -577,11 +255,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 <p class="nomargin pt5">{{$post->Auther_en}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
-<<<<<<< HEAD
-<p class="nomargin pb20">{{$post->Body_en}} </p>
-=======
 <p class="nomargin pb20">{!!str_limit($post->Body_en, 200)!!}</p>
->>>>>>> 84c4bc5c9476597ccf92e687765acd65f04f50d4
 @else
 <h3><a href="/post/{{$post->id}}">{{$post->Title_ar}}</a></h3>
 <p class="nomargin pt5">{{$post->Auther_ar}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
@@ -605,41 +279,6 @@ Find your Domain: <input type="text" name="query" size="20" />
 </div>
 </div>
 </section>
-
-
-<section class="ptb40" id="partners">
-<div class="container">
-<div class="owl-carousel partners-slider">
-<div class="item">
-<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
-</div>
-<div class="item">
-<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
-</div>
-<div class="item">
-<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
-</div>
-<div class="item">
-<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
-</div>
-<div class="item">
-<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
-</div>
-<div class="item">
-<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
-</div>
-<div class="item">
-<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
-</div>
-<div class="item">
-<a href="#"><img src="./images/partners/envato-logo.svg" alt="image title"></a>
-</div>
-</div>
-</div>
-</section>
-
-
-
 
 <div class="live-chat collapsed">
 

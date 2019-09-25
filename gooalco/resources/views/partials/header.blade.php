@@ -39,10 +39,6 @@
                             </div>
                             </div>
                             </div>
-                
-         
-
-
     
     <header class="fixed">
         <nav class="navbar navbar-default navbar-static-top fluid_header centered transparent">
