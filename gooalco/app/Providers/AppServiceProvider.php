@@ -29,8 +29,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         view::composer( 'menus', 'partials.header', 'App\Http\ViewComposers\HeaderComposer');
-        view::share('menus' , Menu::get());
-        view::share('options' , Option::get());
+       // view::share('menus' , Menu::get());
+       // view::share('options' , Option::get());
 
     }
 }
