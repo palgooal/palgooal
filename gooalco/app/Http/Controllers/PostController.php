@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\modals\Post;
+use Str;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -15,6 +16,7 @@ class PostController extends Controller
      */
     public function index()
     {
+        
         return view ('admin.posts.news')->with("posts", Post::get());
     }
 

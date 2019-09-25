@@ -1,45 +1,49 @@
-<div class="loader">
-        <div class="spinner">
-        <div class="cloud1"><img src="images/clouds/cloud-blue.svg" alt=""></div>
-        <div class="cloud2"><img src="images/clouds/cloud-green.svg" alt=""></div>
-        </div>
-        </div>
-<div class="top-header">
-    <div class="container">
-    <div class="row">
+{{-- <div class="loader">
+                <div class="spinner">
+                <div class="cloud1"><img src="images/clouds/cloud-blue.svg" alt=""></div>
+                <div class="cloud2"><img src="images/clouds/cloud-green.svg" alt=""></div>
+                </div>
+                </div> --}}
+                <div class="top-header">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <ul class="social list-inline ptb10">
+                            <li><a href="tel:12345678912">+970-598-663</a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                            </div>
+                            
+                        
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                        
+                            <ul class="top-button ptb10">
+                            <li>
+                            <a href="#" class="btn btn-small btn-border btn-green customer-support"><i class="fa fa-comments"></i>{{__('home.live chat')}}</a>
+                            </li>
+                            <li class="login">
+                            <a id="modal_trigger" class="btn btn-small btn-border-rev btn-blue" href="#"><i class="fa fa-user"></i>{{__('home.Client Area')}}</a>
+                            </li>
+                            <li>
+                                    <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/ar"><i class="fa fa-user"></i>عربي</a>
+                                    </li>
+                                    <li>
+                                    <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/en"><i class="fa fa-user"></i>en</a>
+                                    </li>
+                            </ul>
+                        
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                
+         
 
-    <div class="col-md-6 col-sm-6 col-xs-12">
-    <ul class="social list-inline ptb10">
-    <li><a href="tel:12345678912">+970-598-663</a></li>
-    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-    </ul>
-    </div>
 
-    <div class="col-md-6 col-sm-6 col-xs-12">
-
-    <ul class="top-button ptb10">
-    <li>
-    <a href="#" class="btn btn-small btn-border btn-green customer-support"><i class="fa fa-comments"></i>{{__('home.live chat')}}</a>
-    </li>
-    <li class="login">
-    <a id="modal_trigger" class="btn btn-small btn-border-rev btn-blue" href="#"><i class="fa fa-user"></i>{{__('home.Client Area')}}</a>
-    </li>
-    <li>
-            <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/ar"><i class="fa fa-user"></i>عربي</a>
-            </li>
-            <li>
-            <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/en"><i class="fa fa-user"></i>en</a>
-            </li>
-    </ul>
-
-    </div>
-    </div>
-    </div>
-    </div>
-
+    
     <header class="fixed">
         <nav class="navbar navbar-default navbar-static-top fluid_header centered transparent">
         <div class="container">
@@ -92,3 +96,4 @@
         </div>
         </nav>
         </header>
+        

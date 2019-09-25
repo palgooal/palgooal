@@ -4,54 +4,59 @@
 
 <section class="page-title ptb50 overlay-black">
     <div class="container">
-    <h2 class="uppercase">Blog post</h2>
-    <div class="breadcrumbs pt10">
-    <h5><a href="/home">{{__('home.Home')}}</a> / {{__('home.Blog')}} / {{$post->Title}}</h5>
+        @if (App::isLocale('en'))
+        <h2 class="uppercase">{{$post->Title_en}}</h2>
+        <div class="breadcrumbs pt10">        
+        <h5><a href="/">{{__('home.Home')}}</a> / <a href="/g">{{__('home.Blog')}}</a> / {{$post->Title_en}}</h5>
     </div>
     </div>
-    </section>
-    
+</section>
+        @else
+        <h2 class="uppercase">{{$post->Title_ar}}</h2>   
+        <div class="breadcrumbs pt10"> 
+                <h5><a href="/">{{__('home.Home')}}</a> / {{__('home.Blog')}} / {{$post->Title_ar}}</h5>    
+            </div>
+        </div>
+        </section>
+        @endif
     
     <section class="blog-post pt80 pb60">
     <div class="container">
-    
     <div class="col-md-12 post-title">
-    <h2 class="uppercase">{{$post->Title}}</h2>
-    
-    <ul class="post-detail list-inline pt10">
-    <li><i class="fa fa-user"></i> {{$post->Auther}}</li>
-    <li><i class="fa fa-clock-o"></i> 4:30pm</li>
-    <li><i class="fa fa-comments-o"></i> 12 Comments</li>
-    </ul>
+        @if (App::isLocale('en'))
+        <h2 class="uppercase">{{$post->Title_en}}</h2>
+        <ul class="post-detail list-inline pt10">
+                <li><i class="fa fa-user"></i> {{$post->Auther_en}}</li>
+                <li><i class="fa fa-clock-o"></i>{{$post->updated_at}}</li>
+                {{-- <li><i class="fa fa-comments-o"></i> 12 Comments</li> --}}
+                </ul>
+        @else
+        <h2 class="uppercase">{{$post->Title_ar}}</h2>
+        <ul class="post-detail list-inline pt10">
+                <li><i class="fa fa-user"></i> {{$post->Auther_ar}}</li>
+                <li><i class="fa fa-clock-o"></i>{{$post->updated_at}}</li>
+                {{-- <li><i class="fa fa-comments-o"></i> 12 Comments</li> --}}
+                </ul>
+            
+        @endif
+        <br>
     </div>
     
+    <img src="{{asset('/images/'.$post->image)}}" class="img-responsive" alt="" >
     
-    <div class="col-md-12 post-content mt20">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <br>
+    @if (App::isLocale('en'))
+    <p>{!!$post->Body_en!!}</p>
+    @else
+    <p>{!!$post->Body_ar!!}</p>
+    @endif
     
-    <div class="post-img nopadding mtb40">
-    <img src="images/blog/blog4.jpg" class="img-responsive" alt="">
-    </div>
-    
-    <h3 class="uppercase pb20">Subtitle</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-     
-    <div class="col-md-12 post-quote ptb20">
-    <blockquote>Social media is not about the exploitation of technology but service to community.</blockquote>
-    </div>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    
+       
     <div class="share mt30">
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//themeforest.net/item/cloudify-one-page-web-hosting-html-template/18398632" target="_blank" class="share-icon fb"><i class="fa fa-facebook"></i></a>
     <a href="https://twitter.com/home?status=https%3A//themeforest.net/item/cloudify-one-page-web-hosting-html-template/18398632" target="_blank" class="share-icon tw"><i class="fa fa-twitter"></i></a>
     <a href="https://plus.google.com/share?url=https%3A//themeforest.net/item/cloudify-one-page-web-hosting-html-template/18398632" target="_blank" class="share-icon gp"><i class="fa fa-google-plus"></i></a>
-    <span class="uppercase">share <i class="fa fa-share-alt"></i></span>
+    <span class="uppercase">{{__('home.share')}} <i class="fa fa-share-alt"></i></span>
     </div>
     </div>
     
@@ -59,7 +64,7 @@
     </section>
     
     
-    <section class="blog-comments pb80">
+    {{-- <section class="blog-comments pb80">
     <div class="container main-content">
     <div class="col-md-12">
     <h3 class="uppercase pb40">4 comments</h3>
@@ -229,65 +234,7 @@
     </div>
     </div>
     </section>
+     --}}
     
-    
-    <footer>
-    
-    <div class="top-footer">
-    <div class="container">
-    
-    <div class="row ptb60 footer-info">
-    
-    <div class="col-sm-3 about">
-    <a href="index.html"><img src="images/logo.svg" alt=""></a>
-    <p class="pt30">Lorem ipsum dolor sit amet, ectetur adipiscing elit.viverra tellus. Vivamus finibus, quam vitae pulvinar euismod, Lorem ipsum dolor sit amet, ectetur adipiscing elit.</p>
-    </div>
-    
-    <div class="col-sm-3">
-    <h4>Important Links</h4>
-    <ul class="footer-links nopadding mt30">
-    <li><a href="#">Privacy & Policy</a></li>
-    <li><a href="#">Terms & Conditions</a></li>
-    <li><a href="#">VPS Service</a></li>
-    <li><a href="#">Support</a></li>
-    </ul>
-    </div>
-    
-    <div class="col-sm-3">
-    <h4>Products</h4>
-    <ul class="footer-links nopadding mt30">
-    <li><a href="#">Webhosting</a></li>
-    <li><a href="#">Reseler Hosting</a></li>
-    <li><a href="#">VPS Hosting</a></li>
-    <li><a href="#">Wordpress Hosting</a></li>
-    </ul>
-    </div>
-    
-    <div class="col-sm-3">
-    <h4>Contact Us</h4>
-    <ul class="footer-links nopadding mt30">
-    <li><i class="fa fa-phone"></i>123-456-7890</li>
-    <li><i class="fa fa-envelope"></i><a href="http://cariera.co/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ee87808881ae8d82819b8a878897c08d8183">[email&#160;protected]</a></li>
-    <li><i class="fa fa-map-marker"></i>London, UK</li>
-    </ul>
-    <div class="payment mt30">
-    <h4>Payment</h4>
-    <ul class="list-inline nopadding mt20">
-    <li><i class="fa fa-cc-amex"></i></li>
-    <li><i class="fa fa-cc-paypal"></i></li>
-    <li><i class="fa fa-cc-stripe"></i></li>
-    <li><i class="fa fa-cc-visa"></i></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    
-    </div>
-    </div>
-    
-    
-    <div class="copyright ptb20 text-center">
-    Copyright &copy; cloudify. All Rights Reserved
-    </div>
-
+   
     @endsection
