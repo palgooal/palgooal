@@ -85,6 +85,10 @@
                         <label>تحميل الصور</label>
                         <input class="form-control spinner" type="file" placeholder="تحميل الصور" name="image" id="image">
                     </div>
+                    <p> بأي لغة تريد نشر الخبر </p>
+                    <label class="radio-inline"><input type="radio" name="optradio" value="ar">العربية</label>
+                    <label class="radio-inline"><input type="radio" name="optradio"value="en">الانجليزية</label>
+                    <label class="radio-inline"><input type="radio" name="optradio"value="both">كليهما</label>
 
 
 

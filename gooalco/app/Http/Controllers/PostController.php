@@ -16,7 +16,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        
+
         return view ('admin.posts.news')->with("posts", Post::get());
     }
 
@@ -52,6 +52,8 @@ class PostController extends Controller
         $posts->Title_en =$request->Title_en;
         $posts->Auther_en =$request->Auther_en;
         $posts->Body_en =$request->Body_en;
+        $posts->optradio =$request->optradio;
+
 
         $posts->save();
 

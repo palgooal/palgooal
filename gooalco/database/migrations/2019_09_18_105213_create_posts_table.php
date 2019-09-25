@@ -22,7 +22,9 @@ class CreatePostsTable extends Migration
             $table->string('Auther_en')->nullable();
             $table->text('Body_en')->nullable();
             $table->string('image')->nullable();
-            
+            $table->string('optradio');
+
+
             $table->timestamps();
         });
     }
