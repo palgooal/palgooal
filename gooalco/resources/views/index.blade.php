@@ -561,7 +561,9 @@ Find your Domain: <input type="text" name="query" size="20" />
 <div class="col-md-12">
 
 <div class="row news-content pt30">
+
     @foreach ($posts as $post)
+
 
 
 <div class="col-md-4">
@@ -575,7 +577,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 <p class="nomargin pt5">{{$post->Auther_en}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
-<p class="nomargin pb20">{{$post->Body_en}}</p>
+<p class="nomargin pb20">{{$post->Body_en}} </p>
 @else
 <h3><a href="blog-post.html">{{$post->Title_ar}}</a></h3>
 <p class="nomargin pt5">{{$post->Auther_ar}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>

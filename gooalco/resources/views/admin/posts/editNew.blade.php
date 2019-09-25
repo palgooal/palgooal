@@ -34,73 +34,90 @@
       @csrf
       <div class="form-body">
 
+
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#ar">اضافة خبر باللغة العربية</a></li>
+          <li><a data-toggle="tab" href="#en">اضافة خبر باللغة الانجليزية</a></li>
+
+        </ul>
+
+        <div class="tab-content">
+          <div id="ar" class="tab-pane fade in active">
+            <h3>اضافة خبر باللغة العربية</h3>
             <div class="form-group">
-                <label>عنوان التدوينة باللغة العربية</label>
-            <input class="form-control spinner" type="text" placeholder="العنوان باللغة العربية" name="Title_ar" value="{{$post->Title_ar}}" id="Title">
+                <label>عنوان التدوينة</label>
+                <input class="form-control spinner" type="text" placeholder="العنوان" name="Title_ar" id="Title">
             </div>
             <div class="form-group">
-                    <label>عنوان التدوينة باللغة الانجليزية</label>
-                    <input class="form-control spinner" type="text" placeholder="العنوان باللغة الانجليزية" name="Title_en" value="{{$post->Title_en}}" id="Title">
-                </div>
-            <div class="form-group">
-                <label>نص التدوينة باللغة العربية</label>
-                <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا باللغة العربية ... ">{{$post->Body_ar}}</textarea>
+                <label>نص التدوينة</label>
+                <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا ... "></textarea>
 
             </div>
             <div class="form-group">
-                    <label>نص التدوينة باللغة الانجليزية</label>
-                    <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا باللغة الانجليزية ... ">{{$post->Body_en}}</textarea>
+                <label>اسم الكاتب</label>
+                <input class="form-control spinner" type="text" placeholder="الكاتب" name="Auther_ar" id="Auther">
+            </div>
+          </div>
+
+          <div id="en" class="tab-pane fade">
+            <h3>Add post in Engilsh</h3>
+
+
+
+
+            <div class="form-group">
+                    <label>Add title</label>
+                    <input class="form-control spinner" type="text" placeholder="Add title of the post" name="Title_en" id="Title">
+                </div>
+
+            <div class="form-group">
+                    <label>Add body of the post</label>
+                    <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control summernote" placeholder=" Add body of the post "></textarea>
 
                 </div>
-                <div class="form-group">
-                        <label>اسم الكاتب بالغة العربية</label>
-                        <input class="form-control spinner" type="text" placeholder="الكاتب باللغة العربية" name="Auther_ar" value="{{$post->Auther_ar}}" id="Auther">
-                    </div>
+
                     <div class="form-group">
-                            <label>اسم الكاتب بالغة الانجليزية</label>
-                            <input class="form-control spinner" type="text" placeholder="الكاتب باللغة الانجليزية" name="Auther_en"value="{{$post->Auther_en}}" id="Auther">
+                            <label>Auther</label>
+                            <input class="form-control spinner" type="text" placeholder="Auther  " name="Auther_en" id="Auther">
                         </div>
-
-            </div>
-            <div class="form-group">
-                <img src="{{asset ('/images/'.$post->image)}}" class="img-rounded img-thumbnail"  alt=""  width="304" height="236">
-                <br>
-                <label>تحميل الصورة</label>
-            <input class="form-control spinner" type="file" placeholder=" Uploed image" name="image" id="image" value="{{$post->image}}">
-            </div>
-            {{-- <div class="form-group">
-                <label for="catagory_id" class="col-md-2 control-label">التصنيف</label>
-
-                {{-- <div class="col-md-8">
-                  <select
-                    class="form-control"
-                    required="required"
-                    id="catagory_id"
-                    name="catagory_id[]"
-                    multiple
-                    >
-                    @foreach ($categorys as $category)
-                    <option value="{{$category->id}}"
-                            @foreach ($post->categories as $categoryp)
-                                {{$categoryp->id == $category->id ? "selected" : "" }}
-                            @endforeach
-
-                        >{{$category->title}}</option>
-                    @endforeach
-
-                    </select> --}}
-
-                  {{-- <span class="help-block">
-                    <strong></strong>
-                  </span>
+                    </div>
                 </div>
-              </div>  --}}
-        </div>
-        <div class="form-actions">
-            <button type="submit" class="btn blue">تعديل</button>
-            <a href="/admin/posts" type="button" class="btn default">الغاء</a>
-        </div>
 
+            <div class="form-group">
+                <label>تحميل الصور</label>
+                <input class="form-control spinner" type="file" placeholder="تحميل الصور" name="image" id="image">
+            </div>
+
+
+    {{-- <div class="form-group">
+            <label for="catagory_id" class="col-md-2 control-label"
+              >category</label
+            >
+
+            <div class="col-md-8">
+              <select
+                class="form-control"
+                required="required"
+                id="catagory_id"
+                name="catagory_id[]"
+                multiple
+                >
+
+                @foreach($categories as $categor)
+                <option value="{{$categor->id}}">{{$categor->title}}</option>
+                @endforeach
+                </select>
+
+              <span class="help-block">
+                <strong></strong>
+              </span>
+            </div>
+          </div> --}}
+<div class="form-actions">
+    <button type="submit" class="btn blue">تعديل</button>
+    <a href="/admin/posts" class="btn default">الغاء</a>
+</div>
+</div>
     </form>
 
 

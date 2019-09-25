@@ -30,7 +30,7 @@
       >
       @csrf
         <div class="form-body">
-            <div class="container">
+
 
                 <ul class="nav nav-tabs">
                   <li class="active"><a data-toggle="tab" href="#ar">اضافة خبر باللغة العربية</a></li>
@@ -79,11 +79,13 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
+
+
                     <div class="form-group">
                         <label>تحميل الصور</label>
                         <input class="form-control spinner" type="file" placeholder="تحميل الصور" name="image" id="image">
                     </div>
+
 
 
             {{-- <div class="form-group">
@@ -114,7 +116,7 @@
             <button type="submit" class="btn blue">اضافة</button>
             <a href="/admin/posts" class="btn default">الغاء</a>
         </div>
-
+        </div>
     </form>
 
 

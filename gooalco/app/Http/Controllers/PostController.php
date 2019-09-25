@@ -50,6 +50,7 @@ class PostController extends Controller
         $posts->Title_en =$request->Title_en;
         $posts->Auther_en =$request->Auther_en;
         $posts->Body_en =$request->Body_en;
+
         $posts->save();
 
         return redirect('/admin/posts');
@@ -101,6 +102,7 @@ class PostController extends Controller
         $posts->Title_en =$request->Title_en;
         $posts->Auther_en =$request->Auther_en;
         $posts->Body_en =$request->Body_en;
+
         $posts->save();
         return redirect('/admin/posts');
     }
