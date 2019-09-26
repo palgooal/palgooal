@@ -166,32 +166,12 @@ Find your Domain: <input type="text" name="query" size="20" />
 
     <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
     <figure>
-    <a href="{{$work->image}}" class="hover-zoom">
-    <img src="{{$work->image}}" class="img-responsive" alt="">
+    <a href="{{asset('/images/'.$work->image)}}" class="hover-zoom">
+    <img src="{{asset('/images/'.$work->image)}}" class="img-responsive" alt="">
     </a>
     </figure>
     </div>
     @endforeach
-
-
-
-
-
-
-
-
-
-
-
-    {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
-    <figure>
-    <a href="images/portfolio/image8.jpg" class="hover-zoom">
-    <img src="images/portfolio/image8.jpg" class="img-responsive" alt="">
-    </a>
-    </figure>
-    </div>
-    </div> --}}
-
     </div>
     </section>
 
