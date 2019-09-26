@@ -11,13 +11,13 @@
           <div class="portlet-title">
             <div class="caption font-red-sunglo">
               <i class="icon-settings font-red-sunglo"></i>
-              <span class="caption-subject bold uppercase">اضافة عرض </span>
+              <span class="caption-subject bold uppercase">اضافة  </span>
             </div>
           </div>
           <div class="portlet-body form">
             <form
               method="POST"
-              action="/admin/works"
+              action="/admin/categorys"
               enctype="multipart/form-data"
               accept-charset="UTF-8"
               class="form-horizontal"
@@ -27,60 +27,16 @@
               <div class="form-body">
 
                     <div class="form-group">
-                            <label>اسم الموقع</label>
+                            <label>اسم التصنيف</label>
                             <input
                               class="form-control spinner"
                               type="text"
-                              placeholder="اسم الموقع"
+                              placeholder="اسم التصنيف"
                               name="name"
                               id="name"
                             />
                           </div>
-                          <div class="form-group">
-                            <label>رابط الموقع</label>
-                            <input
-                              class="form-control spinner"
-                              type="text"
-                              placeholder="رابط الموقع"
-                              name="url"
-                              id="url"
-                            />
-                          </div>
-                          <div class="form-group">
-                            <label>التصنيفات </label>
 
-                          <div >
-                            <select
-                              class="form-control"
-
-                              id="category_id"
-                              name="category_id[]"
-                              multiple
-                              @foreach ($categorys as $category)
-
-
-                          ><option value="{{$category->id}}">{{$category->name}}</option>
-                              @endforeach
-                             </select
-                            >
-
-                            <span class="help-block">
-                              <strong></strong>
-                            </span>
-                          </div></div>
-
-
-                          <div class="form-group">
-                              <label>صورة الموقع</label>
-                              <input
-                                class="form-control spinner"
-                                type="file"
-                                placeholder="صورة الموقع"
-                                alt="defult"
-                                name="image"
-                                id="image"
-                                />
-                          </div>
 
 
 
@@ -115,9 +71,8 @@
                 <thead>
                   <tr>
 
-                        <td> اسم الموقع</td>
-                        <td>رابط الموقع</td>
-                        <td>صورة الموقع  </td>
+                        <td> اسم التصنيف</td>
+
 
                         <td>تعديل</td>
                         <td>حذف</td>
@@ -126,13 +81,12 @@
                   </tr>
                 </thead>
                 <tbody>
-                    @foreach ($works as $work)
+                    @foreach ($categorys as $category)
 
 
                   <tr>
-                    <td>{{$work->name}}</td>
-                  <td>{{$work->url}}</td>
-                  <td>{{$work->image}}</td>
+                    <td>{{$category->name}}</td>
+
 
 
 
@@ -140,7 +94,7 @@
 
                     <td>
                       <a
-                        href="/admin/works/{{$work->id}}/edit"
+                        href="/admin/categorys/{{$category->id}}/edit"
                         class="btn btn-primary"
                         >تعديل</a
                       >
@@ -148,7 +102,7 @@
                     <td>
                       <form
                         style="display: inline"
-                    action="/admin/works/{{$work->id}}"
+                    action="/admin/categorys/{{$category->id}}"
                         method="post"
                       >
                         <button type="submit" class="btn btn-danger">

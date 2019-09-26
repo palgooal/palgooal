@@ -34,5 +34,6 @@ Route::resource('/admin/pages', 'PageController');
 Route::resource('/admin/options', 'OptionController');
 Route::resource('/admin/price', 'PriceController');
 Route::resource('/admin/works', 'WorkController');
+Route::resource('/admin/categorys', 'CategoryController');
 
 

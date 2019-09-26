@@ -17,8 +17,7 @@
           <div class="portlet-body form">
             <form
               method="POST"
-          action="/admin/works/{{$work->id}}"
-              enctype="multipart/form-data"
+          action="/admin/categorys/{{$category->id}}"
               accept-charset="UTF-8"
               class="form-horizontal"
               role="form"
@@ -34,33 +33,13 @@
                               type="text"
                               placeholder="اسم الموقع"
                               name="name"
-                              value="{{$work->name}}"
+                              value="{{$category->name}}"
 
                               id="name"
                             />
                           </div>
-                          <div class="form-group">
-                            <label>رابط الموقع</label>
-                            <input
-                              class="form-control spinner"
-                              type="text"
-                              placeholder="رابط الموقع"
-                              name="url"
-                          value="{{$work->url}}"
-                              id="url"
-                            />
-                          </div>
-                          <div class="form-group">
-                              <label>صورة الموقع</label>
-                              <input
-                                class="form-control spinner"
-                                type="file"
-                                placeholder="صورة الموقع"
-                                name="image"
-                                value="{{$work->image}}"
-                                id="image"
-                                />
-                          </div>
+
+
 
 
 

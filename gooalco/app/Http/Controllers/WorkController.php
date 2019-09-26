@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Category as AppCategory;
+use App\modal\Category;
 use App\modal\Work;
 use Illuminate\Http\Request;
 
@@ -14,7 +16,7 @@ class WorkController extends Controller
      */
     public function index()
     {
-        return view('admin.work.works')->with('works',Work::get());
+        return view('admin.work.works')->with('works',Work::get())->with('categorys',AppCategory::get(['id', 'name']));
     }
 
     /**
@@ -24,7 +26,7 @@ class WorkController extends Controller
      */
     public function create()
     {
-        return view('admin.work.works');
+        return view('admin.work.works')->with('categorys',AppCategory::get(['id', 'name']));
     }
 
     /**
@@ -44,6 +46,7 @@ class WorkController extends Controller
         $work->name = $request->name;
         $work->url = $request->url;
         $work->save();
+        $work->categorys()->attach($request->category_id);
         return redirect('admin/works');
     }
 
@@ -65,7 +68,7 @@ class WorkController extends Controller
      */
     public function edit(Work $work)
     {
-        return view('admin.work.editWork')->with('work', $work);
+        return view('admin.work.editWork')->with('work', $work)->with('categorys',Category::get(['id', 'name']));
     }
 
     /**
@@ -85,6 +88,8 @@ class WorkController extends Controller
             $work->name = $request->name;
             $work->url = $request->url;
             $work->save();
+            $work->categorys()->sync($request->category_id);
+
             return redirect('admin/works');
         }
     }
