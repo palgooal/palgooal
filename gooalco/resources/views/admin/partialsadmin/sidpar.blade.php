@@ -210,6 +210,24 @@
 
                                         </ul>
                                     </li>
+                                    <li class="nav-item start ">
+                                        <a href="javascript:;" class="nav-link nav-toggle">
+                                            <i class="icon-home"></i>
+                                            <span class="title"> التصنيفات </span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item start ">
+                                                <a href="/admin/categorys" class="nav-link ">
+                                                    <i class="icon-bar-chart"></i>
+                                                    <span class="title">مشاهدة التصنيفات   </span>
+                                                </a>
+                                            </li>
+
+
+
+                                        </ul>
+                                    </li>
                                 <li class="nav-item start ">
                                         <a href="/admin/slider" class="nav-link nav-toggle">
                                             <i class="icon-home"></i>

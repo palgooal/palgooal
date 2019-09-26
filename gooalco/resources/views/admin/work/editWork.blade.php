@@ -51,6 +51,33 @@
                             />
                           </div>
                           <div class="form-group">
+                            <label>التصنيفات </label>
+
+                          <div >
+                            <select
+                              class="form-control"
+
+                              id="category_id"
+
+                              name="category_id[]"
+                              multiple
+                              @foreach ($categorys as $category)
+
+
+                          ><option @foreach ($work->categorys as $category)
+                            {{$category->id == $category->id ? "selected" : ""}}
+                            @endforeach
+
+                            >{{$category->name}}</option>
+                              @endforeach
+                             </select
+                            >
+
+                            <span class="help-block">
+                              <strong></strong>
+                            </span>
+                          </div></div>
+                          <div class="form-group">
                               <label>صورة الموقع</label>
                               <input
                                 class="form-control spinner"
@@ -61,6 +88,7 @@
                                 id="image"
                                 />
                           </div>
+
 
 
 
