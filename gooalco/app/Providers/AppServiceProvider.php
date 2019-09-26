@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\modals\Menu;
 use App\modals\Option;
+use App\modal\Price;
 use Illuminate\Support\ServiceProvider;
 use Schema;
 use Illuminate\Support\Facades\View;
@@ -29,8 +30,9 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         view::composer( 'menus', 'partials.header', 'App\Http\ViewComposers\HeaderComposer');
-       // view::share('menus' , Menu::get());
-       // view::share('options' , Option::get());
+        view::share('menus' , Menu::get());
+        view::share('options' , Option::get());
+        view::share('prices', Price::get());
 
     }
 }

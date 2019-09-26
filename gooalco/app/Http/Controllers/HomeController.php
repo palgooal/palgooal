@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\modal\Price;
+//use App\modal\Price;
 use App\modal\Work;
 use App\modals\Menu;
 use Illuminate\Http\Request;
@@ -45,6 +45,8 @@ class HomeController extends Controller
         ->with('submenus' ,SubMenu::get())
         ->with('options' , Option::get())
         ->with('works' ,  $work);
+        //->with('prices' ,  Price::get());
+       
 
 
     }
