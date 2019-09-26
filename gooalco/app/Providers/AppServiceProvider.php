@@ -5,6 +5,8 @@ namespace App\Providers;
 use App\modals\Menu;
 use App\modals\Option;
 use App\modal\Price;
+use App\modal\Category;
+
 use Illuminate\Support\ServiceProvider;
 use Schema;
 use Illuminate\Support\Facades\View;
@@ -33,6 +35,8 @@ class AppServiceProvider extends ServiceProvider
         view::share('menus' , Menu::get());
         view::share('options' , Option::get());
         view::share('prices', Price::get());
+        view::share('categorys', Category::get());
+
 
     }
 }
