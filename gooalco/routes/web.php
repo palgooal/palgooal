@@ -33,5 +33,6 @@ Route::resource('/admin/submenus', 'SubMenuController');
 Route::resource('/admin/pages', 'PageController');
 Route::resource('/admin/options', 'OptionController');
 Route::resource('/admin/price', 'PriceController');
+Route::resource('/admin/works', 'WorkController');
 
 

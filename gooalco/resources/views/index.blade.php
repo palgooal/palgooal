@@ -144,349 +144,6 @@ Find your Domain: <input type="text" name="query" size="20" />
 </div>
 </div>
 </div>
-<<<<<<< HEAD
-=======
-
-
-<div class="container-fluid ptb80 info">
-<div class="container">
-<div class="col-md-6 info-text">
-<h3 class="pb20">Fully Responsive</h3>
-<p>Cloudify adapts and provides an optimal experience on any device it’s being accessed from. This means that your website should look and function flawlessly for a user on a desktop computer, laptop, tablet, or smartphone. </p>
-<ul>
-<li>Pixel Perfect</li>
-<li>Svg graphics.</li>
-<li>Retina ready.</li>
-</ul>
-</div>
-<div class="col-md-4 col-md-offset-2 info-image">
-<img src="./images/icons/responsive-design.svg" alt="">
-</div>
-</div>
-</div>
-
-</section>
-
-
-<section class="ptb40" id="subscribe">
-<div class="container subscribe-form">
-<div class="col-md-3 col-sm-12">
-<h2 class="uppercase">Subscribe<small class="capitalize">Newsletter</small></h2>
-</div>
-<div class="col-md-9 col-sm-12">
-
-<form action="#" class="form-inline mailchimp" id="subscribtion-form-not">
-
-<div id="subscribe-result"></div>
-
-<div class="form-group">
-<div class="input-group">
-<input type="email" name="email" class="form-control" placeholder="Email Address">
-<button type="submit" class="btn btn-border btn-blue">Submit</button>
-</div>
-</div>
-</form>
-
-</div>
-
-<div class="clouds">
-<img src="./images/clouds/cloud1.svg" class="cloud1" alt="">
-<img src="./images/clouds/cloud2.svg" class="cloud2" alt="">
-</div>
-
-</div>
-</section>
-
-
-<section id="team">
-<div class="container ptb80">
-<div class="section-title">
-<h2> Meet The Team </h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-</div>
-
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class="member">
-<div class="member-details">
-<img src="./images/team/team1.jpg" class="img-responsive" alt="">
-<div class="overlay">
-<div class="member-info-overlay">
-<h4>John Doe</h4>
-<p>SEO Expert</p>
-</div>
-<div class="member-social">
-<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-</div>
-</div>
-</div>
-<div class="member-info">
-<h4>John Doe</h4>
-<p>SEO Expert</p>
-</div>
-</div>
-</div>
-
-
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class="member">
-<div class="member-details">
-<img src="./images/team/team2.jpg" class="img-responsive" alt="">
-<div class="overlay">
-<div class="member-info-overlay">
-<h4>John Doe</h4>
-<p>Web Developer</p>
-</div>
-<div class="member-social">
-<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-</div>
-</div>
-</div>
-<div class="member-info">
-<h4>John Doe</h4>
-<p>Web Developer</p>
-</div>
-</div>
-</div>
-
-
-<div class="col-md-4 col-sm-4 col-xs-12">
-<div class="member">
-<div class="member-details">
-<img src="./images/team/team3.jpg" class="img-responsive" alt="">
-<div class="overlay">
-<div class="member-info-overlay">
-<h4>John Doe</h4>
-<p>Graphic Designer</p>
-</div>
-<div class="member-social">
-<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-<a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-</div>
-</div>
-</div>
-<div class="member-info">
-<h4>John Doe</h4>
-<p>Graphic Designer</p>
-</div>
-</div>
-</div>
-
-</div>
-</section>
-
-
-<section id="pricing-table">
-<div class="container ptb80">
-<div class="section-title">
-<h2>Pricing Plan</h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-</div>
-
-<div class="pricing-table1">
-    @foreach ($prices as $price)
-
-<<<<<<< HEAD
-
-
-<div class="col-sm-3 pricing-plan" id="starter">
-
-<div class="row price">
-<div>
-<span class="currency">$</span>
-<span class="amount">{{$price->price}}</span>
-<span class="month">per year</span>
-</div>
-</div>
-
-=======
-
-
-<div class="col-sm-3 pricing-plan" id="starter">
-
-<div class="row price">
-<div>
-<span class="currency">$</span>
-<span class="amount">{{$price->price}}</span>
-<span class="month">per year</span>
-</div>
-</div>
-
->>>>>>> 0a15ec3eb8e2d1109f1d10074a3866c984978c1f
-<div class="plan-type">
-<span>{{$price->name}}</span>
-</div>
-
-<ul class="nav">
-<li>{{$price->num_email}} Email Account</li>
-<li>{{$price->num_website}} Website Layout</li>
-<li>{{$price->storge}}GB Space</li>
-<li>Number of Database : {{$price->num_database}}</li>
-<li>Avarage of Data Transfer : {{$price->data_transfare}}</li>
-<li>Backup  :{{$price->backup}}</li>
-<li>{{$price->description}}</li>
-</ul>
-<a href="#" class="btn btn-border btn-blue">purchase</a>
-
-</div>
-<<<<<<< HEAD
-
-
-
-
-
-=======
-
-
-
-
-
->>>>>>> 0a15ec3eb8e2d1109f1d10074a3866c984978c1f
-@endforeach
-
-</div>
-
-</div>
-</section>
-
-
-<section class="ptb40" id="countup">
-<div class="container-fluid">
-
-<div class="col-md-3 col-sm-3 col-xs-12">
-<img src="./images/icons/award.svg" alt="">
-<span class="counter" data-from="0" data-to="65"></span>
-<h3>Awards</h3>
-</div>
-
-
-<div class="col-md-3 col-sm-3 col-xs-12">
-<img src="./images/icons/happy.svg" alt="">
-<span class="counter" data-from="0" data-to="750"></span>
-<h3>Clients</h3>
-</div>
-
-
-<div class="col-md-3 col-sm-3 col-xs-12">
-<img src="./images/icons/site.svg" alt="">
-<span class="counter" data-from="0" data-to="1425"></span>
-<h3>Hosted Websites</h3>
-</div>
-
-
-<div class="col-md-3 col-sm-3 col-xs-12">
-<img src="./images/icons/clock.svg" alt="">
-<span class="counter" data-from="0" data-to="2425"></span>
-<h3>Work Hours</h3>
-</div>
-
-</div>
-</section>
-
-
-<section class="pt80 pb40" id="testimonials">
-<div class="container">
-<div class="section-title">
-<h2> Testimonials </h2>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-</div>
-
-<div class="owl-carousel testimonial">
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-
-<div class="item">
-<div class="review">
-<div class="review-inner text-center">
-<blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </blockquote>
-<img src="./images/clouds/cloud-blue.svg" alt="">
-</div>
-</div>
-<div class="customer">
-<h3 class="uppercase">customer</h3>
-<span>Web Developer</span>
-</div>
-</div>
-
-</div>
-
-</div>
->>>>>>> 0a15ec3eb8e2d1109f1d10074a3866c984978c1f
 </section>
 <section class="portfolio pt80 pb40">
     <div class="container nopadding">
@@ -502,74 +159,39 @@ Find your Domain: <input type="text" name="query" size="20" />
     <li><a href="#0" data-filter=".portfolio-cat4">hosted websites</a></li>
     </ul>
     </div>
-    
+
     <div class="row portfolio-grid mt40">
-    
+        @foreach ($works as $work)
+
+
     <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
     <figure>
-    <a href="images/portfolio/image1.jpg" class="hover-zoom">
-    <img src="images/portfolio/image1.jpg" class="img-responsive" alt="">
+    <a href="{{$work->image}}" class="hover-zoom">
+    <img src="{{$work->image}}" class="img-responsive" alt="">
     </a>
     </figure>
     </div>
-    
-    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
-    <figure>
-    <a href="images/portfolio/image2.jpg" class="hover-zoom">
-    <img src="images/portfolio/image2.jpg" class="img-responsive" alt="">
-    </a>
-    </figure>
-    </div>
-    
-    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
-    <figure>
-    <a href="images/portfolio/image3.jpg" class="hover-zoom">
-    <img src="images/portfolio/image3.jpg" class="img-responsive" alt="">
-    </a>
-    </figure>
-    </div>
-    
-    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
-    <figure>
-    <a href="images/portfolio/image4.jpg" class="hover-zoom">
-    <img src="images/portfolio/image4.jpg" class="img-responsive" alt="">
-    </a>
-    </figure>
-    </div>
-    
-    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
-    <figure>
-    <a href="images/portfolio/image5.jpg" class="hover-zoom">
-    <img src="images/portfolio/image5.jpg" class="img-responsive" alt="">
-    </a>
-    </figure>
-    </div>
-    
-    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
-    <figure>
-    <a href="images/portfolio/image6.jpg" class="hover-zoom">
-    <img src="images/portfolio/image6.jpg" class="img-responsive" alt="">
-    </a>
-     </figure>
-    </div>
-    
-    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
-    <figure>
-    <a href="images/portfolio/image7.jpg" class="hover-zoom">
-    <img src="images/portfolio/image7.jpg" class="img-responsive" alt="">
-    </a>
-    </figure>
-    </div>
-    
-    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
+    @endforeach
+
+
+
+
+
+
+
+
+
+
+
+    {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
     <figure>
     <a href="images/portfolio/image8.jpg" class="hover-zoom">
     <img src="images/portfolio/image8.jpg" class="img-responsive" alt="">
     </a>
     </figure>
     </div>
-    </div>
-    
+    </div> --}}
+
     </div>
     </section>
 
@@ -598,15 +220,14 @@ Find your Domain: <input type="text" name="query" size="20" />
 <p class="nomargin pt5">{{$post->Auther_en}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
-<<<<<<< HEAD
+
 <p class="nomargin pb20">{!!str_limit($post->Body_en, 200)!!}</p>
-=======
-<<<<<<< HEAD
+
+
 <p class="nomargin pb20">{{$post->Body_en}} </p>
-=======
+
 <p class="nomargin pb20">{!!Str::limit($post->Body_en, 200)!!}</p>
->>>>>>> 84c4bc5c9476597ccf92e687765acd65f04f50d4
->>>>>>> 0a15ec3eb8e2d1109f1d10074a3866c984978c1f
+
 @else
 <h3><a href="/post/{{$post->id}}">{{$post->Title_ar}}</a></h3>
 <p class="nomargin pt5">{{$post->Auther_ar}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>

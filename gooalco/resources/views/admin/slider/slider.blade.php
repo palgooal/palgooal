@@ -180,8 +180,8 @@
                   @foreach ($sliders as $slider)
                   <tr>
                     <td>{{$slider->title_ar}}</td>
-                    {{-- <td>{{$slider->description}}</td> --}}
-                    <td><img src="{{asset('/images/'.$slider->image)}}"}} alt="Los Angeles" style="width:100%;"></td>
+
+                    <td><img src="/slider/{{$slider->image}}" alt="Los Angeles" style="width:100%;"></td>
 
                     <td>
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\modal\Price;
+use App\modal\Work;
 use App\modals\Menu;
 use Illuminate\Http\Request;
 use Session;
@@ -34,13 +35,16 @@ class HomeController extends Controller
     public function index()
     {
 
+        $post = Post::latest()->take(4)->get();
+
+         $work = Work::latest()->take(8)->get();
         return view('index')
-        ->with('posts', Post::get())
+        ->with('posts', $post)
         ->with('sliders', Slider::get())
         ->with('menus', Menu::get())
         ->with('submenus' ,SubMenu::get())
         ->with('options' , Option::get())
-        ->with('prices' , Price::paginate(4));
+        ->with('works' ,  $work);
 
 
     }
