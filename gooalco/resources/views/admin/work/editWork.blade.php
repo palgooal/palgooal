@@ -51,27 +51,13 @@
                             />
                           </div>
                           <div class="form-group">
-                            <label>التصنيفات </label>
-
-                          <div >
-                            <select
-                              class="form-control"
-
-                              id="category_id"
-
-                              name="category_id[]"
-                              multiple
+                            <label for="category_work_id">التصنيفات </label>
+                          <div>
+                            <select class="form-control" id="category_work_id" name="category_work_id">                             name="category_work_id"
                               @foreach ($categorys as $category)
-
-
-                          ><option @foreach ($work->categorys as $category)
-                            {{$category->id == $category->id ? "selected" : ""}}
+                          <option value="{{$category->id}}">{{$category->name}}</option>
                             @endforeach
-
-                            >{{$category->name}}</option>
-                              @endforeach
-                             </select
-                            >
+                             </select>
 
                             <span class="help-block">
                               <strong></strong>

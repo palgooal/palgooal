@@ -6,7 +6,7 @@
 <div class="row ptb60 footer-info">
 
 <div class="col-sm-3 about">
-<a href="index.html"><img src="./images/logo2.svg" alt=""></a>
+<a href="index.html"><img src="/images/LOGO.png" alt=""></a>
 <p class="pt30">{{__('footer.Lorem ipsum dolor sit amet, ectetur adipiscing elit.viverra tellus. Vivamus finibus, quam vitae pulvinar euismod, Lorem ipsum dolor sit amet, ectetur adipiscing elit.')}}</p>
 </div>
 

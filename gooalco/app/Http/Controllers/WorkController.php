@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Category as AppCategory;
-use App\modal\Category;
-use App\modal\Work;
+use App\modals\Category;
+use App\modals\Work;
 use Illuminate\Http\Request;
 
 class WorkController extends Controller
@@ -16,7 +16,7 @@ class WorkController extends Controller
      */
     public function index()
     {
-        return view('admin.work.works')->with('works',Work::get())->with('categorys',AppCategory::get(['id', 'name']));
+        return view('admin.work.works')->with('works',Work::get());
     }
 
     /**
@@ -26,7 +26,7 @@ class WorkController extends Controller
      */
     public function create()
     {
-        return view('admin.work.works')->with('categorys',AppCategory::get(['id', 'name']));
+        return view('admin.work.works')->with('categorys', Category::get());
     }
 
     /**
@@ -45,9 +45,9 @@ class WorkController extends Controller
         }
         $work->name = $request->name;
         $work->url = $request->url;
+        $work->category_work_id = $request->category_work_id;
         $work->save();
-        $work->categorys()->attach($request->category_id);
-        return redirect('admin/works');
+        return redirect('/admin/works');
     }
 
     /**
@@ -66,9 +66,9 @@ class WorkController extends Controller
      * @param  \App\modal\Work  $work
      * @return \Illuminate\Http\Response
      */
-    public function edit(Work $work)
+    public function edit($id)
     {
-        return view('admin.work.editWork')->with('work', $work)->with('categorys',Category::get(['id', 'name']));
+        return view('admin.work.editWork')->with('work', Work::find($id))->with('categorys', Category::get());
     }
 
     /**
@@ -87,10 +87,9 @@ class WorkController extends Controller
             $work->image =$path;
             $work->name = $request->name;
             $work->url = $request->url;
+            $work->category_work_id = $request->category_work_id;
             $work->save();
-            $work->categorys()->sync($request->category_id);
-
-            return redirect('admin/works');
+            return redirect('/admin/works');
         }
     }
 

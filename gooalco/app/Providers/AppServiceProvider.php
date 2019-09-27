@@ -5,7 +5,7 @@ namespace App\Providers;
 use App\modals\Menu;
 use App\modals\Option;
 use App\modal\Price;
-use App\modal\Category;
+use App\modals\Category;
 use App\modals\Post;
 
 use Illuminate\Support\ServiceProvider;

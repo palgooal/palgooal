@@ -47,22 +47,14 @@
                             />
                           </div>
                           <div class="form-group">
-                            <label>التصنيفات </label>
+                            <label for="category_work_id">التصنيفات </label>
 
                           <div >
-                            <select
-                              class="form-control"
-
-                              id="category_id"
-                              name="category_id[]"
-                              multiple
+                            <select class="form-control" id="category_work_id" name="category_work_id">
                               @foreach ($categorys as $category)
-
-
-                          ><option value="{{$category->id}}">{{$category->name}}</option>
+                          <option value="{{$category->id}}">{{$category->name}}</option>
                               @endforeach
-                             </select
-                            >
+                             </select>
 
                             <span class="help-block">
                               <strong></strong>

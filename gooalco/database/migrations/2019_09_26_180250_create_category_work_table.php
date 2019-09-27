@@ -15,8 +15,7 @@ class CreateCategoryWorkTable extends Migration
     {
         Schema::create('category_work', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('category_id');
-            $table->integer('work_id');
+            $table->string('title');
             $table->timestamps();
         });
     }

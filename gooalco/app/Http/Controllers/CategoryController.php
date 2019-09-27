@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\modal\Category;
+use App\modals\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -38,7 +38,7 @@ class CategoryController extends Controller
         $category = new Category();
         $category->name = $request->name;
         $category->save();
-        return redirect('admin/categorys');
+        return redirect('/admin/categorys');
     }
 
     /**
@@ -88,7 +88,7 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         Category::destroy($id);
-        return redirect('admin/categorys');
+        return redirect('/admin/categorys');
 
     }
 }

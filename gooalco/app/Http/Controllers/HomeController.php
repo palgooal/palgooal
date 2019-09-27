@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 //use App\modal\Price;
-use App\modal\Work;
+use App\modals\Work;
 use App\modals\Menu;
 use Illuminate\Http\Request;
 use Session;

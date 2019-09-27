@@ -18,6 +18,7 @@ class CreateWorksTable extends Migration
             $table->string('image')->default('default.jpg')->nullable();
             $table->string('name');
             $table->string('url')->nullable();
+            $table->integer('category_work_id');
             $table->timestamps();
         });
     }

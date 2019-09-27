@@ -1,9 +1,9 @@
-{{-- <div class="loader">
+<div class="loader">
                 <div class="spinner">
-                <div class="cloud1"><img src="images/clouds/cloud-blue.svg" alt=""></div>
-                <div class="cloud2"><img src="images/clouds/cloud-green.svg" alt=""></div>
+                <div class="cloud1"><img src="/images/clouds/cloud-blue.svg" alt=""></div>
+                <div class="cloud2"><img src="/images/clouds/cloud-green.svg" alt=""></div>
                 </div>
-                </div> --}}
+                </div>
                 <div class="top-header">
                     <div class="container">
                     <div class="row">
@@ -45,7 +45,7 @@
         <div class="container">
 
         <div class="col-md-2 col-sm-3 col-xs-3">
-        <a class="navbar-brand" href="/"><img src="{{asset('./images/LOGO.png')}}" alt="logo"></a>
+        <a class="navbar-brand" href="/"><img src="{{asset('/images/LOGO.png')}}" alt="logo"></a>
 
         </div>
 
