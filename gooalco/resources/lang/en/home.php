@@ -34,5 +34,14 @@ return[
     'SSD Cloud Hosting'=>'SSD Cloud Hosting',
     'Experience up to 2X faster load times due to low-density servers, premium hardware, and multiple caching layers'=>'Experience up to 2X faster load times due to low-density servers, premium hardware, and multiple caching layers',
     'Of our business'=>'Of our business',
-    'ALL'=>'ALL'
+    'ALL'=>'ALL',
+    'Shared Hosting'=>'Shared Hosting',
+    'Distributor service(Reseller)'=>'Distributor service(Reseller)',
+    'Hosting Wordpress'=>'Hosting Wordpress',
+    'Domain reservation'=>'Domain reservation',
+    'Sms Hosting'=>'Sms Hosting',
+    'progroming and disagining'=>'progroming and disagining',
+    'Our main service'=>'Our main service',
+    'We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed'=>'We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed'
+
 ];

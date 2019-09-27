@@ -35,5 +35,13 @@ return[
 'SSD Cloud Hosting'=>'SSD سحابة استضافة',
 'Experience up to 2X faster load times due to low-density servers, premium hardware, and multiple caching layers'=>'استمتع بأوقات تحميل أسرع تصل إلى 2X بسبب الخوادم منخفضة الكثافة والأجهزة المتميزة وطبقات التخزين المؤقت المتعددة',
 'Of our business'=>'من أعمالنا',
-'ALL'=>'الكل'
+'ALL'=>'الكل',
+'Shared Hosting'=>'استضافة مشتركة',
+'Distributor service(Reseller)'=>'موزع خدمة(Reseller)',
+'Hosting Wordpress'=>'استضافة ووردبرس',
+'Domain reservation'=>'حجز دومين',
+'Sms Hosting'=>'استضافة رسائل',
+'progroming and disagining'=>'تصميم وبرمجة',
+'Our main service'=>'خدماتنا الرئيسية',
+'We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed'=>'نوفر خدمات ملائمة للجميع و تمثل البيئة الخصبة لنمو الأفكار و المشاريع على الإنترنت ، وخدماتنا تحمل الكثير من القيم التي تولد شعوراً بالسعادة والرضى لدى عملاؤنا على مدار (11) أحدى عشرعاماً شهِدنا'
 ];
