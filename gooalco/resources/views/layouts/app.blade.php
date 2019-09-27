@@ -20,12 +20,12 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700|Roboto:400,700" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
-<link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
-<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/responsive.css">
 
 
 @if (App::isLocale('ar'))
@@ -50,7 +50,7 @@
 @include('partials.footer')
 
 <script data-cfasync="false" src="./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./js/jquery-3.1.1.min.js"></script>
-<script src="{$WEB_ROOT}/js/bootstrap.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
 <script src="./js/wow.min.js"></script>
 <script src="./js/swiper.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
