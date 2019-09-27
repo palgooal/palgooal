@@ -6,6 +6,7 @@ use App\modals\Menu;
 use App\modals\Option;
 use App\modal\Price;
 use App\modal\Category;
+use App\modals\Post;
 
 use Illuminate\Support\ServiceProvider;
 use Schema;
@@ -31,11 +32,13 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-        view::composer( 'menus', 'partials.header', 'App\Http\ViewComposers\HeaderComposer');
+       // view::composer( 'menus', 'partials.header', 'App\Http\ViewComposers\HeaderComposer');
         view::share('menus' , Menu::get());
-        view::share('options' , Option::get());
+        view::composer('options' , Option::get());
         view::share('prices', Price::get());
         view::share('categorys', Category::get());
+        view::share('posts', Post::get());
+
 
 
     }

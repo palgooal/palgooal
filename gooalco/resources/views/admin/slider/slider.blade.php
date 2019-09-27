@@ -72,10 +72,7 @@
                                                       id="description_ar"
                                                     />
                                                   </div>
-
                                 </div>
-
-
                                         <div id="en" class="tab-pane ">
                                           <h3>ADD slider</h3>
                                           <div class="form-group">
@@ -100,9 +97,6 @@
                                                       id="title2_en"
                                                     />
                                                   </div>
-
-
-
                                                     <div class="form-group">
                                                             <label>Add blue title</label>
                                                         <input
@@ -114,10 +108,6 @@
                                                         />
                                                       </div>
 
-
-
-
-
                                               <div class="form-group">
                                                     <label>Add description</label>
                                                 <input
@@ -128,11 +118,8 @@
                                                   id="description_en"
                                                 />
                                               </div>
-                                        </div>
-
+                                       </div>
                           </div>
-
-
                 <div class="form-group">
                   <label>تحميل صورة خلفية السلايدر</label>
                   <input
@@ -170,7 +157,6 @@
                 <thead>
                   <tr>
                     <th>عنوان السلايدر</th>
-                    {{-- <th>description</th> --}}
                     <th>صورة خلفية السلايدر</th>
                     <th>تعديل</th>
                     <th>حذف</th>
@@ -181,43 +167,16 @@
                   <tr>
                     <td>{{$slider->title_ar}}</td>
 
-                    <td><img src="/slider/{{$slider->image}}" alt="Los Angeles" style="width:100%;"></td>
+                    <td><img src="{{asset('/images/'.$slider->image)}}" alt="Los Angeles" style="width:100%;"></td>
 
                     <td>
 
-                      {{--
-                      <a
-                        href="/admin/Menus/{{$item->id}}/edit"
-                        class="btn btn-xs
-                                                    btn-info"
-                        >Edit</a
-                      >
-                      --}} {{--
-                      <button
-                        class="edit"
-                        data-id="{{$item->id}}"
-                        type="button"
-                        class="btn btn-primary"
-                      >
-                        <i class="fa fa-edit"></i> Edit
-                      </button>
-                      --}}
-                      <a
-                        href="/admin/slider/{{$slider->id}}/edit"
-                        class="btn btn-primary"
-                        >تعديل</a
-                      >
+                       <a href="/admin/slider/{{$slider->id}}/edit" class="btn btn-primary">تعديل</a>
                     </td>
                     <td>
-                      <form
-                        style="display: inline"
-                        action="/admin/slider/{{$slider->id}}"
-                        method="post"
-                      >
-                        <button type="submit" class="btn btn-danger">
-                          <i class="fa fa-trash-o"></i> حذف
-                        </button>
-
+                      <form style="display: inline" action="/admin/slider/{{$slider->id}}" method="post">
+                      <button type="submit" class="btn btn-danger">
+                          <i class="fa fa-trash-o"></i> حذف </button>
                         @method('delete') @csrf
                       </form>
                     </td>

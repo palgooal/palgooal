@@ -153,12 +153,12 @@ Find your Domain: <input type="text" name="query" size="20" />
             </div>
     <ul class="list-inline text-center uppercase" id="portfolio-sorting">
     <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
-    @foreach ($categorys as $category)
+    
         
     
-    <li><a href="#0" data-filter=".portfolio-cat1">{{$category->name}}</a></li>
+    <li><a href="#0" data-filter=".portfolio-cat1"></a></li>
    
-    @endforeach
+   
 
     </ul>
     </div>
@@ -190,8 +190,6 @@ Find your Domain: <input type="text" name="query" size="20" />
 
     @foreach ($posts as $post)
 
-
-
 <div class="col-md-4">
 <article class="blog-single pb30 shadow">
 <div class="blog-post-thumbnail normal-post hover-link">
@@ -203,14 +201,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 <p class="nomargin pt5">{{$post->Auther_en}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
-
-<p class="nomargin pb20">{!!str_limit($post->Body_en, 200)!!}</p>
-
-
-<p class="nomargin pb20">{{$post->Body_en}} </p>
-
 <p class="nomargin pb20">{!!Str::limit($post->Body_en, 200)!!}</p>
-
 @else
 <h3><a href="/post/{{$post->id}}">{{$post->Title_ar}}</a></h3>
 <p class="nomargin pt5">{{$post->Auther_ar}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>

@@ -35,7 +35,7 @@ class HomeController extends Controller
     public function index()
     {
 
-        $post = Post::latest()->take(4)->get();
+        $post = Post::latest()->take(3)->get();
 
          $work = Work::latest()->take(8)->get();
         return view('index')
