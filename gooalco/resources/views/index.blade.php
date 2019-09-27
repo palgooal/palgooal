@@ -137,38 +137,40 @@ Find your Domain: <input type="text" name="query" size="20" />
       <div class="row">
         <div class="section-head col-sm-12">
         <br />
-          <h4><span>Why Choose</span> Me?</h4>
+          <h4><span></span> {{__('home.Our main service')}} </h4>
           <br />
-          <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+          <p>
+         {{__('home.We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed')}}
+          </p>
         </div>
         <div class="col-lg-4 col-sm-6">
           <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
-            <h6>Modern Design</h6>
+            <h6>{{__('home.Shared Hosting')}}</h6>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
           <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-anchor"></i></span>
-            <h6>Creative Design</h6>
+            <h6>{{__('home.Distributor service(Reseller)')}}</h6>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-anchor"></i></span>
-            <h6>Your Photoshoping</h6>
+          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-wordpress"></i></span>
+            <h6>{{__('home.Hosting Wordpress')}}</h6>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
           <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
-            <h6>Business Growth</h6>
+            <h6>{{__('home.Domain reservation')}}</h6>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
-            <h6>Market Strategy</h6>
+          <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-comments"></i></span>
+            <h6>{{__('home.Sms Hosting')}}</h6>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
           <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
-            <h6>Retina Ready</h6>
+            <h6>{{__('home.progroming and disagining')}}</h6>
           </div>
         </div>
       </div>
