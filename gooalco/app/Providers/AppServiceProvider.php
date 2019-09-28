@@ -6,7 +6,9 @@ use App\modals\Menu;
 use App\modals\Option;
 use App\modal\Price;
 use App\modals\Category;
+use App\modals\Page;
 use App\modals\Post;
+
 
 use Illuminate\Support\ServiceProvider;
 use Schema;
@@ -38,6 +40,7 @@ class AppServiceProvider extends ServiceProvider
         view::share('prices', Price::get());
         view::share('categorys', Category::get());
         view::share('posts', Post::get());
+        view::share('pages', Page::get());
 
 
 

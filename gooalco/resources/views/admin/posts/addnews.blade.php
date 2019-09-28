@@ -58,29 +58,20 @@
 
                   <div id="en" class="tab-pane fade">
                     <h3>Add post in Engilsh</h3>
-
-
-
-
                     <div class="form-group">
                             <label>Add title</label>
                             <input class="form-control spinner" type="text" placeholder="Add title of the post" name="Title_en" id="Title">
                         </div>
-
                     <div class="form-group">
                             <label>Add body of the post</label>
                             <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control summernote" placeholder=" Add body of the post "></textarea>
-
                         </div>
-
                             <div class="form-group">
                                     <label>Auther</label>
                                     <input class="form-control spinner" type="text" placeholder="Auther  " name="Auther_en" id="Auther">
                                 </div>
                             </div>
                         </div>
-
-
                     <div class="form-group">
                         <label>تحميل الصور</label>
                         <input class="form-control spinner" type="file" placeholder="تحميل الصور" name="image" id="image">
@@ -90,32 +81,6 @@
                     <label class="radio-inline"><input type="radio" name="optradio"value="en">الانجليزية</label>
                     <label class="radio-inline"><input type="radio" name="optradio"value="both">كليهما</label>
 
-
-
-            {{-- <div class="form-group">
-                    <label for="catagory_id" class="col-md-2 control-label"
-                      >category</label
-                    >
-
-                    <div class="col-md-8">
-                      <select
-                        class="form-control"
-                        required="required"
-                        id="catagory_id"
-                        name="catagory_id[]"
-                        multiple
-                        >
-
-                        @foreach($categories as $categor)
-                        <option value="{{$categor->id}}">{{$categor->title}}</option>
-                        @endforeach
-                        </select>
-
-                      <span class="help-block">
-                        <strong></strong>
-                      </span>
-                    </div>
-                  </div> --}}
         <div class="form-actions">
             <button type="submit" class="btn blue">اضافة</button>
             <a href="/admin/posts" class="btn default">الغاء</a>

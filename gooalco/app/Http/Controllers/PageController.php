@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\modals\Page;
 use Illuminate\Http\Request;
+use unique;
 
 class PageController extends Controller
 {
@@ -36,9 +37,11 @@ class PageController extends Controller
     public function store(Request $request)
     {
         $pages = new Page();
+        $pages->title_ar =$request->title_ar;
+        $pages->title_en =$request->title_en;
+        $pages->content_ar =$request->content_ar;
+        $pages->content_en =$request->content_en;
         $pages->slug =$request->slug;
-        $pages->title =$request->title;
-        $pages->content =$request->content;
         $pages->save();
 
         return redirect('/admin/pages');
@@ -50,9 +53,9 @@ class PageController extends Controller
      * @param  \App\Pages  $pages
      * @return \Illuminate\Http\Response
      */
-    public function show(Pages $pages)
+    public function show($id)
     {
-        //
+        return view('pages')->with('page', Page::find($id));
     }
 
     /**
@@ -77,8 +80,11 @@ class PageController extends Controller
     {
         $pages = Page::find($id);
         $pages->slug =$request->slug;
-        $pages->title =$request->title;
-        $pages->content =$request->content;
+        $pages->title_ar =$request->title_ar;
+        $pages->title_en =$request->title_en;
+        $pages->content_ar =$request->content_ar;
+        $pages->content_en =$request->content_en;
+
         $pages->save();
 
         return redirect('/admin/pages');

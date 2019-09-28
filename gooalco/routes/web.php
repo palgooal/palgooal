@@ -27,13 +27,15 @@ Route::get('/lang/{local}', 'HomeController@lang');
 
 Route::resource('/admin/posts', 'PostController');
 Route::get('/post/{id}', 'HomeController@show');
+//Route::get('/pagess', 'HomeController@showPages');
 Route::resource('/admin/slider', 'SliderController');
 Route::resource('/admin/menus', 'MenuController');
 Route::resource('/admin/submenus', 'SubMenuController');
 Route::resource('/admin/pages', 'PageController');
+Route::get('/pages/{id}', 'PageController@show');
 Route::resource('/admin/options', 'OptionController');
 Route::resource('/admin/price', 'PriceController');
 Route::resource('/admin/works', 'WorkController');
-Route::resource('/admin/categorys', 'CategoryController');
+Route::resource('/admin/categorys', 'CategoryController'); 
 
 

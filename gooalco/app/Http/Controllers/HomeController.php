@@ -11,9 +11,7 @@ use App\modals\Post;
 use App\modals\Slider;
 use App\modals\SubMenu;
 use App\modals\Option;
-
-
-
+use App\modals\Page;
 
 class HomeController extends Controller
 {
@@ -55,6 +53,10 @@ class HomeController extends Controller
         return view('singelPost')
         ->with('post', Post::find($id));
     }
+    // public function showPages($id)
+    // {
+    //     return view('pages')->with('pages', Page::find($id));
+    // }
     function lang($local){
         Session::put('lang', $local);
         return redirect()->back();
