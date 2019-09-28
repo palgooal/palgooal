@@ -74,6 +74,20 @@
   ga('create', 'UA-60264400-3', 'auto');
   ga('send', 'pageview');
 
+
+  $.ajax({
+                    url:"/admin/categorys",
+                    type:"GET",
+                    data:{"t":"tour","k":"price"},
+                    success:function(data) {
+
+                        document.getElementById('opprice').innerHTML=data;
+                    },
+                    error:function() {
+
+                    }
+     });
+
 </script>
 </body>
 

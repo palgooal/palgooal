@@ -28,17 +28,13 @@
 
                 <div class="form-group">
                         <label>القائمة</label>
-                            <select
-                            class="form-control"
-                            required="required"
-                            id="menu_id"
-                            name="menu_id"
-                            >
+                            <select class="form-control" required="required" id="menu_id" name="menu_id" >
                             @foreach($menus as $menu)
                            <option value="{{$menu->id}}">{{$menu->name_en}}</option>
                         @endforeach
                         </select>
                       </div>
+                               
             <div class="form-group">
               <label>اسم القائمة الفرعية بالعربي</label>
               <input

@@ -31,31 +31,27 @@
           @csrf
             <div class="form-body">
                     <div class="form-group">
-                            <label for="القوائم" class="col-md-1 control-label"
-                              >القوائم</label
-                            >
-
+                            <label for="menu_id" class="col-md-1 control-label">القوائم</label>
                             <div class="col-md-11">
-                              <select
-                                class="form-control"
-
-                                id="القوائم"
-                                name="menu_id"
+                              <select class="form-control"  id="menu_id" name="menu_id">
                                 @foreach ($menus as $menu)
-
-
-                                ><option value="{{$menu->id}}">{{$menu->name_en}}</option
-                                >
-                                @endforeach</select
-                              >
-
-
+                                <option value="{{$menu->id}}">{{$menu->name_en}}</option>
                               <span class="help-block">
                                 <strong></strong>
                               </span>
                             </div>
                           </div>
-
+                          <div class="form-group">
+                              <label for="menu_id" class="col-md-1 control-label">الصفحات</label>
+                              <div class="col-md-11">
+                                <select class="form-control"  id="menu_id" name="menu_id">
+                                  @foreach ($menus as $menu)
+                                  <option value="{{$menu->id}}">{{$menu->name_en}}</option>
+                                <span class="help-block">
+                                  <strong></strong>
+                                </span>
+                              </div>
+                            </div>
 
                 <div class="form-group">
                     <label>اسم القائمة الفرعية</label>

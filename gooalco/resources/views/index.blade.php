@@ -184,25 +184,31 @@ Find your Domain: <input type="text" name="query" size="20" />
         <div class="row">
         
         <ul class="list-inline text-center uppercase" id="portfolio-sorting">
-        <li><a href="#0" data-filter="*" class="current">all</a></li>
-        <li><a href="#0" data-filter=".portfolio-cat1">servers</a></li>
-        <li><a href="#0" data-filter=".portfolio-cat2">shared hosting</a></li>
+        <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
+        @foreach ($categorys as $category)
+    
+        <li><a href="#0" data-filter=".{{$category->id}}">{{$category->name}}</a></li>
+        {{-- <li><a href="#0" data-filter=".portfolio-cat2">shared hosting</a></li>
         <li><a href="#0" data-filter=".portfolio-cat3">domains</a></li>
-        <li><a href="#0" data-filter=".portfolio-cat4">hosted websites</a></li>
+        <li><a href="#0" data-filter=".portfolio-cat4">hosted websites</a></li> --}}
+        @endforeach
         </ul>
+        
         </div>
         
         <div class="row portfolio-grid mt40">
+        @foreach ($works as $work)
         
-        <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
+        <div class="element col-md-3 col-sm-6 col-xs-6 {{$work->category_work_id}}">
         <figure>
-        <a href="images/portfolio/image1.jpg" class="hover-zoom">
-        <img src="images/portfolio/image1.jpg" class="img-responsive" alt="">
+        <a href="{{asset('images/'.$work->image)}}" class="hover-zoom">
+        <img src="{{asset('images/'.$work->image)}}" class="img-responsive" alt="">
         </a>
         </figure>
         </div>
+        @endforeach
         
-        <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
+        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
         <figure>
         <a href="images/portfolio/image2.jpg" class="hover-zoom">
         <img src="images/portfolio/image2.jpg" class="img-responsive" alt="">
@@ -225,38 +231,38 @@ Find your Domain: <input type="text" name="query" size="20" />
         </a>
         </figure>
         </div>
-        
-        <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
+         --}}
+        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
         <figure>
         <a href="images/portfolio/image5.jpg" class="hover-zoom">
         <img src="images/portfolio/image5.jpg" class="img-responsive" alt="">
         </a>
         </figure>
-        </div>
+        </div> --}}
         
-        <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
+        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
         <figure>
         <a href="images/portfolio/image6.jpg" class="hover-zoom">
         <img src="images/portfolio/image6.jpg" class="img-responsive" alt="">
         </a>
          </figure>
-        </div>
+        </div> --}}
         
-        <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
+        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
         <figure>
         <a href="images/portfolio/image7.jpg" class="hover-zoom">
         <img src="images/portfolio/image7.jpg" class="img-responsive" alt="">
         </a>
         </figure>
-        </div>
+        </div> --}}
         
-        <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
+        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
         <figure>
         <a href="images/portfolio/image8.jpg" class="hover-zoom">
         <img src="images/portfolio/image8.jpg" class="img-responsive" alt="">
         </a>
         </figure>
-        </div>
+        </div> --}}
         </div>
         
         </div>
