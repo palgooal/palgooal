@@ -25,27 +25,14 @@
               @csrf
               @method('put')
               <div class="form-body">
-
                     <div class="form-group">
                             <label>اسم الموقع</label>
-                            <input
-                              class="form-control spinner"
-                              type="text"
-                              placeholder="اسم الموقع"
-                              name="name"
-                              value="{{$category->name}}"
-
-                              id="name"
-                            />
+                            <input class="form-control spinner" type="text" placeholder="اسم الموقع" name="name_ar" value="{{$category->name_ar}}" id="name_ar"/>
                           </div>
-
-
-
-
-
-
-
-
+                          <div class="form-group">
+                            <label>اسم الموقع</label>
+                            <input class="form-control spinner" type="text" placeholder="اسم الموقع" name="name_en" value="{{$category->name_en}}" id="name_en"/>
+                          </div>
                 <div class="form-actions">
                     <button type="submit" class="btn blue">تعديل</button>
                   </div>
