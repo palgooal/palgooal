@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Category as AppCategory;
+
+use App\modals\categorieWork;
 use App\modals\Category;
 use App\modals\Work;
 use Illuminate\Http\Request;
@@ -26,7 +27,7 @@ class WorkController extends Controller
      */
     public function create()
     {
-        return view('admin.work.works')->with('categorys', Category::get());
+        return view('admin.work.works')->with('categorys', categorieWork::get());
     }
 
     /**
@@ -68,7 +69,7 @@ class WorkController extends Controller
      */
     public function edit($id)
     {
-        return view('admin.work.editWork')->with('work', Work::find($id))->with('categorys', Category::get());
+        return view('admin.work.editWork')->with('work', Work::find($id))->with('categorys', categorieWork::get());
     }
 
     /**

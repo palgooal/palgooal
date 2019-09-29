@@ -32,8 +32,19 @@
                               class="form-control spinner"
                               type="text"
                               placeholder="اسم التصنيف"
-                              name="name"
-                              id="name"
+                              name="name_ar"
+                              id="name_ar"
+                            />
+                          </div>
+
+                          <div class="form-group">
+                            <label> add name en  </label>
+                            <input
+                              class="form-control spinner"
+                              type="text"
+                              placeholder="اسم التصنيف"
+                              name="name_en"
+                              id="name_en"
                             />
                           </div>
 
@@ -85,7 +96,7 @@
 
 
                   <tr>
-                    <td>{{$category->name}}</td>
+                    <td>{{$category->name_ar}}</td>
 
 
 

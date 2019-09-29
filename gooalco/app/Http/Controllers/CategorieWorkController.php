@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\modals\Category;
+use App\modals\categorieWork;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class CategorieWorkController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view ('admin.category.categorys')->with('categorys',Category::get());
+        return view('admin.category.categorys')->with('categorys', categorieWork::get());
     }
 
     /**
@@ -24,7 +24,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view ('admin.category.categorys');
+        return view('admin.category.categorys')->with('categorys', categorieWork::get());
     }
 
     /**
@@ -35,19 +35,23 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $category = new Category();
-        $category->name = $request->name;
-        $category->save();
+        $categorieWork = new categorieWork() ;
+        $categorieWork->name_ar = $request->name_ar;
+        $categorieWork->name_en = $request->name_en;
+        $categorieWork->save();
+
         return redirect('/admin/categorys');
+
+        
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\modal\Category  $category
+     * @param  \App\modals\categorieWork  $categorieWork
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show(categorieWork $categorieWork)
     {
         //
     }
@@ -55,40 +59,34 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\modal\Category  $category
+     * @param  \App\modals\categorieWork  $categorieWork
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit(categorieWork $categorieWork)
     {
-        return view ('admin.category.editCategory')->with('category',$category);
-
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\modal\Category  $category
+     * @param  \App\modals\categorieWork  $categorieWork
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Category $category)
+    public function update(Request $request, categorieWork $categorieWork)
     {
-        $category->name = $request->name;
-        $category->save();
-        return redirect('admin/categorys');
-
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\modal\Category  $category
+     * @param  \App\modals\categorieWork  $categorieWork
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(categorieWork $categorieWork)
     {
-        Category::destroy($id);
-        return redirect('/admin/categorys');
-
+        //
     }
 }

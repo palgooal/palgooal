@@ -186,7 +186,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         <ul class="list-inline text-center uppercase" id="portfolio-sorting">
         <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
         @foreach ($categorys as $category)
-        <li><a href="#0" data-filter=".{{$category->id}}">{{$category->name}}</a></li>
+        <li><a href="#0" data-filter=".{{$category->id}}">{{$category->name_ar}}</a></li>
         @endforeach
         </ul>
         

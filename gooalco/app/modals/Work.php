@@ -8,6 +8,6 @@ class Work extends Model
 {
     public function category()
     {
-        return $this->belongsTo('App\Category');
+        return $this->belongsTo('App\categorieWork');
     }
 }

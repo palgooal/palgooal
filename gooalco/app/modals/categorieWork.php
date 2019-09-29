@@ -4,7 +4,7 @@ namespace App\modals;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class categorieWork extends Model
 {
     public function works()
     {
