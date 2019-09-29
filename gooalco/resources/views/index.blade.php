@@ -186,11 +186,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         <ul class="list-inline text-center uppercase" id="portfolio-sorting">
         <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
         @foreach ($categorys as $category)
-    
         <li><a href="#0" data-filter=".{{$category->id}}">{{$category->name}}</a></li>
-        {{-- <li><a href="#0" data-filter=".portfolio-cat2">shared hosting</a></li>
-        <li><a href="#0" data-filter=".portfolio-cat3">domains</a></li>
-        <li><a href="#0" data-filter=".portfolio-cat4">hosted websites</a></li> --}}
         @endforeach
         </ul>
         
