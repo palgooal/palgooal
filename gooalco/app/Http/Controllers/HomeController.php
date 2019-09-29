@@ -40,7 +40,7 @@ class HomeController extends Controller
         ->with('posts', $post)
         ->with('sliders', Slider::get())
         ->with('menus', Menu::get())
-        ->with('submenus' ,SubMenu::get())
+        ->with('submenus' ,SubMenu::orderBy('number', 'asc')->get())
         ->with('options' , Option::get())
         ->with('works' ,  $work);
         //->with('prices' ,  Price::get());

@@ -32,6 +32,7 @@
 
 <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
 <link rel="stylesheet" type="text/css" href="./css/style-ar.css">
+<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
 
 @endif
 
@@ -73,21 +74,6 @@
 
   ga('create', 'UA-60264400-3', 'auto');
   ga('send', 'pageview');
-
-
-  $.ajax({
-                    url:"/admin/categorys",
-                    type:"GET",
-                    data:{"t":"tour","k":"price"},
-                    success:function(data) {
-
-                        document.getElementById('opprice').innerHTML=data;
-                    },
-                    error:function() {
-
-                    }
-     });
-
 </script>
 </body>
 

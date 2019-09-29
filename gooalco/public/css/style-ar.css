@@ -44,3 +44,13 @@ a.blog-more-btn i {
 .swiper-button-next i {
     transform: rotateZ(-180deg) !important;
 }
+/* body {
+    font-family: open sans, Cairo, sans-serif
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {font-family: roboto,Cairo, sans-serif;}
