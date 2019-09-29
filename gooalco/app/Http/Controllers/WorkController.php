@@ -44,7 +44,8 @@ class WorkController extends Controller
             $path= $request->image->store('Works');
             $work->image =$path;
         }
-        $work->name = $request->name;
+        $work->name_ar = $request->name_ar;
+        $work->name_en = $request->name_en;
         $work->url = $request->url;
         $work->category_work_id = $request->category_work_id;
         $work->save();
@@ -86,7 +87,8 @@ class WorkController extends Controller
         {
             $path= $request->image->store('slider');
             $work->image =$path;
-            $work->name = $request->name;
+            $work->name_ar = $request->name_ar;
+            $work->name_en = $request->name_en;
             $work->url = $request->url;
             $work->category_work_id = $request->category_work_id;
             $work->save();

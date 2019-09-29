@@ -25,6 +25,14 @@
             >
               @csrf
               <div class="form-body">
+                    <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#ar">اضافة اخر الأعمال  </a></li>
+                            <li><a data-toggle="tab" href="#en">add last news</a></li>
+
+                          </ul>
+                          <div class="tab-content">
+                                <div id="ar" class="tab-pane fade in active">
+                                  <h3>اضافة اخر الأعمال</h3>
 
                     <div class="form-group">
                             <label>اسم الموقع</label>
@@ -32,20 +40,11 @@
                               class="form-control spinner"
                               type="text"
                               placeholder="اسم الموقع"
-                              name="name"
-                              id="name"
+                              name="name_ar"
+                              id="name_ar"
                             />
                           </div>
-                          <div class="form-group">
-                            <label>رابط الموقع</label>
-                            <input
-                              class="form-control spinner"
-                              type="text"
-                              placeholder="رابط الموقع"
-                              name="url"
-                              id="url"
-                            />
-                          </div>
+
                           <div class="form-group">
                             <label for="category_work_id">التصنيفات </label>
 
@@ -59,7 +58,49 @@
                             <span class="help-block">
                               <strong></strong>
                             </span>
-                          </div></div>
+                          </div></div></div>
+
+
+                          <div id="en" class="tab-pane fade ">
+                                <h3> add last work </h3>
+                                <div class="form-group">
+                                        <label>اسم الموقع</label>
+                                        <input
+                                          class="form-control spinner"
+                                          type="text"
+                                          placeholder="اسم الموقع"
+                                          name="name_en"
+                                          id="name_en"
+                                        />
+
+                                      <div class="form-group">
+                                        <label for="category_work_id">التصنيفات </label>
+
+                                      <div >
+                                        <select class="form-control" id="category_work_id" name="category_work_id">
+                                          @foreach ($categorys as $category)
+                                      <option value="{{$category->id}}">{{$category->name_en}}</option>
+                                          @endforeach
+                                         </select>
+
+                                        <span class="help-block">
+                                          <strong></strong>
+                                        </span>
+                                      </div></div>
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>رابط الموقع</label>
+                          <input
+                            class="form-control spinner"
+                            type="text"
+                            placeholder="رابط الموقع"
+                            name="url"
+                            id="url"
+                          />
+                        </div>
 
 
                           <div class="form-group">
@@ -122,9 +163,9 @@
 
 
                   <tr>
-                    <td>{{$work->name}}</td>
-                  <td>{{$work->url}}</td>
-                  <td>{{$work->image}}</td>
+                    <td>{{$work->name_ar}}</td>
+                    <td>{{$work->url}}</td>
+                    <td>{{$work->image}}</td>
 
 
 

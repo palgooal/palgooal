@@ -182,19 +182,22 @@ Find your Domain: <input type="text" name="query" size="20" />
 <section class="portfolio pt80 pb40">
         <div class="container nopadding">
         <div class="row">
-        
+
         <ul class="list-inline text-center uppercase" id="portfolio-sorting">
         <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
         @foreach ($categorys as $category)
-        <li><a href="#0" data-filter=".{{$category->id}}">{{$category->name_ar}}</a></li>
+        @if (App::isLocale('en'))
+        <li><a href="#0" data-filter=".{{$category->id}}">{{$category->name_en}}</a></li>
+        @else
+        <li><a href="#0" data-filter=".{{$category->id}}">{{$category->name_ar}}</a></li>@endif
         @endforeach
         </ul>
-        
+
         </div>
-        
+
         <div class="row portfolio-grid mt40">
         @foreach ($works as $work)
-        
+
         <div class="element col-md-3 col-sm-6 col-xs-6 {{$work->category_work_id}}">
         <figure>
         <a href="{{asset('images/'.$work->image)}}" class="hover-zoom">
@@ -203,7 +206,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         </figure>
         </div>
         @endforeach
-        
+
         {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
         <figure>
         <a href="images/portfolio/image2.jpg" class="hover-zoom">
@@ -211,7 +214,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         </a>
         </figure>
         </div>
-        
+
         <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
         <figure>
         <a href="images/portfolio/image3.jpg" class="hover-zoom">
@@ -219,7 +222,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         </a>
         </figure>
         </div>
-        
+
         <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
         <figure>
         <a href="images/portfolio/image4.jpg" class="hover-zoom">
@@ -235,7 +238,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         </a>
         </figure>
         </div> --}}
-        
+
         {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
         <figure>
         <a href="images/portfolio/image6.jpg" class="hover-zoom">
@@ -243,7 +246,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         </a>
          </figure>
         </div> --}}
-        
+
         {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
         <figure>
         <a href="images/portfolio/image7.jpg" class="hover-zoom">
@@ -251,7 +254,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         </a>
         </figure>
         </div> --}}
-        
+
         {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
         <figure>
         <a href="images/portfolio/image8.jpg" class="hover-zoom">
@@ -260,7 +263,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         </figure>
         </div> --}}
         </div>
-        
+
         </div>
         </section>
 {{-- <section class="portfolio pt80 pb40">
@@ -271,12 +274,12 @@ Find your Domain: <input type="text" name="query" size="20" />
             </div>
     <ul class="list-inline text-center uppercase" id="portfolio-sorting">
     <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
-    
-        
-    
+
+
+
     <li><a href="#0" data-filter=".portfolio-cat1"></a></li>
-   
-   
+
+
 
     </ul>
     </div>
