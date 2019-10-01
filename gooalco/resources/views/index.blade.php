@@ -214,14 +214,15 @@ Find your Domain: <input type="text" name="query" size="20" />
         </section>
 
 
-<section class="ptb80" id="latest-news">
+<section class="ptb80" id="latest-news" )>
+ 
 <div class="container">
 <div class="section-title">
 <h2>{{__('home.Latest News')}}</h2>
 </div>
 <div class="col-md-12">
-
-<div class="row news-content pt30">
+   
+    @includeWhen(!count($posts) !=null, 'alert.empyt', ['msg' => 'لا توجد منشورات'])
 
     @foreach ($posts as $post)
 
@@ -260,6 +261,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 </div>
 </div>
 </section>
+
 
 <div class="live-chat collapsed">
 
