@@ -38,6 +38,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $slug = Str::slug ($request->Title_en ==null) ? Str::slug($request->Title_ar) : Str::slug($request->Title_en);
         $posts = new Post();
         if($request->image !=null)
         {
@@ -53,6 +54,7 @@ class PostController extends Controller
         $posts->Auther_en =$request->Auther_en;
         $posts->Body_en =$request->Body_en;
         $posts->optradio =$request->optradio;
+        $posts->slug = $slug;
 
 
         $posts->save();
@@ -68,9 +70,9 @@ class PostController extends Controller
      * @param  \App\modals\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show($slug)
     {
-        //
+        return view('singelPost')->with('post', Post::where('slug', $slug)->first());
     }
 
     /**

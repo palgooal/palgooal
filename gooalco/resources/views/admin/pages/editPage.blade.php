@@ -21,7 +21,7 @@
 <div class="portlet-body form">
     <form
         method="POST"
-action="/admin/pages/{{$page->id}}"
+        action="/admin/pages/{{$page->id}}"
         accept-charset="UTF-8"
         class="form-horizontal"
         role="form"
@@ -56,10 +56,10 @@ action="/admin/pages/{{$page->id}}"
                         <textarea name="content_en" id="content_en" cols="30" rows="10" class="form-control summernote" placeholder=" المحتوى ">{{$page->content_en}}</textarea>
                         </div>
             </div>
-            <div class="form-group">
+            {{-- <div class="form-group">
                     <label>slug</label>
-                    <input class="form-control spinner" type="text" placeholder=" عنوان الصفحة" name="slug" id="slug">
-                     </div>
+            <input class="form-control spinner" type="text" placeholder=" عنوان الصفحة" name="slug" id="slug" value="{{$page->slug}}">
+                     </div> --}}
             
         </div>
         <div class="form-actions">

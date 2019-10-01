@@ -55,10 +55,10 @@
                             <textarea name="content_en" id="content_en" cols="30" rows="10" class="form-control summernote" placeholder=" المحتوى "></textarea>
                         </div>
             </div>
-            <div class="form-group">
+            {{-- <div class="form-group">
                     <label>slug</label>
                     <input class="form-control spinner" type="text" placeholder=" عنوان الصفحة" name="slug" id="slug">
-                     </div>
+                     </div> --}}
             
         </div>
         <div class="form-actions">

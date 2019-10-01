@@ -12,6 +12,7 @@ use App\modals\Slider;
 use App\modals\SubMenu;
 use App\modals\Option;
 use App\modals\Page;
+use Product;
 
 class HomeController extends Controller
 {
@@ -48,10 +49,12 @@ class HomeController extends Controller
 
 
     }
-    public function show($id)
+    public function show($title_en)
     {
-        return view('singelPost')
-        ->with('post', Post::find($id));
+        Product::where('post', $title_en)->first();
+
+        // return view('singelPost')
+        // ->with('post', Post::find($title_en));
     }
     // public function showPages($id)
     // {
