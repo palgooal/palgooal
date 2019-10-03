@@ -146,35 +146,9 @@
                                             <span class="title">اضافة صفحة</span>
                                         </a>
                                     </li>
-
-
                                 </ul>
-
                             </li>
-                            <li class="nav-item start ">
-                                    <a href="javascript:;" class="nav-link nav-toggle">
-                                        <i class="icon-home"></i>
-                                        <span class="title">Projects</span>
-                                        <span class="arrow"></span>
-                                    </a>
-                                    <ul class="sub-menu">
                                         <li class="nav-item start ">
-                                            <a href="/admin/Projects" class="nav-link ">
-                                                <i class="icon-bar-chart"></i>
-                                                <span class="title">All Poroject </span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item start ">
-                                        <a href="/admin/Projects/create" class="nav-link ">
-                                                <i class="icon-bulb"></i>
-                                                <span class="title">Add Projects</span>
-                                            </a>
-                                        </li>
-
-
-                                    </ul>
-                                </li>
-                                <li class="nav-item start ">
                                         <a href="javascript:;" class="nav-link nav-toggle">
                                             <i class="icon-home"></i>
                                             <span class="title">العروض </span>

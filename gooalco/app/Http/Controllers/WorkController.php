@@ -85,15 +85,16 @@ class WorkController extends Controller
         $work = Work::find($id);
         if($request->image !=null)
         {
-            $path= $request->image->store('slider');
+            $path= $request->image->store('Works');
             $work->image =$path;
-            $work->name_ar = $request->name_ar;
-            $work->name_en = $request->name_en;
-            $work->url = $request->url;
-            $work->category_work_id = $request->category_work_id;
-            $work->save();
-            return redirect('/admin/works');
         }
+        $work->name_ar = $request->name_ar;
+        $work->name_en = $request->name_en;
+        $work->url = $request->url;
+        $work->category_work_id = $request->category_work_id;
+        $work->save();
+        return redirect('/admin/works');
+        
     }
 
     /**

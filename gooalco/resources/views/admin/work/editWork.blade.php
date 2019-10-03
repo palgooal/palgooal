@@ -29,33 +29,22 @@
 
                     <div class="form-group">
                             <label>اسم الموقع</label>
-                            <input
-                              class="form-control spinner"
-                              type="text"
-                              placeholder="اسم الموقع"
-                              name="name"
-                              value="{{$work->name}}"
-
-                              id="name"
-                            />
+                            <input class="form-control spinner" type="text" placeholder="اسم الموقع" name="name_ar" value="{{$work->name_ar}}" id="name_ar" />
+                          </div>
+                          <div class="form-group">
+                            <label>اسم الموقع</label>
+                            <input class="form-control spinner" type="text" placeholder="اسم الموقع" name="name_en" value="{{$work->name_en}}" id="name_en" />
                           </div>
                           <div class="form-group">
                             <label>رابط الموقع</label>
-                            <input
-                              class="form-control spinner"
-                              type="text"
-                              placeholder="رابط الموقع"
-                              name="url"
-                          value="{{$work->url}}"
-                              id="url"
-                            />
+                            <input class="form-control spinner" type="text" placeholder="رابط الموقع" name="url" value="{{$work->url}}" id="url" />
                           </div>
                           <div class="form-group">
                             <label for="category_work_id">التصنيفات </label>
                           <div>
-                            <select class="form-control" id="category_work_id" name="category_work_id">                             name="category_work_id"
+                            <select class="form-control" id="category_work_id" name="category_work_id">
                               @foreach ($categorys as $category)
-                          <option value="{{$category->id}}">{{$category->name}}</option>
+                          <option value="{{$category->id}}">{{$category->name_ar}}</option>
                             @endforeach
                              </select>
 
@@ -65,22 +54,8 @@
                           </div></div>
                           <div class="form-group">
                               <label>صورة الموقع</label>
-                              <input
-                                class="form-control spinner"
-                                type="file"
-                                placeholder="صورة الموقع"
-                                name="image"
-                                value="{{$work->image}}"
-                                id="image"
-                                />
+                              <input class="form-control spinner" type="file" placeholder="صورة الموقع" name="image" value="{{$work->image}}" id="image" />
                           </div>
-
-
-
-
-
-
-
                 <div class="form-actions">
                     <button type="submit" class="btn blue">تعديل</button>
                   </div>

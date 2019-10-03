@@ -182,7 +182,10 @@ Find your Domain: <input type="text" name="query" size="20" />
 <section class="portfolio pt80 pb40">
         <div class="container nopadding">
         <div class="row">
-
+          <div class="section-head col-sm-12">
+            <br />
+              <h4><span></span> {{__('home.Of our business')}} </h4>
+               </div>
         <ul class="list-inline text-center uppercase" id="portfolio-sorting">
         <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
         @foreach ($categorys as $category)
@@ -199,11 +202,20 @@ Find your Domain: <input type="text" name="query" size="20" />
         @foreach ($works as $work)
 
         <div class="element col-md-3 col-sm-6 col-xs-6 {{$work->category_work_id}}">
-        <figure>
-        <a href="{{asset('images/'.$work->image)}}" class="hover-zoom">
-        <img src="{{asset('images/'.$work->image)}}" class="img-responsive" alt="">
+        {{-- <figure>
+            {{-- <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228"> --}}
+
+        {{-- <a href="{{asset('images/'.$work->image)}}" class="hover-zoom" >
+        <img src="{{asset('images/'.$work->image)}}" class="img-responsive" alt="" >
         </a>
-        </figure>
+        </figure> --}}
+      <img id="{{$work->id}}" src="{{asset('images/'.$work->image)}}" alt="Snow" style="width:100%;max-width:300px">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
         </div>
         @endforeach
 
@@ -373,4 +385,6 @@ Find your Domain: <input type="text" name="query" size="20" />
 </div>
 
 </div>
+
+
 @endsection
