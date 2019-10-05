@@ -15,22 +15,26 @@
 <section class="domain ptb30">
 <div class="container">
 <div class="col-md-3">
-<h2 class="capitalize"></h2>{{__('home.Search Your')}} <span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
+{{-- <h2 class="capitalize"></h2>{{__('home.Search Your')}} <span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
 <form action="https://clientgooal.palgooal.com/cart.php?a=add&domain=register" method="post">
 Find your Domain: <input type="text" name="query" size="20" />
 <input type="submit" value="Go" />
-</form>
+</form> --}}
 </div>
 <div class="col-md-9">
 <div class="row">
 
 <div class="form-group">
-<input type="search" class="form-control" placeholder="{{__('home.Enter your domain name here')}}">
+        <h2 class="capitalize"></h2>{{__('home.Search Your')}} <span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
+        <form action="https://clientgooal.palgooal.com/cart.php?a=add&domain=register" method="post">
+
+<input type="text" name="query" class="form-control" placeholder="{{__('home.Enter your domain name here')}}">
 <button type="submit" class="btn btn-border btn-blue">{{__('home.Search')}}</button>
+</form>
 </div>
 
 </div>
-<div class="row">
+{{-- <div class="row">
 
 <div class="domain-check">
 <ul>
@@ -53,7 +57,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 </ul>
 </div>
 
-</div>
+</div> --}}
 </div>
 </div>
 </section>
@@ -219,7 +223,7 @@ Find your Domain: <input type="text" name="query" size="20" />
         </div>
         @endforeach
 
-        
+
         </div>
 
         </div>
@@ -227,13 +231,13 @@ Find your Domain: <input type="text" name="query" size="20" />
 
 
 <section class="ptb80" id="latest-news" )>
- 
+
 <div class="container">
 <div class="section-title">
 <h2>{{__('home.Latest News')}}</h2>
 </div>
 <div class="col-md-12">
-   
+
     @includeWhen(!count($posts) !=null, 'alert.empyt', ['msg' => 'لا توجد منشورات'])
 
     @foreach ($posts as $post)
