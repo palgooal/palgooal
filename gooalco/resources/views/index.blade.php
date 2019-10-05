@@ -15,17 +15,14 @@
 <section class="domain ptb30">
 <div class="container">
 <div class="col-md-3">
-{{-- <h2 class="capitalize"></h2>{{__('home.Search Your')}} <span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
-<form action="https://clientgooal.palgooal.com/cart.php?a=add&domain=register" method="post">
-Find your Domain: <input type="text" name="query" size="20" />
-<input type="submit" value="Go" />
-</form> --}}
-</div>
+
+  <h2 class="capitalize">{{__('home.Search Your')}} <br><span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
+ </div>
+
 <div class="col-md-9">
 <div class="row">
 
 <div class="form-group">
-        <h2 class="capitalize"></h2>{{__('home.Search Your')}} <span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
         <form action="https://clientgooal.palgooal.com/cart.php?a=add&domain=register" method="post">
 
 <input type="text" name="query" class="form-control" placeholder="{{__('home.Enter your domain name here')}}">
@@ -342,14 +339,14 @@ Find your Domain: <input type="text" name="query" size="20" />
 </ul>
 <div id="cd-login">
 
-<form class="cd-form">
+<form class="cd-form" method="post" action="https://clientgooal.palgooal.com/dologin.php">
 <p class="fieldset">
 <label class="image-replace cd-email" for="signin-email">E-mail</label>
-<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+<input class="full-width has-padding has-border" id="signin-email" type="text" name="username" size="50" placeholder="E-mail">
 </p>
 <p class="fieldset">
 <label class="image-replace cd-password" for="signin-password">Password</label>
-<input class="full-width has-padding has-border" id="signin-password" type="password" placeholder="Password">
+<input class="full-width has-padding has-border" id="signin-password" type="password" name="password" size="20" autocomplete="off"  placeholder="Password">
 </p>
 <p class="fieldset">
 <input type="checkbox" id="remember-me" checked>

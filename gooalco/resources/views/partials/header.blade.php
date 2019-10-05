@@ -16,10 +16,10 @@
                             <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                             </ul>
                             </div>
-                            
-                        
+
+
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                        
+
                             <ul class="top-button ptb10">
                             <li>
                             <a href="#" class="btn btn-small btn-border btn-green customer-support"><i class="fa fa-comments"></i>{{__('home.live chat')}}</a>
@@ -34,12 +34,12 @@
                                     <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/en"><i class="fa fa-user"></i>en</a>
                                     </li>
                             </ul>
-                        
+
                             </div>
                             </div>
                             </div>
                             </div>
-    
+
     <header class="fixed">
         <nav class="navbar navbar-default navbar-static-top fluid_header centered transparent">
         <div class="container">
@@ -62,7 +62,7 @@
         <ul class="nav navbar-nav navbar-right">
                 @foreach ($menus as $menu)
 
-                
+
         <li class="dropdown simple-menu active">
 
         <a href="{{$menu->url}}" class="dropdown-toggle" data-toggle="dropdown" role="button">@if (App::isLocale('en')){{$menu->name_en}}
@@ -92,4 +92,4 @@
         </div>
         </nav>
         </header>
-        
+
