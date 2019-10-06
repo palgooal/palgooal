@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\modals\Page;
 use Illuminate\Http\Request;
 use unique;
+use Str;
 
 class PageController extends Controller
 {
@@ -36,12 +37,15 @@ class PageController extends Controller
      */
     public function store(Request $request)
     {
+        
+        $slug = Str::slug ($request->title_en ==null) ? Str::slug($request->title_ar) : Str::slug($request->title_en)  ;
+        
         $pages = new Page();
         $pages->title_ar =$request->title_ar;
         $pages->title_en =$request->title_en;
         $pages->content_ar =$request->content_ar;
         $pages->content_en =$request->content_en;
-        $pages->slug =$request->slug;
+        $pages->slug =$slug;
         $pages->save();
 
         return redirect('/admin/pages');
@@ -53,9 +57,10 @@ class PageController extends Controller
      * @param  \App\Pages  $pages
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        return view('pages')->with('page', Page::find($id));
+        
+         return view('pages')->with('page', Page::where('slug', $slug)->first());
     }
 
     /**
@@ -78,8 +83,9 @@ class PageController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $slug = Str::slug ($request->title_en ==null) ? Str::slug($request->title_ar) : Str::slug($request->title_en);
         $pages = Page::find($id);
-        $pages->slug =$request->slug;
+        $pages->slug =$slug;
         $pages->title_ar =$request->title_ar;
         $pages->title_en =$request->title_en;
         $pages->content_ar =$request->content_ar;

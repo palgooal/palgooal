@@ -24,7 +24,9 @@
                             <tr>
                                 <th> تصنيف </th>
                                 <th>العنوان</th>
+                                <th>slug</th>
                                 <th>الرابط</th>
+                                <th>شاهد الصفحة</th>
                                 <th> تعديل</th>
                                 <th> حذف </th>
                             </tr>
@@ -35,14 +37,16 @@
                             <tr>
                             <td> {{$item->id}}</td>
                             <td> {{$item->title_ar}}</td>
-                            <td>/pages/{{$item->id}} </td>
+                            <td>{{$item->slug}}</td>
+                            <td>/pages/{{$item->slug}} </td>
 
                                 <td>
+                                        <a href="/pages/{{$item->slug}}" class="btn btn-primary">مشاهدة</a>
+                                </td>
+                                <td>
+                                    <a href="/admin/pages/{{$item->id}}/edit" class="btn btn-primary">تعديل</a>
+                            </td>
 
-                                        <a href="/admin/pages/{{$item->id}}/edit" class="btn btn-primary">تعديل</a>
-                                {{-- <button  class="edit" data-id="" type="button" class="btn btn-primary" ><i class="fa fa-edit" ></i> Edit </button >                 --}}
-
-                                       </td>
                               <td>
                               <form style="display: inline" action="/admin/pages/{{$item->id}}" method="post" >
                                 <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i> حذف </button>

@@ -43,16 +43,16 @@
                     <h3>اضافة خبر باللغة العربية</h3>
                     <div class="form-group">
                         <label>عنوان التدوينة</label>
-                        <input class="form-control spinner" type="text" placeholder="العنوان" name="Title_ar" id="Title">
+                        <input class="form-control spinner" type="text" placeholder="العنوان" name="Title_ar" id="Title_ar">
                     </div>
                     <div class="form-group">
                         <label>نص التدوينة</label>
-                        <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا ... "></textarea>
+                        <textarea name="Body_ar" id="Body_ar" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا ... "></textarea>
 
                     </div>
                     <div class="form-group">
                         <label>اسم الكاتب</label>
-                        <input class="form-control spinner" type="text" placeholder="الكاتب" name="Auther_ar" id="Auther">
+                        <input class="form-control spinner" type="text" placeholder="الكاتب" name="Auther_ar" id="Auther_ar">
                     </div>
                   </div>
 
@@ -60,15 +60,15 @@
                     <h3>Add post in Engilsh</h3>
                     <div class="form-group">
                             <label>Add title</label>
-                            <input class="form-control spinner" type="text" placeholder="Add title of the post" name="Title_en" id="Title">
+                            <input class="form-control spinner" type="text" placeholder="Add title of the post" name="Title_en" id="Title_en">
                         </div>
                     <div class="form-group">
                             <label>Add body of the post</label>
-                            <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control summernote" placeholder=" Add body of the post "></textarea>
+                            <textarea name="Body_en" id="Body_en" cols="30" rows="10" class="form-control summernote" placeholder=" Add body of the post "></textarea>
                         </div>
                             <div class="form-group">
                                     <label>Auther</label>
-                                    <input class="form-control spinner" type="text" placeholder="Auther  " name="Auther_en" id="Auther">
+                                    <input class="form-control spinner" type="text" placeholder="Auther  " name="Auther_en" id="Auther_en">
                                 </div>
                             </div>
                         </div>
@@ -76,10 +76,10 @@
                         <label>تحميل الصور</label>
                         <input class="form-control spinner" type="file" placeholder="تحميل الصور" name="image" id="image">
                     </div>
-                    <p> بأي لغة تريد نشر الخبر </p>
+                    {{-- <p> بأي لغة تريد نشر الخبر </p>
                     <label class="radio-inline"><input type="radio" name="optradio" value="ar">العربية</label>
                     <label class="radio-inline"><input type="radio" name="optradio"value="en">الانجليزية</label>
-                    <label class="radio-inline"><input type="radio" name="optradio"value="both">كليهما</label>
+                    <label class="radio-inline"><input type="radio" name="optradio"value="both">كليهما</label> --}}
 
         <div class="form-actions">
             <button type="submit" class="btn blue">اضافة</button>

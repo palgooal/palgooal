@@ -11,6 +11,10 @@ return[
     'Register' => 'Register',
     'First Name'=>'First Name',
     'Last Name'=> 'Last Name',
-    'Confirm Password'=>'Confirm Password'
+    'User Name' => ' User Name ',
+    'I agree the'=>'I  agree the',
+    'terms'=>'terms',
+    'Confirm Password'=>'Confirm Password',
+    'New account' => 'New account'
 
 ];

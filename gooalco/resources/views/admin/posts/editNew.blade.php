@@ -20,15 +20,7 @@
 </div>
 <div class="portlet-body form">
 
-    <form
-        method="post"
-        action="/admin/posts/{{$post->id}}"
-        enctype="multipart/form-data"
-        accept-charset="UTF-8"
-        class="form-horizontal"
-        enctype="multipart/form-data"
-        role="form"
-      >
+    <form  method="post" action="/admin/posts/{{$post->id}}" enctype="multipart/form-data"  accept-charset="UTF-8" class="form-horizontal" role="form" >
 
       <input type="hidden" name="_method" value="put">
       @csrf
@@ -46,82 +38,49 @@
             <h3>اضافة خبر باللغة العربية</h3>
             <div class="form-group">
                 <label>عنوان التدوينة</label>
-                <input class="form-control spinner" type="text" placeholder="العنوان" name="Title_ar" id="Title">
+            <input class="form-control spinner" type="text" placeholder="العنوان" name="Title_ar" id="Title_ar" value="{{$post->Title_ar}}">
             </div>
             <div class="form-group">
                 <label>نص التدوينة</label>
-                <textarea name="Body_ar" id="Body" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا ... "></textarea>
+            <textarea name="Body_ar" id="Body_ar" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا ... ">{{$post->Body_ar}}</textarea>
 
             </div>
             <div class="form-group">
                 <label>اسم الكاتب</label>
-                <input class="form-control spinner" type="text" placeholder="الكاتب" name="Auther_ar" id="Auther">
+            <input class="form-control spinner" type="text" placeholder="الكاتب" name="Auther_ar" id="Auther_ar" value="{{$post->Auther_ar}}">
             </div>
           </div>
 
           <div id="en" class="tab-pane fade">
             <h3>Add post in Engilsh</h3>
-
-
-
-
             <div class="form-group">
                     <label>Add title</label>
-                    <input class="form-control spinner" type="text" placeholder="Add title of the post" name="Title_en" id="Title">
+            <input class="form-control spinner" type="text" placeholder="Add title of the post" name="Title_en" id="Title_en" value="{{$post->Title_en}}">
                 </div>
 
             <div class="form-group">
                     <label>Add body of the post</label>
-                    <textarea name="Body_en" id="Body" cols="30" rows="10" class="form-control summernote" placeholder=" Add body of the post "></textarea>
+            <textarea name="Body_en" id="Body_en" cols="30" rows="10" class="form-control summernote" placeholder=" Add body of the post ">{{$post->Body_en}}</textarea>
 
                 </div>
 
                     <div class="form-group">
                             <label>Auther</label>
-                            <input class="form-control spinner" type="text" placeholder="Auther  " name="Auther_en" id="Auther">
+                    <input class="form-control spinner" type="text" placeholder="Auther" name="Auther_en" id="Auther_en" value="{{$post->Auther_en}}">
                         </div>
                     </div>
                 </div>
-
+              <img src="{{asset('/images/'.$post->image)}}" alt="" class="img-thumbnail">
             <div class="form-group">
                 <label>تحميل الصور</label>
                 <input class="form-control spinner" type="file" placeholder="تحميل الصور" name="image" id="image">
             </div>
-
-
-    {{-- <div class="form-group">
-            <label for="catagory_id" class="col-md-2 control-label"
-              >category</label
-            >
-
-            <div class="col-md-8">
-              <select
-                class="form-control"
-                required="required"
-                id="catagory_id"
-                name="catagory_id[]"
-                multiple
-                >
-
-                @foreach($categories as $categor)
-                <option value="{{$categor->id}}">{{$categor->title}}</option>
-                @endforeach
-                </select>
-
-              <span class="help-block">
-                <strong></strong>
-              </span>
-            </div>
-          </div> --}}
-<div class="form-actions">
+        <div class="form-actions">
     <button type="submit" class="btn blue">تعديل</button>
     <a href="/admin/posts" class="btn default">الغاء</a>
 </div>
 </div>
     </form>
-
-
-
 </div>
 </div>
 </div>

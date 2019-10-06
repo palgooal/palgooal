@@ -11,6 +11,10 @@ return[
     'Register' => 'تسجيل',
     'First Name'=>'الاسم الأول',
     'Last Name'=> 'الاسم الأخير',
-    'Confirm Password'=>'اعادة تأكيد كلمة المرور'
+    'User Name' => ' اسم المستخدم',
+    'Confirm Password'=>'اعادة تأكيد كلمة المرور',
+    'I agree the'=>'أوافق على',
+    'terms'=>'الشروط',
+    'New account' => 'انشاء حساب جديد'
 
 ];

@@ -15,22 +15,23 @@
 <section class="domain ptb30">
 <div class="container">
 <div class="col-md-3">
-<h2 class="capitalize"></h2>{{__('home.Search Your')}} <span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
-<form action="https://clientgooal.palgooal.com/cart.php?a=add&domain=register" method="post">
-Find your Domain: <input type="text" name="query" size="20" />
-<input type="submit" value="Go" />
-</form>
-</div>
+
+  <h2 class="capitalize">{{__('home.Search Your')}} <br><span class="text-blue">{{__('home.domain')}}</span> {{__('home.Now!')}}</h2>
+ </div>
+
 <div class="col-md-9">
 <div class="row">
 
 <div class="form-group">
-<input type="search" class="form-control" placeholder="{{__('home.Enter your domain name here')}}">
+        <form action="https://clientgooal.palgooal.com/cart.php?a=add&domain=register" method="post">
+
+<input type="text" name="query" class="form-control" placeholder="{{__('home.Enter your domain name here')}}">
 <button type="submit" class="btn btn-border btn-blue">{{__('home.Search')}}</button>
+</form>
 </div>
 
 </div>
-<div class="row">
+{{-- <div class="row">
 
 <div class="domain-check">
 <ul>
@@ -53,7 +54,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 </ul>
 </div>
 
-</div>
+</div> --}}
 </div>
 </div>
 </section>
@@ -182,7 +183,10 @@ Find your Domain: <input type="text" name="query" size="20" />
 <section class="portfolio pt80 pb40">
         <div class="container nopadding">
         <div class="row">
-
+          <div class="section-head col-sm-12">
+            <br />
+              <h4><span></span> {{__('home.Of our business')}} </h4>
+               </div>
         <ul class="list-inline text-center uppercase" id="portfolio-sorting">
         <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
         @foreach ($categorys as $category)
@@ -199,132 +203,60 @@ Find your Domain: <input type="text" name="query" size="20" />
         @foreach ($works as $work)
 
         <div class="element col-md-3 col-sm-6 col-xs-6 {{$work->category_work_id}}">
-        <figure>
-        <a href="{{asset('images/'.$work->image)}}" class="hover-zoom">
-        <img src="{{asset('images/'.$work->image)}}" class="img-responsive" alt="">
+        {{-- <figure>
+            {{-- <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228"> --}}
+
+        {{-- <a href="{{asset('images/'.$work->image)}}" class="hover-zoom" >
+        <img src="{{asset('images/'.$work->image)}}" class="img-responsive" alt="" >
         </a>
-        </figure>
+        </figure> --}}
+        <img id="myImg" src="{{asset('images/'.$work->image)}}" alt="Snow" style="width:100%;max-width:300px">
+        <a href="">dfsdfsdfsdfsd</a>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+      
         </div>
         @endforeach
 
-        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
-        <figure>
-        <a href="images/portfolio/image2.jpg" class="hover-zoom">
-        <img src="images/portfolio/image2.jpg" class="img-responsive" alt="">
-        </a>
-        </figure>
-        </div>
 
-        <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
-        <figure>
-        <a href="images/portfolio/image3.jpg" class="hover-zoom">
-        <img src="images/portfolio/image3.jpg" class="img-responsive" alt="">
-        </a>
-        </figure>
-        </div>
-
-        <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
-        <figure>
-        <a href="images/portfolio/image4.jpg" class="hover-zoom">
-        <img src="images/portfolio/image4.jpg" class="img-responsive" alt="">
-        </a>
-        </figure>
-        </div>
-         --}}
-        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
-        <figure>
-        <a href="images/portfolio/image5.jpg" class="hover-zoom">
-        <img src="images/portfolio/image5.jpg" class="img-responsive" alt="">
-        </a>
-        </figure>
-        </div> --}}
-
-        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat2">
-        <figure>
-        <a href="images/portfolio/image6.jpg" class="hover-zoom">
-        <img src="images/portfolio/image6.jpg" class="img-responsive" alt="">
-        </a>
-         </figure>
-        </div> --}}
-
-        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat3">
-        <figure>
-        <a href="images/portfolio/image7.jpg" class="hover-zoom">
-        <img src="images/portfolio/image7.jpg" class="img-responsive" alt="">
-        </a>
-        </figure>
-        </div> --}}
-
-        {{-- <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat4">
-        <figure>
-        <a href="images/portfolio/image8.jpg" class="hover-zoom">
-        <img src="images/portfolio/image8.jpg" class="img-responsive" alt="">
-        </a>
-        </figure>
-        </div> --}}
         </div>
 
         </div>
         </section>
-{{-- <section class="portfolio pt80 pb40">
-    <div class="container nopadding">
-    <div class="row">
-        <div class="section-title">
-            <h2>{{__('home.Of our business')}}</h2>
-            </div>
-    <ul class="list-inline text-center uppercase" id="portfolio-sorting">
-    <li><a href="#0" data-filter="*" class="current">{{__('home.ALL')}}</a></li>
+
+      
 
 
+<section class="ptb80" id="latest-news" )>
 
-    <li><a href="#0" data-filter=".portfolio-cat1"></a></li>
-
-
-
-    </ul>
-    </div>
-
-    <div class="row portfolio-grid mt40">
-        @foreach ($works as $work)
-
-
-    <div class="element col-md-3 col-sm-6 col-xs-6 portfolio-cat1">
-    <figure>
-    <a href="{{asset('/images/'.$work->image)}}" class="hover-zoom">
-    <img src="{{asset('/images/'.$work->image)}}" class="img-responsive" alt="">
-    </a>
-    </figure>
-    </div>
-    @endforeach
-    </div>
-    </section> --}}
-
-
-<section class="ptb80" id="latest-news">
 <div class="container">
 <div class="section-title">
 <h2>{{__('home.Latest News')}}</h2>
 </div>
 <div class="col-md-12">
 
-<div class="row news-content pt30">
+    @includeWhen(!count($posts) !=null, 'alert.empyt', ['msg' => 'لا توجد منشورات'])
 
     @foreach ($posts as $post)
 
 <div class="col-md-4">
 <article class="blog-single pb30 shadow">
 <div class="blog-post-thumbnail normal-post hover-link">
-<a href="/post/{{$post->id}}"><img src="{{asset('/images/'.$post->image)}}" alt=""></a>
+<a href="/post/{{$post->slug}}"><img src="{{asset('/images/'.$post->image)}}" alt=""></a>
 </div>
 <div class="blog-post-title pt30 pb10">
  @if (App::isLocale('en'))
-<h3><a href="/post/{{$post->id}}">{{$post->Title_en}}</a></h3>
+<h3><a href="/post/{{$post->slug}}">{{$post->Title_en}}</a></h3>
 <p class="nomargin pt5">{{$post->Auther_en}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
 <p class="nomargin pb20">{!!Str::limit($post->Body_en, 200)!!}</p>
 @else
-<h3><a href="/post/{{$post->id}}">{{$post->Title_ar}}</a></h3>
+<h3><a href="/post/{{$post->slug}}">{{$post->Title_ar}}</a></h3>
 <p class="nomargin pt5">{{$post->Auther_ar}}<a class="blog-author" href="#"></a> <span class="blog-date">{{$post->updated_at}}</span></p>
 </div>
 <div class="blog-post-details pt20">
@@ -332,7 +264,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 @endif
 
 
-<a class="blog-more-btn" href="/post/{{$post->id}}">{{__('home.Read More')}} <i class="fa fa-long-arrow-right"></i></a>
+<a class="blog-more-btn" href="/post/{{$post->slug}}">{{__('home.Read More')}} <i class="fa fa-long-arrow-right"></i></a>
 </div>
 </article>
 </div>
@@ -346,6 +278,7 @@ Find your Domain: <input type="text" name="query" size="20" />
 </div>
 </div>
 </section>
+
 
 <div class="live-chat collapsed">
 
@@ -405,26 +338,26 @@ Find your Domain: <input type="text" name="query" size="20" />
 <div class="cd-user-modal-container">
 
 <ul class="cd-switcher">
-<li><a href="#0">Sign in</a></li>
-<li><a href="#1">New account</a></li>
+<li><a href="#0">{{__('login.Login')}}</a></li>
+<li><a href="#1">{{__('login.New account')}}</a></li>
 </ul>
 <div id="cd-login">
 
-<form class="cd-form">
+<form class="cd-form" method="post" action="https://clientgooal.palgooal.com/dologin.php">
 <p class="fieldset">
-<label class="image-replace cd-email" for="signin-email">E-mail</label>
-<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+<label class="image-replace cd-email" for="signin-email">{{__('login.E-Mail Address')}}</label>
+<input class="full-width has-padding has-border" id="signin-email" type="text" name="username" size="50" placeholder="E-mail">
 </p>
 <p class="fieldset">
-<label class="image-replace cd-password" for="signin-password">Password</label>
-<input class="full-width has-padding has-border" id="signin-password" type="password" placeholder="Password">
+<label class="image-replace cd-password" for="signin-password">{{__('login.Password')}}</label>
+<input class="full-width has-padding has-border" id="signin-password" type="password" name="password" size="20" autocomplete="off"  placeholder="Password">
 </p>
 <p class="fieldset">
 <input type="checkbox" id="remember-me" checked>
-<label for="remember-me">Remember me</label>
+<label for="remember-me">{{__('login.Remember Me')}}  </label>
 </p>
 <p class="fieldset">
-<button type="submit" value="Login" class="btn btn-border btn-blue">Login</button>
+<button type="submit" value="Login" class="btn btn-border btn-blue">{{__('login.Login')}}</button>
 </p>
 </form>
 </div>
@@ -433,23 +366,23 @@ Find your Domain: <input type="text" name="query" size="20" />
 
 <form class="cd-form">
 <p class="fieldset">
-<label class="image-replace cd-username" for="signup-username">Username</label>
+<label class="image-replace cd-username" for="signup-username">{{__('login.User Name')}}</label>
 <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
 </p>
 <p class="fieldset">
-<label class="image-replace cd-email" for="signup-email">E-mail</label>
+<label class="image-replace cd-email" for="signup-email">{{__('login.E-Mail Address')}}</label>
 <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
 </p>
 <p class="fieldset">
-<label class="image-replace cd-password" for="signup-password">Password</label>
+<label class="image-replace cd-password" for="signup-password">{{__('login.Password')}}</label>
 <input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="Password">
 </p>
 <p class="fieldset">
 <input type="checkbox" id="accept-terms">
-<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+<label for="accept-terms">{{__('login.I agree the')}} <a href="#0">{{__('login.terms')}}</a></label>
 </p>
 <p class="fieldset">
-<button class="btn btn-border btn-blue" type="submit" value="Create account">Create Account</button>
+<button class="btn btn-border btn-blue" type="submit" value="Create account">{{__('login.New account')}}</button>
 </p>
 </form>
 </div>
@@ -457,4 +390,6 @@ Find your Domain: <input type="text" name="query" size="20" />
 </div>
 
 </div>
+
+
 @endsection

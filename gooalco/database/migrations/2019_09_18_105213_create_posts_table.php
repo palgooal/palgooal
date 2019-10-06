@@ -16,15 +16,13 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('Title_ar')->nullable();
-            $table->string('Auther_ar')->nullable();
-            $table->text('Body_ar')->nullable();
             $table->string('Title_en')->nullable();
+            $table->string('Auther_ar')->nullable();
             $table->string('Auther_en')->nullable();
-            $table->text('Body_en')->nullable();
+            $table->longText('Body_ar')->nullable();         
+            $table->longText('Body_en')->nullable();
             $table->string('image')->nullable();
-            $table->string('optradio');
-
-
+            $table->string('slug');
             $table->timestamps();
         });
     }

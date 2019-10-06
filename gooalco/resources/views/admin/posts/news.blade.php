@@ -23,7 +23,7 @@
                                 <thead>
                                     <tr>
                                         <th> عنوان </th>
-
+                                        <th>slug</th>
                                         <th>الكاتب</th>
                                         <th>مشاهدة المقالة</th>
                                         <th>تعديل</th>
@@ -32,18 +32,12 @@
                                 </thead>
                                 <tbody>
                                     @foreach ($posts as $post)
-                                    <tr>
+                                        <tr>
                                         <td> {{$post->Title_ar}}</td>
-
+                                        <td>{{$post->slug}}</td>
                                         <td>{{$post->Auther_ar}}</td>
-                                        {{-- <td> @foreach($item->categories as $category)
-                                           * {{$category->title}}
-                                         @endforeach</td> --}}
-
-                                         <td>
-                                            <a href="/post/{{$post->id}}" class="btn btn-primary">شاهد المقالة</a>
-
-
+                                        <td>
+                                            <a href="/post/{{$post->slug}}" class="btn btn-primary">شاهد المقالة</a>
                                         </td>
                                         <td>
                                             <a href="/admin/posts/{{$post->id}}/edit" class="btn btn-primary">تعديل</a>

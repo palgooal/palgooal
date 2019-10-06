@@ -62,9 +62,9 @@ class CategorieWorkController extends Controller
      * @param  \App\modals\categorieWork  $categorieWork
      * @return \Illuminate\Http\Response
      */
-    public function edit(categorieWork $categorieWork)
+    public function edit($id)
     {
-        //
+        return view('admin.category.editCategory')->with('category', categorieWork::find($id));
     }
 
     /**
@@ -74,9 +74,14 @@ class CategorieWorkController extends Controller
      * @param  \App\modals\categorieWork  $categorieWork
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, categorieWork $categorieWork)
+    public function update(Request $request, $id)
     {
-        //
+        $categorieWork = categorieWork::find($id);
+        $categorieWork->name_ar = $request->name_ar;
+        $categorieWork->name_en = $request->name_en;
+        $categorieWork->save();
+
+        return redirect('/admin/categorys');
     }
 
     /**

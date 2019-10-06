@@ -13,8 +13,10 @@
 <meta name="description" content="Cloudify - Web Hosting HTML Template">
 <meta name="keywords" content="one page, multipage, domain, hosting, server, cloud, cloudify, html5 template">
 <meta name="author" content="GnoDesign">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{{__('home.Palgooal co')}}</title>
+
 <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon.html">
 
@@ -26,12 +28,13 @@
 <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <link rel="stylesheet" type="text/css" href="/css/responsive.css">
-
+<link rel="stylesheet" type="text/css" href="/css/aa.css">
 
 @if (App::isLocale('ar'))
 
 <link rel="stylesheet" href="//cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css">
 <link rel="stylesheet" type="text/css" href="./css/style-ar.css">
+<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
 
 @endif
 
@@ -73,22 +76,32 @@
 
   ga('create', 'UA-60264400-3', 'auto');
   ga('send', 'pageview');
-
-
-  $.ajax({
-                    url:"/admin/categorys",
-                    type:"GET",
-                    data:{"t":"tour","k":"price"},
-                    success:function(data) {
-
-                        document.getElementById('opprice').innerHTML=data;
-                    },
-                    error:function() {
-
-                    }
-     });
-
 </script>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  array.forEach(myImg => {
+   $work->id
+  });
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
 </body>
 
 <!-- Mirrored from cariera.co/templates/cloudify/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Sep 2019 17:00:00 GMT -->
