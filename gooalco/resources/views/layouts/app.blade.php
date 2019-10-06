@@ -16,7 +16,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{{__('home.Palgooal co')}}</title>
-
 <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon.html">
 
@@ -82,15 +81,10 @@
   var modal = document.getElementById("myModal");
   
   // Get the image and insert it inside the modal - use its "alt" text as a caption
-  array.forEach(myImg => {
    $work->id
   });
   var img = document.getElementById("myImg");
   var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
     captionText.innerHTML = this.alt;
   }
   
