@@ -218,7 +218,7 @@
   <img class="modal-content" id="img01">
   <div id="caption"></div>
 </div>
-      
+
         </div>
         @endforeach
 
@@ -228,7 +228,7 @@
         </div>
         </section>
 
-      
+
 
 
 <section class="ptb80" id="latest-news" )>
@@ -346,11 +346,11 @@
 <form class="cd-form" method="post" action="https://clientgooal.palgooal.com/dologin.php">
 <p class="fieldset">
 <label class="image-replace cd-email" for="signin-email">{{__('login.E-Mail Address')}}</label>
-<input class="full-width has-padding has-border" id="signin-email" type="text" name="username" size="50" placeholder="E-mail">
+<input class="full-width has-padding has-border" id="signin-email" type="text" name="username" size="50" placeholder="{{__('login.E-Mail Address')}}">
 </p>
 <p class="fieldset">
 <label class="image-replace cd-password" for="signin-password">{{__('login.Password')}}</label>
-<input class="full-width has-padding has-border" id="signin-password" type="password" name="password" size="20" autocomplete="off"  placeholder="Password">
+<input class="full-width has-padding has-border" id="signin-password" type="password" name="password" size="20" autocomplete="off"  placeholder="{{__('login.Password')}}">
 </p>
 <p class="fieldset">
 <input type="checkbox" id="remember-me" checked>
@@ -367,15 +367,15 @@
 <form class="cd-form">
 <p class="fieldset">
 <label class="image-replace cd-username" for="signup-username">{{__('login.User Name')}}</label>
-<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="{{__('login.User Name')}}">
 </p>
 <p class="fieldset">
 <label class="image-replace cd-email" for="signup-email">{{__('login.E-Mail Address')}}</label>
-<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="{{__('login.E-Mail Address')}}">
 </p>
 <p class="fieldset">
 <label class="image-replace cd-password" for="signup-password">{{__('login.Password')}}</label>
-<input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="Password">
+<input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="{{__('Password')}}">
 </p>
 <p class="fieldset">
 <input type="checkbox" id="accept-terms">

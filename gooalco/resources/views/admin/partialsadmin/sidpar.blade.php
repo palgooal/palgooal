@@ -161,9 +161,6 @@
                                                     <span class="title">جميع العروض </span>
                                                 </a>
                                             </li>
-
-
-
                                         </ul>
                                     </li>
                                     <li class="nav-item start ">
@@ -190,19 +187,40 @@
 
                                         </ul>
                                     </li>
-                                    
-
+                                    <li class="nav-item start ">
+                                        <a href="javascript:;" class="nav-link nav-toggle">
+                                            <i class="icon-home"></i>
+                                            <span class="title">slider </span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item start ">
+                                                <a href="/admin/slider" class="nav-link ">
+                                                    <i class="icon-bar-chart"></i>
+                                                    <span class="title">Sliders </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item start ">
+                                        <a href="javascript:;" class="nav-link nav-toggle">
+                                            <i class="icon-home"></i>
+                                            <span class="title">البريد الالكتروني </span>
+                                            <span class="arrow"></span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="nav-item start ">
+                                                <a href="/admin/contact" class="nav-link ">
+                                                    <i class="icon-bar-chart"></i>
+                                                    <span class="title">جميع الرسائل </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
 
                                         </ul>
                                     </li>
-                                <li class="nav-item start ">
-                                        <a href="/admin/slider" class="nav-link nav-toggle">
-                                            <i class="icon-home"></i>
-                                            <span class="title">Slider</span>
 
-                                        </a>
-
-                                    </li>
                     </ul>
                     <!-- END SIDEBAR MENU -->
                     <!-- END SIDEBAR MENU -->

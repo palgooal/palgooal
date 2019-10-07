@@ -27,6 +27,7 @@ Route::get('/lang/{local}', 'HomeController@lang');
 
 Route::resource('/admin/posts', 'PostController');
 Route::get('/post/{slug}', 'PostController@show');
+
 Route::resource('/admin/slider', 'SliderController');
 Route::resource('/admin/menus', 'MenuController');
 Route::resource('/admin/submenus', 'SubMenuController');
@@ -35,6 +36,7 @@ Route::get('/pages/{slug}', 'PageController@show');
 Route::resource('/admin/options', 'OptionController');
 Route::resource('/admin/price', 'PriceController');
 Route::resource('/admin/works', 'WorkController');
-Route::resource('/admin/categorys', 'CategorieWorkController'); 
-
-
+Route::resource('/admin/categorys', 'CategorieWorkController');
+Route::resource('/contact', 'ContactController');
+Route::get('/admin/contact', 'ContactController@adminIndex');
+Route::get('/admin/contact/{id}', 'ContactController@show');
