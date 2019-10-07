@@ -23,6 +23,7 @@
                             <ul class="top-button ptb10">
                             <li>
                             <a href="#" class="btn btn-small btn-border btn-green customer-support"><i class="fa fa-comments"></i>{{__('home.live chat')}}</a>
+                            <a href="/contact" class="btn btn-small btn-border btn-green customer-support"><i class="fa fa-comments"></i>{{__('contact.Contact')}}</a>
                             </li>
                             <li class="login">
                             <a id="modal_trigger" class="btn btn-small btn-border-rev btn-blue" href="#"><i class="fa fa-user"></i>{{__('home.Client Area')}}</a>
@@ -30,15 +31,15 @@
                             @if (App::isLocale('en'))
                             <li>
                                 <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/ar"><i class="fa fa-user"></i>عربي</a>
-                                </li>   
-                           
+                                </li>
+
                             @else
                             <li>
                                 <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/en"><i class="fa fa-user"></i>en</a>
                                 </li>
                             @endif
-                           
-                                
+
+
                             </ul>
 
                             </div>
