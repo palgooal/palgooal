@@ -7,6 +7,7 @@
     <title>PAL GOOAL</title>
 </head>
 <body>
+    
     {{$e_message}}
 
 </body>

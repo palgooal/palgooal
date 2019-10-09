@@ -30,5 +30,7 @@ class MailController extends Controller
         Session::flush("success");
         return back();
 
+        
+
     }
 }

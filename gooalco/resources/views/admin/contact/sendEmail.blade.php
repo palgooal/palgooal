@@ -14,6 +14,7 @@
             class="form-horizontal"
             role="form">
                 @csrf
+                
                 @if(Session::has("success"))
                 <div class="alert alert-succsess">
                     <b>تم الإرسال بنجاح  </b>

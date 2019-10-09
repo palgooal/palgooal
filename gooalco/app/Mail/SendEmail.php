@@ -23,6 +23,8 @@ class SendEmail extends Mailable
     {
         $this->sub = $subject;
         $this->mes = $message;
+
+        
     }
 
     /**
