@@ -25,6 +25,7 @@ Auth::routes(['verify' => true]);
 
 Route::get('/lang/{local}', 'HomeController@lang');
 
+
 Route::resource('/admin/posts', 'PostController');
 Route::get('/post/{slug}', 'PostController@show');
 
@@ -40,3 +41,7 @@ Route::resource('/admin/categorys', 'CategorieWorkController');
 Route::resource('/contact', 'ContactController');
 Route::get('/admin/contact', 'ContactController@adminIndex');
 Route::get('/admin/contact/{id}', 'ContactController@show');
+Route::get('/admin/email', 'MailController@home');
+Route::post('/admin/sendemail', 'MailController@sendEmail')->name('admin/sendemail');
+
+
