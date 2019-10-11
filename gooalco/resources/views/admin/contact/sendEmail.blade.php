@@ -14,7 +14,7 @@
             class="form-horizontal"
             role="form">
                 @csrf
-                
+
                 @if(Session::has("success"))
                 <div class="alert alert-succsess">
                     <b>تم الإرسال بنجاح  </b>
@@ -28,7 +28,7 @@
 
             <div class="col-md-12">
                     <input class="form-control input-box" type="text" name="subject" placeholder="عنوان الرسالة">
-            <input class="form-control input-box mb20" type="email" name="email" placeholder="عنوان البريد المرسل اليه">
+            <input class="form-control input-box mb20" type="email" name="email" value="{{$contact->email}}" placeholder="عنوان البريد المرسل اليه">
             </div>
             <div class="col-md-12">
 

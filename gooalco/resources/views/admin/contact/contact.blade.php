@@ -27,6 +27,7 @@
                                         <th>البريد الإلكتروني</th>
                                         <th>الموضوع</th>
                                         <th>مشاهدة الرسالة</th>
+                                        <th>الرد الرسالة</th>
                                         <th>حذف</th>
                                     </tr>
                                 </thead>
@@ -39,6 +40,9 @@
                                         <td>{{$contact->subject}}</td>
                                         <td>
                                             <a href="/admin/contact/{{$contact->subject}}" class="btn btn-primary">شاهد الرسالة</a>
+                                        </td>
+                                        <td>
+                                            <a href="/admin/sendmail/{{$contact->id}}" class="btn btn-primary">الرد على الرسالة</a>
                                         </td>
 
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Mail;
 
 use App\Mail\SendEmail;
+use App\modals\contact;
 use Illuminate\Http\Request;
 use Session;
 
@@ -29,8 +30,6 @@ class MailController extends Controller
         Mail::to($email)->send($mail);
         Session::flush("success");
         return back();
-
-        
-
     }
+
 }

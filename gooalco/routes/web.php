@@ -42,7 +42,10 @@ Route::resource('/contact', 'ContactController');
 Route::get('/admin/contact', 'ContactController@adminIndex');
 Route::get('/admin/contact/{id}', 'ContactController@show');
 
+Route::get('/admin/sendmail/{id}', 'ContactController@sendEmailById');
+
 Route::get('/admin/email', 'MailController@home');
+Route::get('/admin/email/{$id}', 'MailController@sendEmailById');
 Route::post('/admin/sendemail', 'MailController@sendEmail');
 
 

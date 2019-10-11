@@ -58,6 +58,10 @@ class ContactController extends Controller
     {
         return view('admin.contact.showMessage')->with('contact',contact::where('subject', $id)->first());
     }
+    public function sendEmailById($id){
+
+        return view ('admin.contact.sendEmail')->with('contact',contact::where('id', $id)->first());
+    }
 
     /**
      * Show the form for editing the specified resource.
