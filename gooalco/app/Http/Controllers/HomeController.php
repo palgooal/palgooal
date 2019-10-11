@@ -13,7 +13,7 @@ use App\modals\SubMenu;
 use App\modals\Option;
 use App\modals\Page;
 use Product;
-
+use App;
 class HomeController extends Controller
 {
     /**
@@ -33,8 +33,13 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if(App::isLocale('ar')){
+            $post = Post::where('Title_ar', '!=', null)->latest()->take(3)->get();
+        }else if(App::isLocale('en')){
+            $post = Post::where('Title_en', '!=', null)->latest()->take(3)->get();
+        }
 
-        $post = Post::latest()->take(3)->get();
+        //$post = Post::latest()->take(3)->get();
 
          $work = Work::latest()->take(8)->get();
         return view('index')

@@ -40,7 +40,6 @@ class AppServiceProvider extends ServiceProvider
         view::composer('options' , Option::get());
         view::share('prices', Price::get());
         view::share('categorys', categorieWork::get());
-        view::share('posts', Post::get());
         view::share('pages', Page::get());
         
 

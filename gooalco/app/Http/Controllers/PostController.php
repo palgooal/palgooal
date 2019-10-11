@@ -16,9 +16,8 @@ class PostController extends Controller
      */
     public function index()
     {
-
-        return view ('admin.posts.news')->with("posts", Post::get());
-    }
+            return view ('admin.posts.news')->with("posts", Post::get());
+        }
 
     /**
      * Show the form for creating a new resource.
@@ -71,6 +70,7 @@ class PostController extends Controller
     public function show($slug)
     {
         return view('singelPost')->with('post', Post::where('slug', $slug)->first());
+        
     }
 
     /**
