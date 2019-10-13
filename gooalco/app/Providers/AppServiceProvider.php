@@ -34,16 +34,12 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-        view::composer( 'menus', 'partials.header', 'App\Http\ViewComposers\HeaderComposer');
+    // //    // view::composer( 'menus', 'partials.header', 'App\Http\ViewComposers\HeaderComposer');
         view::share('menus' , Menu::orderBy('name_ar', 'desc')->get());
-        //view::share('submenus' , SubMenu::orderBy('number', 'asc')->get());
-        view::composer('options' , Option::get());
+        view::share('submenus' , SubMenu::orderBy('number', 'asc')->get());
+    // //     view::composer('options' , Option::get());
         view::share('prices', Price::get());
         view::share('categorys', categorieWork::get());
         view::share('pages', Page::get());
-        
-
-
-
     }
 }
