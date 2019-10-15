@@ -101,11 +101,11 @@
           <table class="table table-hover">
             <thead>
               <tr>
-                <th>ترتيب القائمة الفرعية</th>
-                <th>اسم القائمة الفرعية بالعربية</th>
-                <th>رابط القائمة الفرعية بالانجليزية</th>
+                <th>ترتيب</th>
+                <th>الفرعية بالعربية</th>
+                <th>الفرعية بالانجليزية</th>
+                <th>القائمة الرئيسية</th>
                 <th>الرابط</th>
-
                 <th>تعديل</th>
                 <th>حذف</th>
               </tr>
@@ -116,35 +116,15 @@
                 <td>{{$submenu->number}}</td>
                 <td>{{$submenu->name_ar}}</td>
                 <td>{{$submenu->name_en}}</td>
+                <td>{{$submenu->menu->name_ar}}</td>
                 <td>{{$submenu->url}}</td>
-
-                {{-- <td>{{$submenu->Menu->name_en}}</td> --}}
-                {{-- <td>{{$submenu->menu->name}}</td> --}}
-               {{-- <td>@foreach ($submenu->$menu as $item)
-
-              {{$item->menu_id}} @endforeach</td>  --}}
-
-
-
                 <td>
-
-
-                  <a
-                    href="/admin/submenus/{{$submenu->id}}/edit"
-                    class="btn btn-primary"
-                    >تعديل</a
-                  >
+                  <a href="/admin/submenus/{{$submenu->id}}/edit" class="btn btn-primary">تعديل</a>
                 </td>
                 <td>
-                  <form
-                    style="display: inline"
-                    action="/admin/submenus/{{$submenu->id}}"
-                    method="post"
-                  >
+                  <form style="display: inline" action="/admin/submenus/{{$submenu->id}}" method="post">
                     <button type="submit" class="btn btn-danger">
-                      <i class="fa fa-trash-o"></i> حذف
-                    </button>
-
+                      <i class="fa fa-trash-o"></i> حذف </button>
                     @method('delete') @csrf
                   </form>
                 </td>

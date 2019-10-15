@@ -37,7 +37,7 @@ class HomeController extends Controller
             $post = Post::where('Title_ar', '!=', null)->latest()->take(3)->get();
         }else if(App::isLocale('en')){
             $post = Post::where('Title_en', '!=', null)->latest()->take(3)->get();
-        }
+        } 
 
         //$post = Post::latest()->take(3)->get();
 
@@ -45,7 +45,7 @@ class HomeController extends Controller
         return view('index')
         ->with('posts', $post)
         ->with('sliders', Slider::get())
-        //->with('menus', Menu::get())
+       // ->with('menus', Menu::orderBy('number', 'asc')->get())
         //->with('submenus' ,SubMenu::orderBy('name_ar', 'desc')->get())
         ->with('options' , Option::get())
         ->with('works' ,  $work);
