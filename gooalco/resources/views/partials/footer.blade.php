@@ -58,8 +58,7 @@
     {{$option->Copyright}}
     @endforeach --}}
     
-    
-Copyright &copy; cloudify. All Rights Reserved
+    {{__('home.Copyright © Palgooal co. All Rights Reserved 2019')}}
 </div>
 
 </footer>

@@ -42,6 +42,7 @@ return[
     'Sms Hosting'=>'Sms Hosting',
     'progroming and disagining'=>'progroming and disagining',
     'Our main service'=>'Our main service',
-    'We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed'=>'We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed'
+    'We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed'=>'We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed',
+    'Copyright © Palgooal co. All Rights Reserved 2019'=>'Copyright © Palgooal co. All Rights Reserved 2019 ',
 
 ];

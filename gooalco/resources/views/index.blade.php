@@ -280,7 +280,7 @@
 </section>
 
 
-<div class="live-chat collapsed">
+{{-- <div class="live-chat collapsed">
 
 <div class="header">
 <a href="#" onclick="return(false);" class="chat-close"><i class="fa fa-times"></i></a>
@@ -330,7 +330,7 @@
 
 </div>
 
-</div>
+</div> --}}
 
 
 <div class="cd-user-modal">
