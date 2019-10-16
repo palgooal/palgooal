@@ -46,12 +46,7 @@
                                         </td>
 
 
-                                        {{-- <td>
-                                            <a href="/post/{{$post->slug}}" class="btn btn-primary">شاهد المقالة</a>
-                                        </td>
-                                        <td>
-                                            <a href="/admin/posts/{{$post->id}}/edit" class="btn btn-primary">تعديل</a>
-                                        </td> --}}
+
                                                 <td>
                                                     <form style="display: inline" action="/contact/{{$contact->id}}" method="post">
                                                         <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o"></i> حذف </button>

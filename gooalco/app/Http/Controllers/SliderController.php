@@ -42,14 +42,16 @@ class SliderController extends Controller
             $slider->image =$path;
         }
 
-        $slider->title_ar =$request->title_ar;
-        $slider->title2_ar =$request->title2_ar;
-        $slider->text_blue_ar =$request->text_blue_ar;
-        $slider->description_ar =$request->description_ar;
-        $slider->title_en =$request->title_en;
-        $slider->title2_en =$request->title2_en;
-        $slider->text_blue_en =$request->text_blue_en;
-        $slider->description_en =$request->description_en;
+        // $slider->title_ar =$request->title_ar;
+        // $slider->title2_ar =$request->title2_ar;
+        // $slider->text_blue_ar =$request->text_blue_ar;
+        // $slider->description_ar =$request->description_ar;
+        // $slider->title_en =$request->title_en;
+        // $slider->title2_en =$request->title2_en;
+        // $slider->text_blue_en =$request->text_blue_en;
+        // $slider->description_en =$request->description_en;
+        $slider->body_ar = $request->body_ar ;
+        $slider->body_en = $request->body_en ;
         $slider->save();
 
         return redirect('/admin/slider');

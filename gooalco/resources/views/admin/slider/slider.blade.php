@@ -1,5 +1,5 @@
 @extends('layouts.adminLayout')
-@section('content') 
+@section('content')
 
 <div class="page-content-wrapper">
         <!-- BEGIN CONTENT BODY -->
@@ -29,97 +29,20 @@
                             <li class="active"><a data-toggle="tab" href="#ar">اضافة سلايدر </a></li>
                             <li><a data-toggle="tab" href="#en">ADD SLIDER</a></li>
                           </ul>
-                          <div class="tab-content">
+                           <div class="tab-content">
                                 <div id="ar" class="tab-pane fade in active">
-                                  <h3>اضافة خبر باللغة العربية</h3>
-                                  <div class="form-group">
-                                        <label>عنوان السلايدر باللغة العربية</label>
-                                        <input
-                                          class="form-control spinner"
-                                          type="text"
-                                          placeholder="اكتب هنا عنوان السلادير باللغة العربية"
-                                          name="title_ar"
-                                          id="title_ar"
-                                        />
-                                      </div>
+                                  <h3>اضافة سلايدر</h3>
                                       <div class="form-group">
-                                            <label>عنوان 2 السلادير باللغة العربية</label>
-                                            <input
-                                              class="form-control spinner"
-                                              type="text"
-                                              placeholder="اكتب هنا عنوان 2 السلادير باللغة العربية"
-                                              name="title2_ar"
-                                              id="title2_ar"
-                                            />
-                                          </div>
-                                          <div class="form-group">
-                                                <label>اكتب هنا عنوان بالون الأزرق باللغة العربية</label>
-                                                <input
-                                                  class="form-control spinner"
-                                                  type="text"
-                                                  placeholder="اكتب هنا عنوان بالون الأزرق باللغة العربية"
-                                                  name="text_blue_ar"
-                                                  id="text_blue_ar"
-                                                />
-                                              </div>
-                                              <div class="form-group">
-                                                    <label>وصف عام للسلايدر</label>
-                                                    <input
-                                                      class="form-control spinner"
-                                                      type="text"
-                                                      placeholder="اكتب هنا وصف عام للسلايدر"
-                                                      name="description_ar"
-                                                      id="description_ar"
-                                                    />
-                                                  </div>
+                                        <label> محتوى السلايدر</label>
+                                        <textarea name="body_ar" id="body_ar" cols="30" rows="10" class="form-control summernote" placeholder="إضافة محتوى السلايدر هنا ... "></textarea>
+                                    </div>
                                 </div>
                                         <div id="en" class="tab-pane ">
                                           <h3>ADD slider</h3>
-                                          <div class="form-group">
-                                                <label>Add title</label>
-                                                <input
-                                                  class="form-control spinner"
-                                                  type="text"
-                                                  placeholder="Add  title  "
-                                                    name="title_en"
-                                                  id="title_en"
-                                                />
-                                              </div>
-
-
-                                                <div class="form-group">
-                                                        <label>Add title 2</label>
-                                                    <input
-                                                      class="form-control spinner"
-                                                      type="text"
-                                                      placeholder="Add  title 2"
-                                                        name="title2_en"
-                                                      id="title2_en"
-                                                    />
-                                                  </div>
-                                                    <div class="form-group">
-                                                            <label>Add blue title</label>
-                                                        <input
-                                                          class="form-control spinner"
-                                                          type="text"
-                                                          placeholder="Add blue title"
-                                                                    name="text_blue_en"
-                                                          id="text_blue_en"
-                                                        />
-                                                      </div>
-
                                               <div class="form-group">
-                                                    <label>Add description</label>
-                                                <input
-                                                  class="form-control spinner"
-                                                  type="text"
-                                                  placeholder="Add description"
-                                                  name="description_en"
-                                                  id="description_en"
-                                                />
-                                              </div>
-                                       </div>
-                          </div>
+                                                <label>Body of the slider</label>
+                                                <textarea name="body_en" id="body_en" cols="30" rows="10" class="form-control summernote" placeholder="add body to slider ..."></textarea>
+                                </div></div></div>
                 <div class="form-group">
                   <label>تحميل صورة خلفية السلايدر</label>
                   <input
@@ -162,7 +85,7 @@
                     <th>حذف</th>
                   </tr>
                 </thead>
-                <tbody>
+                {{-- <tbody>
                   @foreach ($sliders as $slider)
                   <tr>
                     <td>{{$slider->title_ar}}</td>
@@ -183,7 +106,7 @@
 
                     @endforeach
                   </tr>
-                </tbody>
+                </tbody> --}}
               </table>
             </div>
           </div>

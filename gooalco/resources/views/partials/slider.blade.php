@@ -12,11 +12,14 @@
     <div class="slider-content container">
     <div class="col-md-12">
             @if (App::isLocale('en'))
-    <h2>{{$slider->title_en}} <br> {{$slider->title2_en}}  <span class="text-blue">{{$slider->text_blue_en}}</span>.</h2>
-    <p>{{$slider->description_en}}</p>
+    {{-- <h2>{{$slider->title_en}} <br> {{$slider->title2_en}}  <span class="text-blue">{{$slider->text_blue_en}}</span>.</h2>
+    <p>{{$slider->description_en}}</p> --}}
+
+    <p class="nomargin pb20">{!!Str::limit($slider->body_en, 1000)!!}</p>
     @else
-            <h2>{{$slider->title_ar}} <br> {{$slider->title2_ar}}  <span class="text-blue">{{$slider->text_blue_ar}}</span>.</h2>
-            <p>{{$slider->description_ar}}</p>
+            {{-- <h2>{{$slider->title_ar}} <br> {{$slider->title2_ar}}  <span class="text-blue">{{$slider->text_blue_ar}}</span>.</h2>
+            <p>{{$slider->description_ar}}</p> --}}
+            <p class="nomargin pb20">{!!Str::limit($slider->body_ar, 1000)!!}</p>
             @endif
             <div>
     <a href="#" class="btn btn-border btn-blue"><i class="fa fa-star"></i>Get Started Now</a>
