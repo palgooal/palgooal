@@ -45,20 +45,7 @@
                             />
                           </div>
 
-                          <div class="form-group">
-                            <label for="category_work_id">التصنيفات </label>
-
-                          <div >
-                            <select class="form-control" id="category_work_id" name="category_work_id">
-                              @foreach ($categorys as $category)
-                          <option value="{{$category->id}}">{{$category->name_ar}}</option>
-                              @endforeach
-                             </select>
-
-                            <span class="help-block">
-                              <strong></strong>
-                            </span>
-                          </div></div></div>
+                          </div>
 
 
                           <div id="en" class="tab-pane fade ">
@@ -73,20 +60,7 @@
                                           id="name_en"
                                         />
 
-                                      <div class="form-group">
-                                        <label for="category_work_id">التصنيفات </label>
 
-                                      <div >
-                                        <select class="form-control" id="category_work_id" name="category_work_id">
-                                          @foreach ($categorys as $category)
-                                      <option value="{{$category->id}}">{{$category->name_en}}</option>
-                                          @endforeach
-                                         </select>
-
-                                        <span class="help-block">
-                                          <strong></strong>
-                                        </span>
-                                      </div></div>
 
                             </div>
                           </div>
@@ -101,6 +75,20 @@
                             id="url"
                           />
                         </div>
+                        <div class="form-group">
+                            <label for="category_work_id">التصنيفات </label>
+
+                          <div >
+                            <select class="form-control" id="category_work_id" name="category_work_id">
+                              @foreach ($categorys as $category)
+                          <option value="{{$category->id}}">{{$category->name_ar}}</option>
+                              @endforeach
+                             </select>
+
+                            <span class="help-block">
+                              <strong></strong>
+                            </span>
+                          </div></div>
 
 
                           <div class="form-group">

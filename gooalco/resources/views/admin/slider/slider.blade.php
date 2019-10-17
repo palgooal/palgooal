@@ -79,16 +79,16 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>عنوان السلايدر</th>
+                    {{-- <th>عنوان السلايدر</th> --}}
                     <th>صورة خلفية السلايدر</th>
                     <th>تعديل</th>
                     <th>حذف</th>
                   </tr>
                 </thead>
-                {{-- <tbody>
+              <tbody>
                   @foreach ($sliders as $slider)
                   <tr>
-                    <td>{{$slider->title_ar}}</td>
+                    {{-- <td>{{$slider->title_ar}}</td> --}}
 
                     <td><img src="{{asset('/images/'.$slider->image)}}" alt="Los Angeles" style="width:100%;"></td>
 
@@ -106,7 +106,7 @@
 
                     @endforeach
                   </tr>
-                </tbody> --}}
+                </tbody>
               </table>
             </div>
           </div>
