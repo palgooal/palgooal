@@ -21,10 +21,10 @@
             <p>{{$slider->description_ar}}</p> --}}
             <p class="nomargin pb20">{!!Str::limit($slider->body_ar, 1000)!!}</p>
             @endif
-            <div>
+            {{-- <div>
     <a href="#" class="btn btn-border btn-blue"><i class="fa fa-star"></i>Get Started Now</a>
     <a href="#" class="btn btn-border-rev btn-green">check pricing</a>
-    </div>
+    </div> --}}
     </div>
     </div>
     </div>
