@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\modals\Post;
 use Str;
+use App;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -71,6 +72,17 @@ class PostController extends Controller
     {
         return view('singelPost')->with('post', Post::where('slug', $slug)->first());
         
+    }
+
+    function blog(Post $post){
+        $post = Post::get();
+        if(App::isLocale('ar')){
+            $post = Post::where('Title_ar', '!=', null)->get();
+        }else if(App::isLocale('en')){
+            $post = Post::where('Title_en', '!=', null)->get();
+        } 
+
+        return view('Blog');
     }
 
     /**

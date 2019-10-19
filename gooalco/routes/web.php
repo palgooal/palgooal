@@ -11,6 +11,7 @@
 |
 */
 
+use App\modals\Post;
 
 Route::get('/', 'HomeController@index')->name('home');
 // Route::get('/', function () {
@@ -47,5 +48,7 @@ Route::get('/admin/sendmail/{id}', 'ContactController@sendEmailById');
 Route::get('/admin/email', 'MailController@home');
 Route::get('/admin/email/{$id}', 'MailController@sendEmailById');
 Route::post('/admin/sendemail', 'MailController@sendEmail');
+Route::get('/Blog/', 'PostController@blog' );
+
 
 

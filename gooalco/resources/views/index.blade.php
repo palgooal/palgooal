@@ -271,7 +271,7 @@
 @endforeach
 
 <div class="col-md-12 text-center pt40">
-<a href="blog-listing.html" class="btn btn-border btn-blue btn-dark">{{__('home.visit blog')}}</a>
+<a href="/Blog" class="btn btn-border btn-blue btn-dark">{{__('home.visit blog')}}</a>
 </div>
 </div>
 

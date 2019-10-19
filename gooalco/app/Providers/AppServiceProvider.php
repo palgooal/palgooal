@@ -42,5 +42,8 @@ class AppServiceProvider extends ServiceProvider
         view::share('prices', Price::get());
         view::share('categorys', categorieWork::get());
         view::share('pages', Page::get());
+        view::share('posts', Post::get()) ;
+
+
     }
 }

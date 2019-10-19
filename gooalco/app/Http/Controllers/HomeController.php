@@ -56,7 +56,7 @@ class HomeController extends Controller
     }
     public function show($title_en)
     {
-        Product::where('post', $title_en)->first();
+        //Product::where('post', $title_en)->first();
 
         // return view('singelPost')
         // ->with('post', Post::find($title_en));
