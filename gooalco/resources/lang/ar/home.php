@@ -45,4 +45,7 @@ return[
 'Our main service'=>'خدماتنا الرئيسية',
 'We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed'=>'نوفر خدمات ملائمة للجميع و تمثل البيئة الخصبة لنمو الأفكار و المشاريع على الإنترنت ، وخدماتنا تحمل الكثير من القيم التي تولد شعوراً بالسعادة والرضى لدى عملاؤنا على مدار (11) أحدى عشرعاماً شهِدنا',
 'Copyright © Palgooal co. All Rights Reserved 2019'=>'جميع الحقوق محفوظة © لشركة بال قول 20019 ',
+'BLOG LISTING'=>'المدونة',
+'show more'=>'أظهر المزيد',
+
 ];

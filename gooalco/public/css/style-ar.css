@@ -54,3 +54,9 @@ h3,
 h4,
 h5,
 h6 {font-family: roboto,Cairo, sans-serif;}
+@media only screen and (max-width: 600px){
+.navbar-toggle {
+    /* float: right !important; */
+    margin-right: 260px;
+    margin-left: auto;
+}}

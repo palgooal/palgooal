@@ -1,9 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.apppages')
 @section('content')
-
 <section class="page-title ptb50 overlay-black">
     <div class="container">
-    <h2 class="uppercase">Blog listing</h2>
+    <h2 class="uppercase">{{__('home.BLOG LISTING')}}</h2>
     <div class="breadcrumbs pt10">
     <h5><a href="/">{{__('home.Home')}}</a> / {{__('home.Blog')}}</h5>
     </div>
@@ -48,22 +47,13 @@
             
             <div class="row">
             <div class="col-md-12 text-center">
-            <a href="#" class="btn btn-border btn-blue btn-dark">show more</a>
+            <a href="#" class="btn btn-border btn-blue btn-dark">{{__('home.show more')}}</a>
             </div>
             </div>
             
             </div>
             </section>
                 
-        <section class="buy-now ptb80">
-            <div class="container">
-            <div class="col-md-12 text-center">
-            <h2 class="text-white">Do you like <span class="text-blue">Cloudify</span>?</h2>
-            <h2 class="text-white pb20">Buy it now and become a Top Hosting Company!</h2>
-            <a href="https://themeforest.net/item/cloudify-one-page-web-hosting-html-template/18398632?ref=gnodesign" target="_blank" class="btn btn-border btn-blue text-white nomargin">purchase now</a>
-            </div>
-            </div>
-            </section>
-
+        
 
 @endsection

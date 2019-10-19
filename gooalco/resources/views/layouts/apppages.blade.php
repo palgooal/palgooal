@@ -58,68 +58,68 @@
 <body id="page-top">
            
 
-@include('partials.header')
+@include('partials.headerpage')
             </div>
 @yield('content')
 @include('partials.footer')
 <div class="cd-user-modal">
 
-  <div class="cd-user-modal-container">
-  
-  <ul class="cd-switcher">
-  <li><a href="#0">{{__('login.Login')}}</a></li>
-  <li><a href="#1">{{__('login.New account')}}</a></li>
-  </ul>
-  <div id="cd-login">
-  
-  <form class="cd-form" method="post" action="https://clientgooal.palgooal.com/dologin.php">
-  <p class="fieldset">
-  <label class="image-replace cd-email" for="signin-email">{{__('login.E-Mail Address')}}</label>
-  <input class="full-width has-padding has-border" id="signin-email" type="text" name="username" size="50" placeholder="{{__('login.E-Mail Address')}}">
-  </p>
-  <p class="fieldset">
-  <label class="image-replace cd-password" for="signin-password">{{__('login.Password')}}</label>
-  <input class="full-width has-padding has-border" id="signin-password" type="password" name="password" size="20" autocomplete="off"  placeholder="{{__('login.Password')}}">
-  </p>
-  <p class="fieldset">
-  <input type="checkbox" id="remember-me" checked>
-  <label for="remember-me">{{__('login.Remember Me')}}  </label>
-  </p>
-  <p class="fieldset">
-  <button type="submit" value="Login" class="btn btn-border btn-blue">{{__('login.Login')}}</button>
-  </p>
-  </form>
-  </div>
-  
-  <div id="cd-signup">
-  
-  <form class="cd-form">
-  <p class="fieldset">
-  <label class="image-replace cd-username" for="signup-username">{{__('login.User Name')}}</label>
-  <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="{{__('login.User Name')}}">
-  </p>
-  <p class="fieldset">
-  <label class="image-replace cd-email" for="signup-email">{{__('login.E-Mail Address')}}</label>
-  <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="{{__('login.E-Mail Address')}}">
-  </p>
-  <p class="fieldset">
-  <label class="image-replace cd-password" for="signup-password">{{__('login.Password')}}</label>
-  <input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="{{__('Password')}}">
-  </p>
-  <p class="fieldset">
-  <input type="checkbox" id="accept-terms">
-  <label for="accept-terms">{{__('login.I agree the')}} <a href="#0">{{__('login.terms')}}</a></label>
-  </p>
-  <p class="fieldset">
-  <button class="btn btn-border btn-blue" type="submit" value="Create account">{{__('login.New account')}}</button>
-  </p>
-  </form>
-  </div>
-  
-  </div>
-  
-  </div>
-  
+    <div class="cd-user-modal-container">
+    
+    <ul class="cd-switcher">
+    <li><a href="#0">{{__('login.Login')}}</a></li>
+    <li><a href="#1">{{__('login.New account')}}</a></li>
+    </ul>
+    <div id="cd-login">
+    
+    <form class="cd-form" method="post" action="https://clientgooal.palgooal.com/dologin.php">
+    <p class="fieldset">
+    <label class="image-replace cd-email" for="signin-email">{{__('login.E-Mail Address')}}</label>
+    <input class="full-width has-padding has-border" id="signin-email" type="text" name="username" size="50" placeholder="{{__('login.E-Mail Address')}}">
+    </p>
+    <p class="fieldset">
+    <label class="image-replace cd-password" for="signin-password">{{__('login.Password')}}</label>
+    <input class="full-width has-padding has-border" id="signin-password" type="password" name="password" size="20" autocomplete="off"  placeholder="{{__('login.Password')}}">
+    </p>
+    <p class="fieldset">
+    <input type="checkbox" id="remember-me" checked>
+    <label for="remember-me">{{__('login.Remember Me')}}  </label>
+    </p>
+    <p class="fieldset">
+    <button type="submit" value="Login" class="btn btn-border btn-blue">{{__('login.Login')}}</button>
+    </p>
+    </form>
+    </div>
+    
+    <div id="cd-signup">
+    
+    <form class="cd-form">
+    <p class="fieldset">
+    <label class="image-replace cd-username" for="signup-username">{{__('login.User Name')}}</label>
+    <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="{{__('login.User Name')}}">
+    </p>
+    <p class="fieldset">
+    <label class="image-replace cd-email" for="signup-email">{{__('login.E-Mail Address')}}</label>
+    <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="{{__('login.E-Mail Address')}}">
+    </p>
+    <p class="fieldset">
+    <label class="image-replace cd-password" for="signup-password">{{__('login.Password')}}</label>
+    <input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="{{__('Password')}}">
+    </p>
+    <p class="fieldset">
+    <input type="checkbox" id="accept-terms">
+    <label for="accept-terms">{{__('login.I agree the')}} <a href="#0">{{__('login.terms')}}</a></label>
+    </p>
+    <p class="fieldset">
+    <button class="btn btn-border btn-blue" type="submit" value="Create account">{{__('login.New account')}}</button>
+    </p>
+    </form>
+    </div>
+    
+    </div>
+    
+    </div>
+    
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery-3.1.1.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>

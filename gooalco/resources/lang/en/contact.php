@@ -7,6 +7,9 @@ return [
     'Message' => 'Message',
     'Send' => 'Send',
     'Contact' => 'Contact',
+    'to contact us' => 'to contact us',
+    'Phone'=> 'Phone',
+    'Email'=> 'Email',
 
 ]
 ?>

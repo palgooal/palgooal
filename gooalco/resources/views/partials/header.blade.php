@@ -26,7 +26,7 @@
                             <a href="/contact" class="btn btn-small btn-border btn-green customer-support"><i class="fa fa-comments"></i>{{__('contact.Contact')}}</a>
                             </li>
                             <li class="login">
-                            <a id="modal_trigger" class="btn btn-small btn-border-rev btn-blue" href="#"><i class="fa fa-user"></i>{{__('home.Client Area')}}</a>
+                            <a id="modal_trigger" class="btn btn-small btn-border-rev btn-blue" href="/#"><i class="fa fa-user"></i>{{__('home.Client Area')}}</a>
                             </li>
                             @if (App::isLocale('en'))
                             <li>

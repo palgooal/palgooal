@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.apppages')
 @section('content')
 
 <section class="page-title ptb50 overlay-black">
@@ -14,7 +14,7 @@
         <aside class="col-md-4 contact-sidebar">
 
         <div class="contact-item">
-        <h3>London, UK Office</h3>
+        <h3>{{__('contact.to contact us')}}</h3>
         <p class="pt10 pb20 nomargin">Vivah London, London, United Kingdom</p>
         <ul>
         <li><strong>Phone:</strong> +123 456 789 0123</li>
