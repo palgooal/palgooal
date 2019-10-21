@@ -180,7 +180,7 @@
 
 
 </section>
-<section class="portfolio pt80 pb40">
+{{-- <section class="portfolio pt80 pb40">
         <div class="container nopadding">
         <div class="row">
           <div class="section-head col-sm-12">
@@ -210,24 +210,24 @@
         <img src="{{asset('images/'.$work->image)}}" class="img-responsive" alt="" >
         </a>
         </figure> --}}
-        <img id="myImg" src="{{asset('images/'.$work->image)}}" alt="Snow" style="width:100%;max-width:300px">
+        {{-- <img id="myImg" src="{{asset('images/'.$work->image)}}" alt="Snow" style="width:100%;max-width:300px">
         <a href="">dfsdfsdfsdfsd</a>
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
-</div>
+</div> --}}
+
+        {{-- </div> --}}
+        {{-- @endforeach --}}
+
+
+        {{-- </div>
 
         </div>
-        @endforeach
-
-
-        </div>
-
-        </div>
-        </section>
-
+        </section> --}}
+{{-- @include('partials.serves') --}}
 
 
 
@@ -332,7 +332,7 @@
 
 </div> --}}
 
-
+@include('partials.pricePlane')
 
 
 @endsection

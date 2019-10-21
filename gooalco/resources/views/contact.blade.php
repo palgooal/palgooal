@@ -15,23 +15,15 @@
 
         <div class="contact-item">
         <h3>{{__('contact.to contact us')}}</h3>
-        <p class="pt10 pb20 nomargin">Vivah London, London, United Kingdom</p>
+        <br>
+        {{-- <p class="pt10 pb20 nomargin">Vivah London, London, United Kingdom</p> --}}
         <ul>
-        <li><strong>Phone:</strong> +123 456 789 0123</li>
-        <li><strong>Fax:</strong> +123 456 789 0123</li>
-        <li><strong>Email:</strong> <a href="http://cariera.co/cdn-cgi/l/email-protection#c6bfa9b3b4a3aba7afaa86a5aaa9b3a2afa0bfe8a5a9ab"><span class="__cf_email__" data-cfemail="87fee8f2f5e2eae6eec7e4ebe8f2e3eee1fea9e4e8ea">[email&#160;protected]</span></a></li>
+        <li><strong>{{__('contact.Phone')}}:</strong> +970 598 663 901</li>
+        <li><strong>{{__('contact.Email')}}:</strong> info@palgoal.ps</li>
         </ul>
         </div>
 
-        <div class="contact-item mt40">
-        <h3>New York, USA Office</h3>
-        <p class="pt10 pb20 nomargin">New York Center, New York, USA</p>
-        <ul>
-        <li><strong>Phone:</strong> +123 456 789 0123</li>
-        <li><strong>Fax:</strong> +123 456 789 0123</li>
-        <li><strong>Email:</strong> <a href="http://cariera.co/cdn-cgi/l/email-protection#364f594344535b575f5a76555a5943525f504f1855595b"><span class="__cf_email__" data-cfemail="354c5a40475058545c7556595a40515c534c1b565a58">[email&#160;protected]</span></a></li>
-        </ul>
-        </div>
+        
         </aside>
 
 

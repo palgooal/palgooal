@@ -1,89 +1,102 @@
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
+.wrapper {
+    position: relative;
+    display: inline-block;
+    width: 700px;
+    height: 250px;
+}
+.slider-middle {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    left: 30%;
+    bottom: 10%;
+    z-index: 100;
+    transition-duration: 1s;
+    box-shadow: 1px 15px 15px -5px gray;
+}
+.slider-left-1 {
+    position: absolute;
+    width: 20%;
+    height: 35%;
+    left: 12%;
+    bottom: 15%;
+    z-index: 99;
+    opacity: 0.9;
+    transition-duration: 1s;
 
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+    color: #fff;
+}
+.slider-left-2 {
+    position: absolute;
+    width: 14%;
+    height: 22%;
+    left: 0;
+    bottom: 18%;
+    z-index: 98;
+    opacity: 0.8;
+    transition-duration: 1s;
+}
+.slider-right-1 {
+    position: absolute;
+    width: 20%;
+    height: 35%;
+    left: 68%;
+    bottom: 15%;
+    z-index: 99;
+    opacity: 0.9;
+    transition-duration: 1s;
+}
+.slider-right-2 {
+    position: absolute;
+    width: 14%;
+    height: 22%;
+    left: 86%;
+    bottom: 18%;
+    z-index: 98;
+    opacity: 0.8;
+    transition-duration: 1s;
 }
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+.slider-hide {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition-duration: 1s;
+}
+#slider-btn {
+    display: none;
 }
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+#slider-btn .prev-btn {
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    z-index: 200;
+    color: #fff;
+    cursor: pointer;
+}
+#slider-btn .next-btn {
+    position: absolute;
+    top: 50%;
+    left: 66%;
+    z-index: 200;
+    color: #fff;
+    cursor: pointer;
+}
+[class^=arr-] {
+    /* Arrows @RCB */
+    border: solid currentColor;
+    border-width: 0 0.15em 0.15em 0;
+    display: inline-block;
+    padding: 0.5em;
+}
+.arr-right {
+    transform: rotate(-45deg);
+}
+.arr-left {
+    transform: rotate(135deg);
 }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+#rotate-slider {
+    display: none;
 }
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-</style>

@@ -4,16 +4,37 @@
 <!-- Mirrored from cariera.co/templates/cloudify/html/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Sep 2019 16:59:37 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta content="width=device-width, initial-scale=1" name="viewport">-->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="بنك الأفكار | حاضنة الإبداع التعليمي" property="og:title">
+    <meta content="book" property="og:type">
+    <meta content="http://eduplus.ps/" property="og:url">
+    <meta content="http://eduplus.ps/newtemplate/img/default.jpg" property="og:image">
+    <meta content=" | حاضنة الإبداع التعليمي" property="og:site_name">
+    <meta content=" حاضنة الإبداع التعليمي" property="og:description">
+    <meta name="og:locale" content="ar_AR">
+
+    <meta content="http://eduplus.ps/" property="ia:markup_url">
+    <meta content="http://eduplus.ps/" property="ia:markup_url_dev">
+    <meta content="http://eduplus.ps/" property="ia:rules_url">
+    <meta content="http://eduplus.ps/" property="ia:rules_url_dev">
+    <meta content="http://eduplus.ps/newtemplate/img/default.jpg" property="og:image:alt">
+
+
+    <meta content="2298185633728958" property="fb:app_id">
+
+{{-- <meta charset="UTF-8"> --}}
 {{-- <base href="/public/"> --}}
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{{-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
 
-<meta name="description" content="Cloudify - Web Hosting HTML Template">
+<meta name="description" content="palgooal - Web Hosting HTML Template">
 <meta name="keywords" content="one page, multipage, domain, hosting, server, cloud, cloudify, html5 template">
 <meta name="author" content="GnoDesign">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1"> --}}
 
 <title>{{__('home.Palgooal co')}}</title>
 <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">

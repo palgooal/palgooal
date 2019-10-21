@@ -75,14 +75,16 @@ class PostController extends Controller
     }
 
     function blog(Post $post){
-        $post = Post::get();
+        //$post = Post::get();
         if(App::isLocale('ar')){
             $post = Post::where('Title_ar', '!=', null)->get();
+            return view('Blog')->with('posts', $post);
         }else if(App::isLocale('en')){
-            $post = Post::where('Title_en', '!=', null)->get();
+           $post = Post::where('Title_en', '!=', null)->get();
+            return view('Blog')->with('posts', $post );
         } 
 
-        return view('Blog');
+        
     }
 
     /**
