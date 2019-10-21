@@ -12,18 +12,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--<meta content="width=device-width, initial-scale=1" name="viewport">-->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta content="بنك الأفكار | حاضنة الإبداع التعليمي" property="og:title">
+        <meta content="شركة بال قول | لتكنولوجيا المعلومات " property="og:title">
         <meta content="book" property="og:type">
-        <meta content="http://eduplus.ps/" property="og:url">
+        <meta content="https://gooal.palgooal.com/" property="og:url">
         <meta content="http://eduplus.ps/newtemplate/img/default.jpg" property="og:image">
-        <meta content=" | حاضنة الإبداع التعليمي" property="og:site_name">
-        <meta content=" حاضنة الإبداع التعليمي" property="og:description">
+        <meta content=" | شركة بال قول" property="og:site_name">
+        <meta content=" شركة بال قول " property="og:description">
         <meta name="og:locale" content="ar_AR">
 
-        <meta content="http://eduplus.ps/" property="ia:markup_url">
-        <meta content="http://eduplus.ps/" property="ia:markup_url_dev">
-        <meta content="http://eduplus.ps/" property="ia:rules_url">
-        <meta content="http://eduplus.ps/" property="ia:rules_url_dev">
+        <meta content="https://palgooal.com/" property="ia:markup_url">
+        <meta content="https://palgooal.com/" property="ia:markup_url_dev">
+        <meta content="https://palgooal.com/" property="ia:rules_url">
+        <meta content="https://palgooal.com/" property="ia:rules_url_dev">
         <meta content="http://eduplus.ps/newtemplate/img/default.jpg" property="og:image:alt">
 
 
@@ -37,7 +37,8 @@
 <meta name="author" content="GnoDesign">
 <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
 
-<title>{{__('home.Palgooal co')}}</title>
+<title>@yield('title' , 'home.Palgooal co')</title>
+{{-- <title>{{__('home.Palgooal co')}}</title> --}}
 <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon.html">
 
