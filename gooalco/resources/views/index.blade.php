@@ -332,7 +332,7 @@
 
 </div> --}}
 
-@include('partials.pricePlane')
+{{-- @include('partials.pricePlane') --}}
 
 
 @endsection
