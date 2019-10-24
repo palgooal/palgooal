@@ -23,9 +23,9 @@
 <div class="col-sm-3">
 <h4>{{__('footer.Products')}}</h4>
 <ul class="footer-links nopadding mt30">
-<li><a href="#">{{__('footer.Webhosting')}}</a></li>
+<li><a href="/pages/linux-hosting-packages">{{__('footer.Web Hosting')}}</a></li>
 <li><a href="#">{{__('footer.Reseler Hosting')}}</a></li>
-<li><a href="#">{{__('footer.VPS Hosting')}}</a></li>
+{{-- <li><a href="#">{{__('footer.VPS Hosting')}}</a></li> --}}
 <li><a href="#">{{__('footer.Wordpress Hosting')}}</a></li>
 </ul>
 </div>
@@ -33,9 +33,9 @@
 <div class="col-sm-3">
 <h4>{{__('footer.Contact Us')}}</h4>
 <ul class="footer-links nopadding mt30">
-<li><i class="fa fa-phone"></i>{{__('footer.123-456-7890')}}</li>
-<li><i class="fa fa-envelope"></i><a href="http://cariera.co/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f29b9c949db2919e9d87969b948bdc919d9f">{{__('footer.info@gmail.com')}}</a></li>
-<li><i class="fa fa-map-marker"></i>{{__('footer.London, UK')}}</li>
+<li><i class="fa fa-phone"></i>{{__('footer.+972598663901')}}</li>
+<li><i class="fa fa-envelope"></i>info@palgoal.ps</a></li>
+{{-- <li><i class="fa fa-map-marker"></i>{{__('footer.London, UK')}}</li> --}}
 </ul>
 <div class="payment mt30">
 <h4>{{__('footer.Payment')}}</h4>

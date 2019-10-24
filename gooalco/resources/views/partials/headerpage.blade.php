@@ -80,7 +80,7 @@
 @if ($menu->submenus->count() >= 1)
 <ul class="dropdown-menu" role="menu">
     @foreach ($menu->submenus as $submenu)
-<li><a href="{{$menu->url}}">@if (App::isLocale('en')){{$submenu->name_en}}@else {{$submenu->name_ar}}@endif
+<li><a href="{{$submenu->url}}">@if (App::isLocale('en')){{$submenu->name_en}}@else {{$submenu->name_ar}}@endif
     </a></li>
 @endforeach
 </ul>

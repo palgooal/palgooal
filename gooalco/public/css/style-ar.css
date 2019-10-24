@@ -60,3 +60,8 @@ h6 {font-family: roboto,Cairo, sans-serif;}
     margin-right: 260px;
     margin-left: auto;
 }}
+
+@media (max-width: 992px)
+{.navbar-header {
+    float: left !important;
+}}

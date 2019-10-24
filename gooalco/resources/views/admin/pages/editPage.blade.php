@@ -64,7 +64,7 @@
         </div>
         <div class="form-actions">
             <button type="submit" class="btn blue">اضافة</button>
-            <button type="button" class="btn default">الغاء</button>
+            <a href="/admin/pages" class="btn default">الغاء</a>
         </div>
 
     </form>
