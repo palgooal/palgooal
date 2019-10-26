@@ -83,8 +83,13 @@
                                 <i class="icon-lock"></i> Lock Screen </a>
                         </li>
                         <li>
-                            <a href="page_user_login_1.html">
-                                <i class="icon-key"></i> Log Out </a>
+                            <a href="logout" onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                <i class="icon-key"></i> تسجيل خروج </a>
+                                <form id="logout-form" action="/logout" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                        
                         </li>
                     </ul>
                 </li>

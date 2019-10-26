@@ -15,6 +15,7 @@ return[
     'I agree the'=>'I  agree the',
     'terms'=>'terms',
     'Confirm Password'=>'Confirm Password',
-    'New account' => 'New account'
+    'New account' => 'New account',
+    'These credentials do not match our records.'=>'These credentials do not match our records.'
 
 ];

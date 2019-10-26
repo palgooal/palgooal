@@ -15,6 +15,7 @@ return[
     'Confirm Password'=>'اعادة تأكيد كلمة المرور',
     'I agree the'=>'أوافق على',
     'terms'=>'الشروط',
-    'New account' => 'انشاء حساب جديد'
+    'New account' => 'انشاء حساب جديد',
+    'These credentials do not match our records.'=>'بيانات الاعتماد هذه لا تتطابق مع سجلاتنا.'
 
 ];
