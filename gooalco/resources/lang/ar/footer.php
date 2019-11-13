@@ -1,19 +1,19 @@
 <?php
 return [
-'IMPORTANT LINKS' =>'روابط مهمة',
+'IMPORTANTLINKS' =>'روابط مهمة',
 'Privacy & Policy' =>'سياسة الاستخدام',
 'Terms & Conditions' =>'سياسة الخصوصية',
-'VPS Service' =>'خدمة VPS',
-'Support' =>'الدعم',
-'Products' =>'منتجات',
+'VPSHosting' =>'VPS استضافة سيرفرات',
+'Support' =>'الدعم الفني',
+'Products' =>'خدماتنا',
 'Web Hosting' =>'استضافة',
 'Reseler Hosting' =>'موزع مساحة',
 'Wordpress Hosting' =>'استضافة ووردبرس ',
 'Contact Us' =>'اتصل بنا',
 '+972598663901' =>'972598663901+',
+'callus' =>'اتصل بنا',
 'info@gmail.com' =>'info@gmail.com',
 'London, UK' =>'غزة',
 'Payment' =>'الدفع',
-'Lorem ipsum dolor sit amet, ectetur adipiscing elit.viverra tellus. Vivamus finibus, quam vitae pulvinar euismod, Lorem ipsum dolor sit amet, ectetur adipiscing elit.' =>'فريق شركة بال قول لتكنولوجيا المعلومات.
-'
+'ABOUT' =>'شركة بال قول هي شركة فلسطينية تعمل في مجال تكنولوجيا المعلومات والدعاية والإعلان والتدريب والاستشارات بمستوي عال وبمساهمة مجموعة من المتخصصين في التكنولوجيا وفي الدعاية والإعلان والتدريب تسعي إلي توفير أفضل الخدمات بجودة عالية ومواكبة التطور'
 ];

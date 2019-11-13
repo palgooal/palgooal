@@ -1,6 +1,6 @@
 <?php
 return [
-'IMPORTANT LINKS' =>'IMPORTANT LINKS',
+'IMPORTANTLINKS' =>'IMPORTANT LINKS',
 'Privacy & Policy' =>'Privacy & Policy',
 'Terms & Conditions' =>'Terms & Conditions',
 'VPS Service' =>'VPS Service',
@@ -8,11 +8,12 @@ return [
 'Products' =>'PRODUCTS',
 'Web Hosting' =>'Web Hosting',
 'Reseler Hosting' =>'Reseler Hosting',
+'VPSHosting'=>'VPS Hosting',
 'Wordpress Hosting' =>'Wordpress Hosting',
 'Contact Us' =>'CONTACT US',
 '+972598663901' =>'+972598663901',
 'info@gmail.com' =>'info@gmail.com',
-'London, UK' =>'London, UK',
+'callus' =>'call us',
 'Payment' =>'PAYMENT',
-'Lorem ipsum dolor sit amet, ectetur adipiscing elit.viverra tellus. Vivamus finibus, quam vitae pulvinar euismod, Lorem ipsum dolor sit amet, ectetur adipiscing elit.' =>'Lorem ipsum dolor sit amet, ectetur adipiscing elit.viverra tellus. Vivamus finibus, quam vitae pulvinar euismod, Lorem ipsum dolor sit amet, ectetur adipiscing elit.'
+'ABOUT' =>'PALCOOL is a Palestinian company working in the field of information technology, advertising, training and consulting at a high level, and a group of specialists in technology, advertising and training to provide the best services with high quality and keep up with the development'
 ];

@@ -2727,8 +2727,11 @@ footer {
 
 .top-footer .footer-info {}
 
-.top-footer .about img {
+/* .top-footer .about img {
     height: 30px
+} */
+p.pt30 {
+    margin-top: -37px;
 }
 
 .top-footer h4 {

@@ -44,18 +44,12 @@
     <img src="{{asset('/images/'.$post->image)}}" class="img-responsive" alt="" >
 
     <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                @if (App::isLocale('en'))
-                <p>{!!$post->Body_en!!}</p>
-                @else
-                <p>{!!$post->Body_ar!!}</p>
-                @endif
-            </div>
-        </div>
-    </div>
-
+    @if (App::isLocale('en'))
+    <p>{!!$post->Body_en!!}</p>
+    @else
+    <p>{!!$post->Body_ar!!}</p>
+    @endif
+    
 
 
     <div class="share mt30">

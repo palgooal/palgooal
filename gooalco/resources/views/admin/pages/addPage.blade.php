@@ -41,7 +41,7 @@
                  </div>
             <div class="form-group">
                 <label>   المحتوى  </label>
-                <textarea name="content_ar" id="content_ar" cols="30" rows="10" class="form-control summernote" placeholder=" المحتوى "></textarea>
+                <textarea name="content_ar" id="content_ar" cols="30" rows="10" class="form-control ckeditor" placeholder=" المحتوى "></textarea>
             </div>
                     </div>
             <div id="en" class="tab-pane fade">
@@ -52,7 +52,7 @@
                              </div>
                         <div class="form-group">
                             <label>Content</label>
-                            <textarea name="content_en" id="content_en" cols="30" rows="10" class="form-control summernote" placeholder=" المحتوى "></textarea>
+                            <textarea name="content_en" id="content_en" cols="30" rows="10" class="form-control ckeditor" placeholder=" المحتوى "></textarea>
                         </div>
             </div>
             {{-- <div class="form-group">

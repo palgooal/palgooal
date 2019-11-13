@@ -39,26 +39,18 @@ action="/admin/slider/{{$slider->id}}"
                           <h3>اضافة سلايدر</h3>
                               <div class="form-group">
                                 <label> محتوى السلايدر</label>
-                              <textarea name="body_ar" id="body_ar" cols="30" rows="10" class="form-control summernote" placeholder="إضافة محتوى السلايدر هنا ... ">{{$slider->body_ar}}</textarea>
+                              <textarea name="body_ar" id="body_ar" cols="30" rows="10" class="form-control ckeditor" placeholder="إضافة محتوى السلايدر هنا ... ">{{$slider->body_ar}}</textarea>
                             </div>
                         </div>
                                 <div id="en" class="tab-pane ">
                                   <h3>ADD slider</h3>
                                       <div class="form-group">
                                         <label>Body of the slider</label>
-                                        <textarea name="body_en" id="body_en" cols="30" rows="10" class="form-control summernote" placeholder="add body to slider ...">{{$slider->body_en}}</textarea>
+                                        <textarea name="body_en" id="body_en" cols="30" rows="10" class="form-control ckeditor" placeholder="add body to slider ...">{{$slider->body_en}}</textarea>
                         </div></div></div>
         <div class="form-group">
           <label>تحميل صورة خلفية السلايدر</label>
-          <input
-            class="form-control spinner"
-            type="file"
-            placeholder="تحميل الصورة"
-            required
-            name="image"
-            id="image"
-            value="{{$slider->image}}"
-          />
+          <input  class="form-control spinner" type="file" placeholder="تحميل الصورة" required name="image" id="image" value="{{$slider->image}}" />
         </div>
       </div>
       <div class="form-actions">

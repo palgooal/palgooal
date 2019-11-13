@@ -34,7 +34,7 @@
                                   <h3>اضافة سلايدر</h3>
                                       <div class="form-group">
                                         <label> محتوى السلايدر</label>
-                                        <textarea name="body_ar" id="body_ar" cols="30" rows="10" class="form-control summernote" placeholder="إضافة محتوى السلايدر هنا ... "></textarea>
+                                        <textarea name="body_ar" id="body_ar" cols="30" rows="10" class="form-control ckeditor" placeholder="إضافة محتوى السلايدر هنا ... "></textarea>
                                     </div>
                                 </div>
                                         <div id="en" class="tab-pane ">

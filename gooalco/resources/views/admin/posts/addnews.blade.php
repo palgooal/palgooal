@@ -47,7 +47,7 @@
                     </div>
                     <div class="form-group">
                         <label>نص التدوينة</label>
-                        <textarea name="Body_ar" id="Body_ar" cols="30" rows="10" class="form-control summernote" placeholder="إضافة وصف هنا ... "></textarea>
+                        <textarea name="Body_ar" id="Body_ar" cols="30" rows="10" class="form-control ckeditor" placeholder="إضافة وصف هنا ... " ></textarea>
 
                     </div>
                     <div class="form-group">
@@ -64,7 +64,7 @@
                         </div>
                     <div class="form-group">
                             <label>Add body of the post</label>
-                            <textarea name="Body_en" id="Body_en" cols="30" rows="10" class="form-control summernote" placeholder=" Add body of the post "></textarea>
+                            <textarea name="Body_en" id="Body_en" cols="30" rows="10" class="form-control ckeditor" placeholder=" Add body of the post "></textarea>
                         </div>
                             <div class="form-group">
                                     <label>Auther</label>

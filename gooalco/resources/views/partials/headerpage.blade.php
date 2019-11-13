@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <ul class="social list-inline ptb10">
-                <li><a href="tel:12345678912">+970-598-663-901</a></li>
+                {{-- <li><a href="tel:12345678912">+970-598-663-901</a></li> --}}
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>

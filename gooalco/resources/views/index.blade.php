@@ -238,9 +238,13 @@
 <h2>{{__('home.Latest News')}}</h2>
 </div>
 <div class="col-md-12">
-
-    @includeWhen(!count($posts) !=null, 'alert.empyt', ['msg' => 'لا توجد منشورات'])
-
+  
+    
+@if (App::isLocale('en'))
+@includeWhen(!count($posts) !=null, 'alert.empyt', ['msg' => 'No posts yet '])
+@else
+@includeWhen(!count($posts) !=null, 'alert.empyt', ['msg' => 'لا توجد منشورات'])
+@endif
     @foreach ($posts as $post)
 
 <div class="col-md-4">

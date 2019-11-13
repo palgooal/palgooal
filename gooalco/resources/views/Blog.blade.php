@@ -9,8 +9,14 @@
     </div>
     </section>
     <section class="blog-listing ptb80">
+                @if (App::isLocale('en'))
+                @includeWhen(!count($posts) !=null, 'alert.empyt', ['msg' => 'No posts yet '])
+                @else
+                @includeWhen(!count($posts) !=null, 'alert.empyt', ['msg' => 'لا توجد منشورات'])
+                @endif
             <div class="container nopadding">
             <div class="row nomargin blog-grid">
+      
             @foreach ($posts as $post)
             <div class="element col-md-4 col-xs-12">
             <article class="blog-single pb30 shadow">

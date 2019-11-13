@@ -1,4 +1,5 @@
 @extends('layouts.apppages')
+
 @section('content')
 <section class="page-title ptb50 overlay-black">
     <div class="container">
