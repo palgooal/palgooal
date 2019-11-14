@@ -1,4 +1,11 @@
 @extends('layouts.apppages')
+@section('title')
+@if (App::isLocale('en'))
+{{$page->title_en}}
+@else
+{{$page->title_ar}}
+@endif
+@endsection
 
 @section('content')
 <section class="page-title ptb50 overlay-black">

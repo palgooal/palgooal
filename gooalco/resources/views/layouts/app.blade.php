@@ -37,7 +37,7 @@
 <meta name="author" content="GnoDesign">
 <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
 
-<title>@yield('title' , 'home.Palgooal co')</title>
+<title>@yield('title' , __('home.Palgooal co'))</title>
 {{-- <title>{{__('home.Palgooal co')}}</title> --}}
 <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon.html">
