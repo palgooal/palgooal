@@ -61,7 +61,8 @@ input {
 }
 
 .uppercase {
-    text-transform: uppercase
+    text-transform: uppercase;
+    color: #29b2fe;
 }
 
 .capitalize {

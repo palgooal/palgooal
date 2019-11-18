@@ -89,7 +89,7 @@
 <div class="container ptb80">
 <div class="section-title">
 <h2>{{__('home.Why choose Palgooal')}}</h2>
-<p>{{__('home.Every type of company services we offer is optimized with unique performance improvements!')}}</p>
+{{-- <p>{{__('home.Every type of company services we offer is optimized with unique performance improvements!')}}</p> --}}
 </div>
 
 <div class="row nomargin">
