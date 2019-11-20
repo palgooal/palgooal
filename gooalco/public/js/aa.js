@@ -1,70 +1,152 @@
-jQuery(document).ready(function($) {
-    var sliders = [];
-    var delay = 4000;
-    var timerId;
-    var remaining;
-    var start;
-    var current_playing;
-    // restore user slider img and title or descriptions
-    $("#rotate-slider").find("img").each(function() {
-        this.className += " slider-hide";
-        sliders.push({html: this})
-    });
-    // initialize the siliders
-    function slider_init() {
-        $("#rotate-slider").css('display', 'block');
-        $("#rotate-slider").append("<div id='slider-btn'><a class='prev-btn'><i class='arr-left'></i></a><a class='next-btn'><i class='arr-right'></i></a></div>")
-        slider_display(sliders, 0);
-        slider_loop(sliders, -1, delay);
-    }
-    // display 5 img at a time
-    function slider_display(A, i) {
-        if (i < 0) {
-            i = A.length -1;
+jQuery(document).ready(function ($) {
+  
+    var slideExtraHeight = 80;
+    var wrapperPaddingLeft = 50;
+    var wrapperPaddingRight = 50;
+    var slideItem = 3;
+    var spead = 500;
+    var slideMargin = 20;
+    var sliderWraper = $('#wrap-sh-slider').width();
+  
+    var slideCount = $('.sh-slider ul li').length;
+    var slideWidth = (sliderWraper -  wrapperPaddingLeft - wrapperPaddingRight);
+    var slideUlWidth = (slideWidth / slideItem) * slideCount * slideMargin - slideMargin;
+  
+  
+    $('.sh-slider ul').css(
+      {
+        width: slideUlWidth,
+        marginLeft: - slideWidth / slideItem
+      }
+    );
+    var slideHeight = $('.sh-slider ul li').height();
+    $('.sh-slider ul li').css(
+      {
+        width: slideWidth / slideItem,
+        height: slideHeight,
+        marginRight: slideMargin
+      }
+    );
+    $('.sh-slider ul li:last-child').prependTo('.sh-slider ul');
+  
+    $('.sh-slider').css(
+      {
+        width: slideWidth + 2 * slideMargin,
+        height: slideHeight,
+        paddingTop: slideExtraHeight / 2,
+        paddingBottom: slideExtraHeight / 2
+      }
+    );
+  
+    $('.sh-slider ul li:first-child').next().next().animate(
+      {
+        height:slideHeight + slideExtraHeight / 2,
+        marginTop: -slideExtraHeight / 4,
+        marginLeft:-slideMargin,
+        marginRight:0,
+        zIndex: 11
+      },spead
+    );
+    removeShadow($('.sh-slider ul li:first-child'));
+    removeShadow($('.sh-slider ul li:first-child').next().next().next().next());
+  
+    /**
+    * Move left
+    */
+    function moveLeft() {
+      setShadow($('.sh-slider ul li'));
+      $('.sh-slider ul li:first-child').next().animate(
+        {
+          height:slideHeight + slideExtraHeight / 2,
+          marginTop: -slideExtraHeight / 4,
+          marginLeft:-slideMargin,
+          marginRight:0, zIndex: 11
+        },spead
+      );
+                  
+      $('.sh-slider ul li:first-child').next().next().animate(
+        {
+          height:slideHeight,
+          marginTop:0, marginLeft: 0,
+          marginRight: slideMargin,
+          zIndex: 1
+        },spead
+      );
+          
+      $('.sh-slider ul').animate({
+        left: + slideWidth / slideItem
+      }, spead, function () {
+        $('.sh-slider ul li:last-child').prependTo('.sh-slider ul');
+        $('.sh-slider ul').css('left', '');
+      });
+      
+            
+      removeShadow($('.sh-slider ul li:last-child'));
+      removeShadow($('.sh-slider ul li:first-child').next().next().next());   
+    };
+    
+    /**
+     * Move right
+     */
+    function moveRight() {
+      setShadow($('.sh-slider ul li'));
+      $('.sh-slider ul li:last-child').prev().prev().animate(
+        {
+          height:slideHeight + slideExtraHeight / 2,
+          marginTop: -slideExtraHeight / 4,
+          marginLeft:-slideMargin,
+          marginRight:0,
+          zIndex: 11
+        },spead
+      );
+      $('.sh-slider ul li:last-child').prev().prev().prev().animate(
+        {
+          height:slideHeight,
+          marginTop:0,
+          marginLeft: 0,
+          marginRight: slideMargin,
+          zIndex: 1
+        },spead
+      );
+      $('.sh-slider ul').animate({
+        left: - slideWidth / slideItem
+      }, spead, function () {
+        $('.sh-slider ul li:first-child').appendTo('.sh-slider ul');
+        $('.sh-slider ul').css('left', '');
+      });
+      
+      removeShadow($('.sh-slider ul li:last-child'));
+      removeShadow($('.sh-slider ul li:last-child').prev().prev().prev().prev()); 
+    };
+    
+    function setShadow(elem) {
+      var shadowValue = '0px 10px 20px #148F77';
+      $(elem).css(
+        {
+          '-webkit-box-shadow' : shadowValue,
+          '-moz-box-shadow' : shadowValue,
+          'box-shadow' : shadowValue
         }
-        current_playing = i;
-        // mute the one img before
-        A[(i + A.length + 3) % A.length].html.className += " slider-hide";
-        // display 5 img after the muted one
-        A[(i + A.length) % A.length].html.className = "slider-middle";
-        A[(i + A.length - 1) % A.length].html.className = "slider-left-1";
-        A[(i + A.length - 2) % A.length].html.className = "slider-left-2";
-        A[(i + A.length + 1) % A.length].html.className = "slider-right-1";
-        A[(i + A.length + 2) % A.length].html.className = "slider-right-2";
-
+      );
     }
-    // slider
-    function slider_loop(A, i, remaining) {
-        start = new Date();
-        if (i < 0) {
-            i = A.length -1;
+    
+    function removeShadow(elem) {
+      $(elem).css(
+        {
+          '-webkit-box-shadow' : 'none',
+          '-moz-box-shadow' : 'none',
+          'box-shadow' : 'none'
         }
-        timerId = setTimeout(function() {
-            slider_display(A, i);
-            slider_loop(A, i - 1, delay);
-        }, remaining);
+      );
     }
-
-    $("#rotate-slider").hover(function() {
-        window.clearTimeout(timerId);
-        remaining = delay - (new Date() - start);
-        $("#slider-btn").show();
-        $("#slider-btn .prev-btn").click(function() {
-            current_playing++;
-            slider_display(sliders, current_playing);
-        });
-        $("#slider-btn .next-btn").click(function() {
-            current_playing--;
-            slider_display(sliders, current_playing);
-        });
-    }, function() {
-        slider_loop(sliders, current_playing, remaining);
-        $("#slider-btn").hide();
-        $("#slider-btn .prev-btn").unbind("click");
-        $("#slider-btn .next-btn").unbind("click");
+  
+    $('a.control_prev').click(function () {
+      moveLeft();
     });
-
-
-    // launch slider
-    slider_init();
-});
+  
+    $('a.control_next').click(function () {
+      moveRight();
+    });
+  
+  });    
+  

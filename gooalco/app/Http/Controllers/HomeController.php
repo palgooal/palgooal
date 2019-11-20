@@ -34,14 +34,17 @@ class HomeController extends Controller
     public function index()
     {
         if(App::isLocale('ar')){
-            $post = Post::where('Title_ar', '!=', null)->latest()->take(3)->get();
+            $post = Post::where('Title_ar', '!=', null)->latest()->take(4)->get();
         }else if(App::isLocale('en')){
-            $post = Post::where('Title_en', '!=', null)->latest()->take(3)->get();
+            $post = Post::where('Title_en', '!=', null)->latest()->take(4)->get();
         } 
+
+     
+        
 
         //$post = Post::latest()->take(3)->get();
 
-         $work = Work::latest()->take(8)->get();
+         $work = Work::latest()->take(4)->get();
         return view('index')
         ->with('posts', $post)
         ->with('sliders', Slider::get())
@@ -50,6 +53,7 @@ class HomeController extends Controller
         ->with('options' , Option::get())
         ->with('works' ,  $work);
         //->with('prices' ,  Price::get());
+        
        
 
 

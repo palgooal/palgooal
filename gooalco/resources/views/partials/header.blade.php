@@ -10,10 +10,10 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <ul class="social list-inline ptb10">
                             {{-- <li><a href="tel:12345678912">+970-598-663-901</a></li> --}}
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.facebook.com/Ps.palgoal"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/palgoal2"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/palgoal/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC6Lf2wxNFqptw0Ieqbd2plA?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
                             </ul>
                             </div>
 
@@ -22,7 +22,6 @@
 
                             <ul class="top-button ptb10">
                             <li>
-                            <a href="#" class="btn btn-small btn-border btn-green customer-support"><i class="fa fa-comments"></i>{{__('home.live chat')}}</a>
                             <a href="/contact" class="btn btn-small btn-border btn-green customer-support"><i class="fa fa-comments"></i>{{__('contact.Contact')}}</a>
                             </li>
                             <li class="login">
@@ -30,12 +29,12 @@
                             </li>
                             @if (App::isLocale('en'))
                             <li>
-                                <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/ar"><i class="fa fa-user"></i>عربي</a>
+                                <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/ar"><i class="fa fa-language"></i>عربي</a>
                                 </li>
 
                             @else
                             <li>
-                                <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/en"><i class="fa fa-user"></i>en</a>
+                                <a  class="btn btn-small btn-border btn-green customer-support" href="/lang/en"><i class="fa fa-language"></i>EN</a>
                                 </li>
                             @endif
 

@@ -1,102 +1,65 @@
-.wrapper {
-    position: relative;
-    display: inline-block;
-    width: 700px;
-    height: 250px;
-}
-.slider-middle {
-    position: absolute;
-    width: 40%;
-    height: 70%;
-    left: 30%;
-    bottom: 10%;
-    z-index: 100;
-    transition-duration: 1s;
-    box-shadow: 1px 15px 15px -5px gray;
-}
-.slider-left-1 {
-    position: absolute;
-    width: 20%;
-    height: 35%;
-    left: 12%;
-    bottom: 15%;
-    z-index: 99;
-    opacity: 0.9;
-    transition-duration: 1s;
 
-    color: #fff;
-}
-.slider-left-2 {
-    position: absolute;
-    width: 14%;
-    height: 22%;
-    left: 0;
-    bottom: 18%;
-    z-index: 98;
-    opacity: 0.8;
-    transition-duration: 1s;
-}
-.slider-right-1 {
-    position: absolute;
-    width: 20%;
-    height: 35%;
-    left: 68%;
-    bottom: 15%;
-    z-index: 99;
-    opacity: 0.9;
-    transition-duration: 1s;
-}
-.slider-right-2 {
-    position: absolute;
-    width: 14%;
-    height: 22%;
-    left: 86%;
-    bottom: 18%;
-    z-index: 98;
-    opacity: 0.8;
-    transition-duration: 1s;
+#wrap-sh-slider {
+  margin: auto;
+  position: relative;
+  width: 60%;
+  overflow: hidden;
 }
 
-.slider-hide {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    transition-duration: 1s;
-}
-#slider-btn {
-    display: none;
+.sh-slider {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 4px;
 }
 
-#slider-btn .prev-btn {
-    position: absolute;
-    top: 50%;
-    left: 31%;
-    z-index: 200;
-    color: #fff;
-    cursor: pointer;
-}
-#slider-btn .next-btn {
-    position: absolute;
-    top: 50%;
-    left: 66%;
-    z-index: 200;
-    color: #fff;
-    cursor: pointer;
-}
-[class^=arr-] {
-    /* Arrows @RCB */
-    border: solid currentColor;
-    border-width: 0 0.15em 0.15em 0;
-    display: inline-block;
-    padding: 0.5em;
-}
-.arr-right {
-    transform: rotate(-45deg);
-}
-.arr-left {
-    transform: rotate(135deg);
+.sh-slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-#rotate-slider {
-    display: none;
+.sh-slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  background: #ccc;
+  text-align: center;
+  box-shadow: 0px 10px 20px #148F77;
+  border-radius: 4px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: calc(50% - 18px);
+  z-index: 999;
+  display: block;
+  padding: 4px 8px;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 2px 0 0 2px;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 0 2px 2px 0;
 }

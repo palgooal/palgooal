@@ -16,8 +16,8 @@ class CreateWorksTable extends Migration
         Schema::create('works', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('image')->default('default.jpg')->nullable();
-            $table->string('name_ar');
-            $table->string('name_en');
+            $table->string('name_ar')->nullable();
+            $table->string('name_en')->nullable();
             $table->string('url')->nullable();
             $table->integer('category_work_id');
             $table->timestamps();

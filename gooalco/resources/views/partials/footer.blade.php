@@ -6,7 +6,7 @@
 <div class="row ptb60 footer-info">
 
 <div class="col-sm-3 about">
-<a href="index.html"><img src="./LOGO.png" alt=""></a>
+<a href="/"><img src="./LOGO.png" alt=""></a>
 <p class="pt30">{{__('footer.ABOUT')}}</p>
 </div>
 

@@ -38,7 +38,6 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $slug = Str::slug ($request->Title_en ==null) ? Str::slug($request->Title_ar) : Str::slug($request->Title_en);
         $posts = new Post();
         $slug = Str::slug ($request->Title_en ==null) ? Str::slug($request->Title_ar) : Str::slug($request->Title_en);
 

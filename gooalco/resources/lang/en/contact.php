@@ -6,7 +6,7 @@ return [
     'Subject' => 'Subject',
     'Message' => 'Message',
     'Send' => 'Send',
-    'Contact' => 'Contact',
+    'Contact' => 'Contact us',
     'to contact us' => 'to contact us',
     'Phone'=> 'Phone',
     'Email'=> 'Email',
