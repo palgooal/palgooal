@@ -49,11 +49,29 @@
 </section>
 
 <section id="services">
-    <div class="container ptb80">
-        <div class="section-title">
-            <h2>{{__('home.Why choose Palgooal')}}</h2> {{--
-            <p>{{__('home.Every type of company services we offer is optimized with unique performance improvements!')}}</p> --}}
-        </div>
+<div class="container ptb80">
+<div class="section-title">
+<h2>{{__('home.Why choose Palgooal')}}</h2>
+{{-- <p>{{__('home.Every type of company services we offer is optimized with unique performance improvements!')}}</p> --}}
+</div>
+
+<div class="row nomargin">
+<div class="col-sm-4 col-xs-12 service text-center pt40">
+<img src="./images/icons/cloud-server.svg" alt="">
+<h3 class="ptb20">{{__('home.SSD Cloud Hosting')}}</h3>
+<p>{{__('home.Experience up to 2X faster load times due to low-density servers, premium hardware, and multiple caching layers')}}</p>
+</div>
+<div class="col-sm-4 col-xs-12 service text-center pt40">
+<img src="./images/icons/locked.svg" alt="">
+<h3 class="ptb20">{{__('home.Safe and fortified')}}</h3>
+<p>{{__('home.The security of your website is our top priority.')}} </p>
+</div>
+<div class="col-sm-4 col-xs-12 service text-center pt40">
+<img src="./images/icons/transfer.svg" alt="">
+<h3 class="ptb20">{{__('home.Transfer your site for free')}}</h3>
+<p>{{__('home.Our dedicated Team is standing by to transfer your existing content from your prior host to our platform.')}}</p>
+</div>
+</div>
 
         <div class="row nomargin">
             <div class="col-sm-4 col-xs-12 service text-center pt40">

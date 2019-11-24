@@ -66,7 +66,11 @@
                 <a href="https://twitter.com/home?status=https%3A//themeforest.net/item/cloudify-one-page-web-hosting-html-template/18398632" target="_blank" class="share-icon tw"><i class="fa fa-twitter"></i></a>
                 <a href="https://plus.google.com/share?url=https%3A//themeforest.net/item/cloudify-one-page-web-hosting-html-template/18398632" target="_blank" class="share-icon gp"><i class="fa fa-google-plus"></i></a>
                 <span>{{__('home.share')}} <i class="fa fa-share-alt"></i></span>
+<<<<<<< HEAD
             </div> --}}
+=======
+            </div>
+>>>>>>> 1db6f36171dedb7fb39a04274f647033535eb4d3
         </div>
 
     </div>

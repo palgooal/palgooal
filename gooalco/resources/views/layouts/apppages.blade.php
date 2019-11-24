@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/responsive.css">
-    
+    <link rel="stylesheet" type="text/css" href="../css/aa.css">
 
     @if (App::isLocale('ar'))
 
