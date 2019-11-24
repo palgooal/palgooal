@@ -15,5 +15,5 @@ return [
 'info@gmail.com' =>'info@gmail.com',
 'callus' =>'call us',
 'Payment' =>'PAYMENT',
-'ABOUT' =>'PALCOOL is a Palestinian company working in the field of information technology, advertising, training and consulting at a high level, and a group of specialists in technology, advertising and training to provide the best services with high quality and keep up with the development'
+'ABOUT' =>'palgoal is a company that works in the field of information technology, advertising, training and consultation at a high level and with the participation of a group of specialists in various fields. It seeks to keep pace with the development and provide the best quality services'
 ];

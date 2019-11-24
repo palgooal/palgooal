@@ -8,7 +8,7 @@
                 <img src="{{asset('/images/'.$work->image)}}" class="img-responsive" alt=""></a>
                 <div class="overlay">
                 <div class="member-info-overlay">
-                <h4><a href="#">{{$work->name_en}}</a></h4>
+                <h4><a href="{{$work->url}}" target="_blank">{{$work->name_en}}</a></h4>
                 </div>
                 </div>
                 </div>
@@ -24,7 +24,7 @@
                 <img src="{{asset('/images/'.$work->image)}}" class="img-responsive" alt=""></a>
                 <div class="overlay">
                 <div class="member-info-overlay">
-                <h4><a href="#">{{$work->name_ar}}</a></h4>
+                <h4><a href="{{$work->url}}" target="_blank">{{$work->name_ar}}</a></h4>
                 </div>
                 </div>
                 </div>

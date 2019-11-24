@@ -44,7 +44,7 @@ return[
 'progroming and disagining'=>'تصميم وبرمجة',
 'Our main service'=>'خدماتنا الرئيسية',
 'We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a  sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed'=>'بال قول الخيار الأمثل و البيئة الخصبة لنمو الأفكار والمشاريع على الانترنت بتقديم خدمات  مرضية وملاءمة  للعملاء.',
-'Copyright © Palgooal co. All Rights Reserved 2019'=>'جميع الحقوق محفوظة © لشركة بال قول 20019 ',
+'Copyright © Palgooal co. All Rights Reserved 2019'=>'جميع الحقوق محفوظة © لشركة بال قول 2019 ',
 'BLOG LISTING'=>'المدونة',
 'show more'=>'أظهر المزيد',
 

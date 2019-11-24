@@ -50,13 +50,23 @@
             <br>
             <p>{!!$post->Body_ar!!}</p>
             @endif
-            <div class="fb-like" data-href="{{$post->slug}}" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-            <div class="share mt30">
+            <!-- Load Facebook SDK for JavaScript -->
+            <div id="fb-root"></div>
+           @if (App::isLocale('en'))
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"></script>
+           @else
+           <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v3.0"></script>
+           @endif
+            <!-- Your like button code -->
+            <div class="fb-like" data-href="post/{{$post->slug}}" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+  
+           
+            {{-- <div class="share mt30">
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//themeforest.net/item/cloudify-one-page-web-hosting-html-template/18398632" target="_blank" class="share-icon fb"><i class="fa fa-facebook"></i></a>
                 <a href="https://twitter.com/home?status=https%3A//themeforest.net/item/cloudify-one-page-web-hosting-html-template/18398632" target="_blank" class="share-icon tw"><i class="fa fa-twitter"></i></a>
                 <a href="https://plus.google.com/share?url=https%3A//themeforest.net/item/cloudify-one-page-web-hosting-html-template/18398632" target="_blank" class="share-icon gp"><i class="fa fa-google-plus"></i></a>
                 <span>{{__('home.share')}} <i class="fa fa-share-alt"></i></span>
-            </div>
+            </div> --}}
         </div>
 
     </div>

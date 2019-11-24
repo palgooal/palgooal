@@ -103,7 +103,7 @@
                     <h4><span></span> {{__('home.Our main service')}} </h4>
                     <br />
                     <p>
-                        {{__('home.We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed')}}
+                        {{-- {{__('home.We provide services suitable for all and represent a fertile environment for the growth of ideas and projects on the Internet, and our services carry a lot of values ​​that generate a sense of happiness and satisfaction among our customers over the (11) eleven years we have witnessed')}} --}}
                     </p>
                 </div>
                 <div class="col-lg-4 col-sm-6">
