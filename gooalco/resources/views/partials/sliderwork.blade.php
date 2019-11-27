@@ -1,39 +1,44 @@
-<div class="owl-carousel">
-        @foreach ($works as $work)
-            
-        @if (App::isLocale('en'))
-        
-        <div class="member">
-                <div class="member-details">
-                <img src="{{asset('/images/'.$work->image)}}" class="img-responsive" alt=""></a>
-                <div class="overlay">
-                <div class="member-info-overlay">
-                <h4><a href="{{$work->url}}" target="_blank">{{$work->name_en}}</a></h4>
-                </div>
-                </div>
-                </div>
-                <div class="member-info">
-                <h4>{{$work->name_en}}</h4>
-                </div>
-                </div>
-        
-        @else
-        
-        <div class="member">
-                <div class="member-details">
-                <img src="{{asset('/images/'.$work->image)}}" class="img-responsive" alt=""></a>
-                <div class="overlay">
-                <div class="member-info-overlay">
-                <h4><a href="{{$work->url}}" target="_blank">{{$work->name_ar}}</a></h4>
-                </div>
-                </div>
-                </div>
-                <div class="member-info">
-                <h4>{{$work->name_ar}}</h4>
-                </div>
-                </div>
-        
-        @endif
+<section class="testimonials-page1 ptb80">
+                <div class="container">
+                        <div class="section-title">
+                                <h2> {{__('home.Of our business')}} </h2>
+                                </div>
+                                <div class="owl-carousel testimonial2">
+                @foreach ($works as $work)
+                    
+                @if (App::isLocale('en'))
                 
-                @endforeach
-  </div> 
+                <div class="member">
+                        <div class="member-details">
+                        <img src="{{asset('./images/'.$work->image)}}" class="img-responsive" alt=""></a>
+                        <div class="overlay">
+                        <div class="member-info-overlay">
+                        <h4><a href="{{$work->url}}" target="_blank">{{$work->name_en}}</a></h4>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="member-info">
+                        <h4>{{$work->name_en}}</h4>
+                        </div>
+                        </div>
+                @else
+                <div class="member">
+                        <div class="member-details">
+                        <img src="{{asset('./images/'.$work->image)}}" class="img-responsive" alt=""></a>
+                        <div class="overlay">
+                        <div class="member-info-overlay">
+                        <h4><a href="{{$work->url}}" target="_blank">{{$work->name_ar}}</a></h4>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="member-info">
+                        <h4>{{$work->name_ar}}</h4>
+                        </div>
+                        </div>
+                
+                @endif
+                        
+                        @endforeach
+          </div> 
+        </div>
+</section>

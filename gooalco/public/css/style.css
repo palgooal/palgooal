@@ -22,8 +22,6 @@ p {
     color: #738191
 }
 
-h2 {}
-
 html,
 body {
     width: 100%;
@@ -79,7 +77,7 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
     -webkit-user-drag: none;
-    user-drag: none
+    user-drag: none;
 }
 
 .fullscreen {
@@ -876,8 +874,6 @@ img {
     color: #999
 }
 
-.top-header ul {}
-
 .social {
     line-height: 25px
 }
@@ -985,22 +981,7 @@ img {
     width: 100%
 }
 
-.chat-message-counter {
-    background: #29b1fd;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    display: inline;
-    font-size: 12px;
-    font-weight: 700;
-    height: 28px;
-    left: 0;
-    line-height: 28px;
-    margin: -15px 0 0 -15px;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 28px
-}
+
 
 .chat-close {
     color: #fff;
@@ -1203,13 +1184,6 @@ img {
     background-repeat: no-repeat;
     background-position: 50% 0
 }
-
-.cd-form label.cd-username {}
-
-.cd-form label.cd-email {}
-
-.cd-form label.cd-password {}
-
 .cd-form input {
     margin: 0;
     padding: 0;
@@ -1351,11 +1325,7 @@ nav.navbar {
     margin-top:-15px;
 }
 
-.nav>li>a:focus,
-.nav>li>a:hover,
-{
-    background: 0 0!important
-}
+
 
 .nav>li>a:focus {
     color: #f6f6f6!important
@@ -1484,8 +1454,6 @@ header.navbar-fixed-top {
 .total-cart ul li .cart-info {
     float: left
 }
-
-.total-cart ul li .cart-info h4 {}
 
 .total-cart ul li .cart-info h4 a {
     color: #323232;
@@ -2118,8 +2086,6 @@ section#subscribe {
     overflow: hidden
 }
 
-.subscribe-form {}
-
 .subscribe-form h2 {
     letter-spacing: 1px;
     padding: 0
@@ -2266,9 +2232,6 @@ section#subscribe .clouds img.cloud1 {
 .member:hover {
     border: 1px solid transparent
 }
-
-.member-social a i:hover {}
-
 .member-info {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
@@ -2336,14 +2299,9 @@ section#countup h3 {
     padding-top: 5px
 }
 
-#testimonials {}
-
 section#latest-news {
     background-color: #f4f4f4
 }
-
-.news-content {}
-
 .blog-single {
     background-color: #fff;
     width: 100%;
@@ -2481,9 +2439,6 @@ section#latest-news2 .blog-post .post-info a.blog-post-link {
     color: #f4f4f4;
     display: block
 }
-
-section#latest-news2 .blog-post:hover .post-info a.blog-post-link {}
-
 section#latest-news2 .blog-post .post-info span {
     font-size: 14px;
     color: #f4f4f4;
@@ -2564,9 +2519,6 @@ section#latest-news2 .blog-post-featured .post-info a.blog-post-link {
     color: #f4f4f4;
     display: block
 }
-
-section#latest-news2 .blog-post-featured:hover .post-info a.blog-post-link {}
-
 section#latest-news2 .blog-post-featured .post-info span {
     font-size: 14px;
     color: #f4f4f4;
@@ -2725,9 +2677,6 @@ footer {
 .contact-form button:hover {
     color: #29b2fe
 }
-
-.top-footer .footer-info {}
-
 /* .top-footer .about img {
     height: 30px
 } */
@@ -2764,8 +2713,6 @@ p.pt30 {
 .top-footer .footer-links li a:hover {
     color: #29b2fe
 }
-
-.payment {}
 
 .payment ul li {
     padding-right: 10px
@@ -3064,8 +3011,6 @@ section.cart-page .main-content {
     font-size: 22px;
     border-bottom: 1px solid #ddd
 }
-
-.cart-content td {}
 
 .cart-content .product-name {
     margin: 22px 0 0 7px
@@ -5086,3 +5031,4 @@ p.service_text{
        max-width: 209px;
    }
    }
+   

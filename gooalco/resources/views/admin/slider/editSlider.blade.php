@@ -50,7 +50,7 @@ action="/admin/slider/{{$slider->id}}"
                         </div></div></div>
         <div class="form-group">
           <label>تحميل صورة خلفية السلايدر</label>
-          <input  class="form-control spinner" type="file" placeholder="تحميل الصورة" required name="image" id="image" value="{{$slider->image}}" />
+          <input  class="form-control spinner" type="file" placeholder="تحميل الصورة"  name="image" id="image" value="{{$slider->image}}" />
         </div>
       </div>
       <div class="form-actions">

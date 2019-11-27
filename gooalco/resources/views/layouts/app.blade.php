@@ -32,11 +32,6 @@
 <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/responsive.css">
-<link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
-
-
-
 
 @if (App::isLocale('ar'))
 
@@ -146,8 +141,8 @@
 <script src="./js/jquery.magnific-popup.min.js"></script>
 <script src="./js/isotope.pkgd.min.js"></script>
 <script src="./js/custom.js"></script>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/owlcarousel/owl.carousel.min.js"></script>
+<!--<script src="./jquery.min.js"></script>-->
+{{-- <script src="./owlcarousel/owl.carousel.min.js"></script> --}}
 
 
 
@@ -163,11 +158,11 @@
 
   
 </script>
-  <script>$(document).ready(function(){
+  {{-- <script>$(document).ready(function(){
     $(".owl-carousel").owlCarousel();
   });
 
-  </script>
+  </script> --}}
 
 
 

@@ -38,37 +38,19 @@ class HomeController extends Controller
         }else if(App::isLocale('en')){
             $post = Post::where('Title_en', '!=', null)->latest()->take(4)->get();
         } 
-
-     
-        
-
         //$post = Post::latest()->take(3)->get();
-
-         $work = Work::latest()->take(4)->get();
+         $work = Work::latest()->take(12)->get();
         return view('index')
         ->with('posts', $post)
         ->with('sliders', Slider::get())
-       // ->with('menus', Menu::orderBy('number', 'asc')->get())
-        //->with('submenus' ,SubMenu::orderBy('name_ar', 'desc')->get())
         ->with('options' , Option::get())
         ->with('works' ,  $work);
-        //->with('prices' ,  Price::get());
-        
-       
-
-
     }
     public function show($title_en)
     {
-        //Product::where('post', $title_en)->first();
-
-        // return view('singelPost')
-        // ->with('post', Post::find($title_en));
+      //
     }
-    // public function showPages($id)
-    // {
-    //     return view('pages')->with('pages', Page::find($id));
-    // }
+
     function lang($local){
         Session::put('lang', $local);
         return redirect()->back();
